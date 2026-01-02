@@ -1,0 +1,8 @@
+# HuggingFace cache
+.hf_cache/
+
+# Model checkpoints
+*.pt
+
+# Output images
+*.png
