@@ -8,6 +8,7 @@ This project implements **inference-time emotional control** of Large Language M
 
 ## 📖 Table of Contents
 
+- [🌟 Project Overview & Complete Pipeline](#-project-overview--complete-pipeline)
 1. [What is an LLM?](#1-what-is-an-llm)
 2. [What is the KV-Cache?](#2-what-is-the-kv-cache)
 3. [Why is Emotion Steering Hard?](#3-why-is-emotion-steering-hard)
@@ -20,6 +21,55 @@ This project implements **inference-time emotional control** of Large Language M
 10. [Project Structure](#10-project-structure)
 11. [Hardware Requirements](#11-hardware-requirements)
 12. [Citation](#12-citation)
+
+---
+
+## 🌟 Project Overview & Complete Pipeline
+
+Below is the complete end-to-end lifecycle of this research project, taking us from raw emotion classification all the way to the mechanistic evaluation of two state-of-the-art language models.
+
+```mermaid
+graph TD
+    A[Phase 0: Base Foundation] --> B(Fine-tune DistilBERT on GoEmotions)
+    B --> C(Generate 750-pair Synthetic Emotion Dataset)
+    
+    C --> D[Phase 1: Projector Training]
+    
+    D --> E{Train Projectors}
+    E -->|Model 1: Phi-4-mini| F[Var1: Basic Linear MLP] & G[Var2: Gated MLP]
+    E -->|Model 2: Qwen2.5-1.5B| H[Var1: Basic Linear MLP] & I[Var2: Gated MLP]
+    
+    F & G & H & I --> J[Phase 2: Data Generation]
+    
+    J --> K(Generate Steered Texts with Ablations: Alpha scaling, Layer targeting)
+    
+    K --> L[Phase 3: Comprehensive Evaluation]
+    
+    L --> M[Linguistic Panel <br> CPU]
+    M --> M1(Dist-1 / Dist-2)
+    M --> M2(Self-BLEU)
+    
+    L --> N[Mechanistic Panel <br> GPU]
+    N --> N1(RoBERTa Emotion Score & JSD)
+    N --> N2(Cosine Similarity: DistilBERT & RoBERTa)
+    N --> N3(Perplexity)
+```
+
+### 📊 Understanding Our Evaluation Metrics
+
+To prove the efficacy of the KV-cache injection method for a Q1 journal submission, we utilize two distinct panels of metrics. 
+
+#### 🗣️ Linguistic Metrics (Ensuring Conversational Quality)
+These metrics ensure the model doesn't just repeat the same angry or happy words indefinitely, but maintains lexical richness.
+- **Dist-1 & Dist-2 (Distinct N-Grams):** Measures how many unique single words or pairs of words the model uses. **High score** = rich, diverse vocabulary. **Low score** = repetitive drone.
+- **Self-BLEU:** Measures how similar generated sentences are to *each other*. If the model says "I am so happy!" for every prompt when injected with Joy, Self-BLEU will be close to 1.0 (bad). We want **low Self-BLEU** for high conversational diversity.
+
+#### ⚙️ Mechanistic & Emotional Metrics (Proving The Injection Works)
+These metrics prove if the emotion was *actually* injected successfully, and if the language model survived the "brain surgery".
+- **Target Emotion Score (via Independent RoBERTa):** We pass the manipulated output text into an *independent* RoBERTa model (that was never used in training). If it detects the target emotion with high probability, it proves the steering undeniably worked.
+- **JSD (Jensen-Shannon Divergence):** Measures the absolute distributional shift. By comparing the 28-dimensional emotion probability of the "Vanilla" output versus the "Steered" output, JSD proves that the overall emotional tone of the sentence fundamentally changed (JSD > 0).
+- **Cosine Similarity (Self-Consistency vs Independent Judge):** We take the 28-dimensional vector of the *raw input emotion text* (e.g. "I am furious") and the 28-dimensional vector of the *steered output text*. Calculating the cosine similarity between them using our train-judge (DistilBERT) shows self-consistency. Taking it from an external judge (RoBERTa) proves generalized, unbiased emotional alignment.
+- **Perplexity (PPL):** Measures textual fluency. We pass the steered text back into the base LLM. If PPL stays close to the Vanilla text's PPL, it means our KV-injection didn't break the grammar or coherence of the LLM. If PPL skyrockets, we've lobotomized the model.
 
 ---
 
