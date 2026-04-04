@@ -19,8 +19,6 @@ This project implements **inference-time emotional control** of Large Language M
 8. [Evaluation Methodology](#8-evaluation-methodology)
 9. [Quick Start](#9-quick-start)
 10. [Project Structure](#10-project-structure)
-11. [Hardware Requirements](#11-hardware-requirements)
-12. [Citation](#12-citation)
 
 ---
 
@@ -321,7 +319,8 @@ $$
 D_{\text{KL}}(P \| Q) = \sum_{i} P(i) \log \frac{P(i)}{Q(i)}
 $$
 
-JSD is symmetric ($\text{JSD}(P \| Q) = \text{JSD}(Q \| P)$) and bounded: $0 \leq \text{JSD} \leq \ln 2 \approx 0.693$.
+JSD is symmetric (JSD(P || Q) = JSD(Q || P)) and bounded:  
+0 ≤ JSD ≤ ln 2 ≈ 0.693
 
 - **JSD ≈ 0** → Steering had no effect (vanilla ≈ steered)
 - **JSD > 0** → The emotion distribution meaningfully shifted
@@ -333,14 +332,13 @@ JSD is symmetric ($\text{JSD}(P \| Q) = \text{JSD}(Q \| P)$) and bounded: $0 \le
 Measures how "surprised" the original LLM is by the steered text. Lower PPL means the text is more fluent and natural:
 
 $$
-\text{PPL}(x) = \exp\!\left(-\frac{1}{T} \sum_{t=1}^{T} \log P(x_t \mid x_{<t})\right)
+\text{PPL}(x) = \exp \left( -\frac{1}{T} \sum_{t=1}^{T} \log P(x_t \mid x_{\lt t}) \right)
 $$
 
-Where $T$ is the number of tokens and $P(x_t \mid x_{<t})$ is the model's predicted probability for the actual token $x_t$.
+Where $T$ is the number of tokens and $P(x_t \mid x_{\lt t})$ is the model's predicted probability for the actual token $x_t$.
 
 - **PPL near vanilla** → Steering preserves fluency
 - **PPL much higher than vanilla** → Steering degrades coherence
-
 ---
 
 ## 9. Quick Start
@@ -404,37 +402,6 @@ Final Dance/
 
 ---
 
-## 11. Hardware Requirements
-
-| Component | Minimum | Tested |
-|-----------|---------|--------|
-| GPU | 6 GB VRAM (RTX 3060) | NVIDIA RTX 3060 6GB |
-| RAM | 16 GB | 16 GB DDR4 |
-| Storage | 20 GB (for model caches) | SSD recommended |
-
-**Memory management strategies used:**
-- 4-bit NF4 quantisation via `bitsandbytes`
-- Batch size = 1 during generation
-- `torch.no_grad()` everywhere during inference
-- Sequential model loading (one model at a time)
-- Explicit `del model; torch.cuda.empty_cache()` between evaluation steps
-
----
-
-## 12. Citation
-
-```bibtex
-@article{kvemotioninjection2026,
-  title   = {Inference-Time Emotional Steering of Frozen Language Models 
-             via KV-Cache Injection},
-  author  = {[Your Name]},
-  journal = {[Target Journal]},
-  year    = {2026},
-  note    = {Under review}
-}
-```
-
----
 
 <div align="center">
 <i>Built with 🎭 emotion and ❄️ frozen weights</i>
