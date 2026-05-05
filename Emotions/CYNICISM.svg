@@ -1,0 +1,172 @@
+<svg width="100%" height="auto" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sci-Fi / Holo-Panel Tipografisi -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Outfit:wght@400;500&amp;display=swap');
+      
+      .font-title { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+      .font-text { font-family: 'Rajdhani', sans-serif; letter-spacing: 0.5px; }
+      
+      /* ZAMAN ÇİZELGESİ: 16 Saniyelik Sinematik Döngü */
+      .input-flow { animation: inputDoc_SW 16s infinite cubic-bezier(0.3, 0.1, 0.2, 1); transform-origin: center; }
+      @keyframes inputDoc_SW {
+        0%, 3% { opacity: 0; transform: translateY(10px); }
+        8%, 20% { opacity: 1; transform: translateY(40px); } 
+        25% { opacity: 1; transform: translateY(180px) scale(0.95); } 
+        30%, 100% { opacity: 0; transform: translateY(180px) scale(0.95); }
+      }
+
+      .input-fade { animation: fadeText_SW 16s infinite ease-in-out; }
+      @keyframes fadeText_SW {
+        0%, 25% { opacity: 1; }
+        29%, 100% { opacity: 0; }
+      }
+
+      /* Veri Tarama (Holo-Scan) Efekti */
+      .highlighter { animation: highlightRead_SW 16s infinite ease-in-out; transform-origin: left; }
+      @keyframes highlightRead_SW {
+        0%, 23% { transform: scaleX(0); opacity: 0; }
+        24% { opacity: 0.4; transform: scaleX(0); }
+        28% { opacity: 0.4; transform: scaleX(1); }
+        32%, 100% { opacity: 0; transform: scaleX(1); }
+      }
+
+      .affective-spark { animation: sparkTravel_SW 16s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+      @keyframes sparkTravel_SW {
+        0%, 34% { opacity: 0; transform: translate(250px, 300px) scale(0); }
+        38% { opacity: 1; transform: translate(250px, 300px) scale(1); } 
+        48% { opacity: 1; transform: translate(250px, 530px) scale(1); } 
+        52%, 100% { opacity: 0; transform: translate(250px, 530px) scale(0); }
+      }
+
+      /* MOTORUN ELE GEÇİRİLMESİ (Maviden Kırmızıya Geçiş) */
+      .attention-node { animation: nodeBreathe_SW 16s infinite; }
+      @keyframes nodeBreathe_SW {
+        0%, 48%, 62%, 100% { fill: #0D1117; stroke: #4DF0FF; filter: drop-shadow(0 0 3px #4DF0FF); }
+        50%, 58% { fill: #1A0505; stroke: #FF2A2A; filter: drop-shadow(0 0 10px #FF2A2A); }
+      }
+      .weaver-line { animation: weaveFlow_SW 16s infinite; }
+      @keyframes weaveFlow_SW {
+        0%, 48%, 62%, 100% { stroke: #4DF0FF; opacity: 0.5; }
+        52%, 56% { stroke: #FF2A2A; opacity: 1; }
+      }
+
+      .final-output { transform-origin: top center; animation: presentPaper_SW 16s infinite cubic-bezier(0.2, 0.8, 0.2, 1); }
+      @keyframes presentPaper_SW {
+        0%, 60% { opacity: 0; transform: translateY(540px) scale(0.6); } 
+        65%, 95% { opacity: 1; transform: translateY(680px) scale(1); filter: drop-shadow(0 0 20px rgba(255, 42, 42, 0.2)); }
+        98%, 100% { opacity: 0; transform: translateY(700px) scale(0.9); } 
+      }
+
+      .text-reveal { animation: revealText_SW 16s infinite steps(45, end); }
+      @keyframes revealText_SW {
+        0%, 65% { width: 0; }
+        75%, 100% { width: 400px; }
+      }
+    </style>
+
+    <!-- Kırmızı (Sith/Cynicism) Enerji Çekirdeği -->
+    <radialGradient id="sparkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF5555" />
+      <stop offset="50%" stop-color="#FF2A2A" />
+      <stop offset="100%" stop-color="rgba(255, 42, 42, 0)" />
+    </radialGradient>
+    
+    <!-- Neon Filtreler -->
+    <filter id="neonBlue">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#4DF0FF" flood-opacity="0.6"/>
+    </filter>
+    <filter id="neonRed">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#FF2A2A" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan: Derin Uzay -->
+  <rect width="100%" height="100%" fill="#05060A"/>
+  
+  <!-- Yıldız Tarlası Patern -->
+  <pattern id="starfield" width="80" height="80" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="50" cy="30" r="1.5" fill="#4DF0FF" opacity="0.2"/>
+    <circle cx="30" cy="70" r="0.5" fill="#FFFFFF" opacity="0.3"/>
+    <circle cx="70" cy="60" r="1" fill="#FF2A2A" opacity="0.1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#starfield)" />
+
+  <!-- AŞAMA 1: GİRDİ (Aydınlık Taraf Paneli) -->
+  <g class="input-flow">
+    <rect x="100" y="0" width="300" height="120" rx="6" fill="#0D111A" stroke="#4DF0FF" stroke-width="1" filter="url(#neonBlue)"/>
+    <g class="input-fade">
+      <text x="250" y="35" fill="#4DF0FF" font-size="10" font-weight="700" class="font-title" text-anchor="middle">CULTURAL REFERENCE</text>
+      <!-- Klasik Star Wars Sarısı -->
+      <text x="250" y="70" fill="#FFE81F" font-size="24" font-weight="600" class="font-text" text-anchor="middle">"May the Force</text>
+      <text x="250" y="100" fill="#FFE81F" font-size="24" font-weight="600" class="font-text" text-anchor="middle">be with you."</text>
+    </g>
+  </g>
+
+  <!-- AŞAMA 2: OKUMA / ANALİZ -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="300" height="160" rx="6" fill="#0D111A" stroke="#2A374A" stroke-width="1"/>
+    <text x="150" y="140" fill="#4DF0FF" font-size="10" font-weight="700" class="font-title" text-anchor="middle" opacity="0.7">DATA COMPREHENSION</text>
+    <!-- Mavi Tarama Lazerleri -->
+    <rect x="70" y="45" width="160" height="25" fill="#4DF0FF" class="highlighter" rx="2"/>
+    <rect x="90" y="75" width="120" height="25" fill="#4DF0FF" class="highlighter" rx="2"/>
+  </g>
+
+  <!-- Akış Hattı -->
+  <line x1="250" y1="320" x2="250" y2="480" stroke="#2A374A" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- AŞAMA 3: DUYGU ÇEKİRDEĞİ (Karanlık Tarafın Gelişi) -->
+  <g class="affective-spark">
+    <!-- Kırmızı Enerji -->
+    <circle cx="0" cy="0" r="24" fill="url(#sparkGlow)" />
+    <circle cx="0" cy="0" r="6" fill="#FFFFFF" filter="url(#neonRed)"/>
+    
+    <!-- Uyarı Rozeti -->
+    <rect x="-75" y="-45" width="150" height="24" rx="4" fill="#0D111A" stroke="#FF2A2A" stroke-width="1" filter="url(#neonRed)"/>
+    <text x="0" y="-29" fill="#FF2A2A" font-size="10" font-weight="700" class="font-title" text-anchor="middle">INJECT: CYNICISM</text>
+  </g>
+
+  <!-- AŞAMA 4: SENTEZ (Motorun Ele Geçirilmesi) -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="300" height="140" rx="6" fill="#0D111A" stroke="#2A374A" stroke-width="1"/>
+    <g transform="translate(150, 60)">
+      <!-- Devre Yolları -->
+      <path d="M -60 0 L -20 0 M 20 0 L 60 0 M 0 -20 L 0 20" stroke-width="2" fill="none" class="weaver-line"/>
+      <!-- Çekirdek Düğümler -->
+      <circle cx="-60" cy="0" r="8" stroke-width="2" class="attention-node" />
+      <circle cx="60" cy="0" r="8" stroke-width="2" class="attention-node" />
+      <circle cx="0" cy="-20" r="8" stroke-width="2" class="attention-node" />
+      <circle cx="0" cy="20" r="8" stroke-width="2" class="attention-node" />
+      <!-- Ana Reaktör -->
+      <circle cx="0" cy="0" r="14" stroke-width="2" class="attention-node" />
+    </g>
+    <text x="150" y="125" fill="#4DF0FF" font-size="10" font-weight="700" class="font-title" text-anchor="middle" opacity="0.7">SYNTHESIS REACTOR</text>
+  </g>
+
+  <!-- AŞAMA 5: ÇIKTI (Kırmızı Hata/Gerçeklik Ekranı) -->
+  <g class="final-output">
+    <!-- Panel artık kırmızı parlıyor -->
+    <rect x="25" y="0" width="450" height="160" rx="6" fill="#0D111A" stroke="#FF2A2A" stroke-width="1" filter="url(#neonRed)"/>
+    <g transform="translate(55, 45)">
+      
+      <text x="0" y="-10" fill="#FF2A2A" font-size="11" font-weight="700" class="font-title">WARNING: OVERRIDE COMPLETE</text>
+      
+      <clipPath id="text-mask">
+        <rect x="0" y="-10" width="0" height="100" class="text-reveal" />
+      </clipPath>
+      
+      <g clip-path="url(#text-mask)">
+        <text x="0" y="30" fill="#E2E8F0" font-size="22" font-weight="500" class="font-text">
+          "...because actual logic and planning
+        </text>
+        <text x="0" y="65" fill="#E2E8F0" font-size="22" font-weight="500" class="font-text">
+          clearly aren't going to <tspan fill="#FF2A2A" font-weight="700">save us.</tspan>"
+        </text>
+      </g>
+      
+      <rect x="0" y="95" width="390" height="1" fill="#2A374A" />
+      <text x="0" y="115" fill="#8B949E" font-size="10" font-weight="700" class="font-title" letter-spacing="1">KV-CACHE MODULATION • FROZEN LLM</text>
+    </g>
+  </g>
+</svg>

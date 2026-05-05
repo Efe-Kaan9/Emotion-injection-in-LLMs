@@ -1,0 +1,170 @@
+<svg width="100%" height="auto" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Okyanusun Kalbi Tipografisi -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap');
+      
+      .font-modern { font-family: 'Montserrat', sans-serif; letter-spacing: 2px; }
+      .font-ocean { font-family: 'Playfair Display', serif; }
+      
+      /* ZAMAN ÇİZELGESİ: 16 Saniyelik Döngü */
+      .input-flow { animation: inputDoc_TITANIC 16s infinite cubic-bezier(0.3, 0.1, 0.2, 1); transform-origin: center; }
+      @keyframes inputDoc_TITANIC {
+        0%, 3% { opacity: 0; transform: translateY(10px); }
+        8%, 20% { opacity: 1; transform: translateY(40px); } 
+        25% { opacity: 1; transform: translateY(180px) scale(0.95); } 
+        30%, 100% { opacity: 0; transform: translateY(180px) scale(0.95); }
+      }
+
+      .input-fade { animation: fadeText_TITANIC 16s infinite ease-in-out; }
+      @keyframes fadeText_TITANIC {
+        0%, 25% { opacity: 1; }
+        29%, 100% { opacity: 0; }
+      }
+
+      /* Su Altı Tarama Efekti */
+      .highlighter { animation: highlightRead_TITANIC 16s infinite ease-in-out; transform-origin: left; }
+      @keyframes highlightRead_TITANIC {
+        0%, 23% { transform: scaleX(0); opacity: 0; }
+        24% { opacity: 0.2; transform: scaleX(0); }
+        28% { opacity: 0.2; transform: scaleX(1); }
+        32%, 100% { opacity: 0; transform: scaleX(1); }
+      }
+
+      .affective-spark { animation: sparkTravel_TITANIC 16s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+      @keyframes sparkTravel_TITANIC {
+        0%, 34% { opacity: 0; transform: translate(250px, 300px) scale(0); }
+        38% { opacity: 1; transform: translate(250px, 300px) scale(1); } 
+        48% { opacity: 1; transform: translate(250px, 530px) scale(1); } 
+        52%, 100% { opacity: 0; transform: translate(250px, 530px) scale(0); }
+      }
+
+      /* KALP ATIŞI VE ELMAS PARILTISI */
+      .attention-node { animation: nodeBreathe_TITANIC 16s infinite; }
+      @keyframes nodeBreathe_TITANIC {
+        0%, 48%, 62%, 100% { fill: #0B1221; stroke: #1E3A5F; }
+        50%, 54%, 58% { fill: #E0F7FA; stroke: #22D3EE; filter: drop-shadow(0 0 10px #22D3EE); } /* Kalp atışı gibi çift ritim */
+        52%, 56% { fill: #0284C7; stroke: #22D3EE; }
+      }
+      .weaver-line { animation: weaveFlow_TITANIC 16s infinite; }
+      @keyframes weaveFlow_TITANIC {
+        0%, 48%, 62%, 100% { stroke: #1E3A5F; }
+        52%, 56% { stroke: #22D3EE; filter: drop-shadow(0 0 4px #22D3EE); }
+      }
+
+      .final-output { transform-origin: top center; animation: presentPaper_TITANIC 16s infinite cubic-bezier(0.2, 0.8, 0.2, 1); }
+      @keyframes presentPaper_TITANIC {
+        0%, 60% { opacity: 0; transform: translateY(540px) scale(0.6); } 
+        65%, 95% { opacity: 1; transform: translateY(680px) scale(1); filter: drop-shadow(0 15px 30px rgba(2, 132, 199, 0.3)); }
+        98%, 100% { opacity: 0; transform: translateY(700px) scale(0.9); } 
+      }
+
+      .text-reveal { animation: revealText_TITANIC 16s infinite steps(45, end); }
+      @keyframes revealText_TITANIC {
+        0%, 65% { width: 0; }
+        75%, 100% { width: 400px; }
+      }
+    </style>
+
+    <!-- Derin Okyanus Arka Plan Gradyanı -->
+    <linearGradient id="oceanDepths" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A" /> <!-- Yüzey altı lacivert -->
+      <stop offset="100%" stop-color="#020617" /> <!-- Simsiyah derinlik -->
+    </linearGradient>
+
+    <!-- Okyanusun Kalbi (Elmas) Gradyanı -->
+    <radialGradient id="heartSpark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A5F3FC" />
+      <stop offset="40%" stop-color="#22D3EE" />
+      <stop offset="80%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="rgba(2, 132, 199, 0)" />
+    </radialGradient>
+    
+    <filter id="glassBlur">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan: Okyanus Derinliği -->
+  <rect width="100%" height="100%" fill="url(#oceanDepths)"/>
+  
+  <!-- Su Altı Partikülleri / Buz Kristalleri -->
+  <pattern id="waterParticles" width="60" height="60" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="1" fill="#38BDF8" opacity="0.1"/>
+    <circle cx="40" cy="30" r="2" fill="#E0F7FA" opacity="0.05"/>
+    <circle cx="20" cy="50" r="0.8" fill="#22D3EE" opacity="0.15"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#waterParticles)" />
+
+  <!-- AŞAMA 1: GİRDİ (Buzlu Cam Panel) -->
+  <g class="input-flow">
+    <!-- Yarı saydam, ince çerçeveli cam hissiyatı -->
+    <rect x="100" y="0" width="300" height="120" rx="8" fill="rgba(30, 58, 95, 0.3)" stroke="#38BDF8" stroke-width="0.5" filter="url(#glassBlur)"/>
+    <g class="input-fade">
+      <text x="250" y="35" fill="#7DD3FC" font-size="9" font-weight="500" class="font-modern" text-anchor="middle">ICONIC DIALOGUE</text>
+      <!-- Klasik, edebi, beyaz-mavi tonlarında metin -->
+      <text x="250" y="70" fill="#F8FAFC" font-size="22" font-weight="400" class="font-ocean" text-anchor="middle">"I'll never let go, Jack."</text>
+    </g>
+  </g>
+
+  <!-- AŞAMA 2: OKUMA (Duygusal Analiz) -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="300" height="160" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="#1E3A5F" stroke-width="1"/>
+    <text x="150" y="140" fill="#38BDF8" font-size="9" font-weight="500" class="font-modern" text-anchor="middle" opacity="0.7">CONTEXT COMPREHENSION</text>
+    <rect x="70" y="45" width="160" height="25" fill="#22D3EE" class="highlighter" rx="2"/>
+    <rect x="90" y="75" width="120" height="25" fill="#22D3EE" class="highlighter" rx="2"/>
+  </g>
+
+  <line x1="250" y1="320" x2="250" y2="480" stroke="#1E3A5F" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- AŞAMA 3: DUYGU ÇEKİRDEĞİ (Okyanusun Kalbi / Elmas) -->
+  <g class="affective-spark">
+    <circle cx="0" cy="0" r="30" fill="url(#heartSpark)" />
+    <!-- Elmasın merkezi -->
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" />
+    
+    <rect x="-80" y="-45" width="160" height="24" rx="12" fill="rgba(2, 6, 23, 0.8)" stroke="#22D3EE" stroke-width="1" filter="url(#glassBlur)"/>
+    <text x="0" y="-29" fill="#22D3EE" font-size="10" font-weight="500" class="font-modern" text-anchor="middle">FOREVER LOVE</text>
+  </g>
+
+  <!-- AŞAMA 4: SENTEZ (Duygu Ağı) -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="300" height="140" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="#1E3A5F" stroke-width="1"/>
+    <g transform="translate(150, 60)">
+      <path d="M -60 0 L -20 0 M 20 0 L 60 0 M 0 -20 L 0 20" stroke-width="2" fill="none" class="weaver-line"/>
+      <!-- Düğümler kolye taşları gibi dizili -->
+      <polygon points="-60,-6 -54,0 -60,6 -66,0" class="attention-node" />
+      <polygon points="60,-6 66,0 60,6 54,0" class="attention-node" />
+      <polygon points="0,-26 6,-20 0,-14 -6,-20" class="attention-node" />
+      <polygon points="0,14 6,20 0,26 -6,20" class="attention-node" />
+      <!-- Merkez Kolye Taşı -->
+      <polygon points="0,-10 10,0 0,10 -10,0" stroke-width="2" class="attention-node" />
+    </g>
+    <text x="150" y="125" fill="#38BDF8" font-size="9" font-weight="500" class="font-modern" text-anchor="middle" opacity="0.7">LANGUAGE WEAVER</text>
+  </g>
+
+  <!-- AŞAMA 5: ÇIKTI (Derin Su Ekranı) -->
+  <g class="final-output">
+    <rect x="25" y="0" width="450" height="160" rx="8" fill="rgba(30, 58, 95, 0.3)" stroke="#38BDF8" stroke-width="0.5" filter="url(#glassBlur)"/>
+    <g transform="translate(55, 45)">
+      
+      <text x="0" y="-10" fill="#22D3EE" font-size="10" font-weight="500" class="font-modern">✦ EMOTION WEAVED: ROMANCE</text>
+      
+      <clipPath id="text-mask">
+        <rect x="0" y="-10" width="0" height="100" class="text-reveal" />
+      </clipPath>
+      
+      <g clip-path="url(#text-mask)">
+        <text x="0" y="30" fill="#F8FAFC" font-size="22" font-weight="400" class="font-ocean">
+          "...because my soul is forever bound
+        </text>
+        <text x="0" y="65" fill="#F8FAFC" font-size="22" font-weight="400" class="font-ocean">
+          to yours, even in the deepest <tspan fill="#22D3EE" font-weight="500" font-style="italic">ocean.</tspan>"
+        </text>
+      </g>
+      
+      <rect x="0" y="95" width="390" height="1" fill="#1E3A5F" />
+      <text x="0" y="115" fill="#64748B" font-size="9" font-weight="500" class="font-modern" letter-spacing="1">KV-CACHE MODULATION • FROZEN LLM</text>
+    </g>
+  </g>
+</svg>

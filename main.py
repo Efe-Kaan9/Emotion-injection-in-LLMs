@@ -124,46 +124,78 @@ def load_example_pairs(notebook_path="KVinjectionWithPhi4.ipynb"):
     raise FileNotFoundError("Could not find example_pairs in notebook")
 
 # =============================================================
-# Emotion Extractor (identical to notebook, with token_type_ids fix)
+# Emotion Extractor — matches DistilBertFineTune.ipynb EXACTLY
+# Architecture: DistilBERT → [CLS] token → Linear(768, 28)
 # =============================================================
-class EmotionExtractor(nn.Module):
-    def __init__(self, encoder_name=ENCODER_NAME, num_emotions=NUM_EMOTIONS):
+class EmotionExtractor(torch.nn.Module):
+    def __init__(self, encoder_name="distilbert-base-uncased", num_emotions=28):
         super().__init__()
-        self.encoder = AutoModel.from_pretrained(encoder_name, cache_dir=CACHE_DIR)
-        self.classifier = nn.Linear(self.encoder.config.hidden_size, num_emotions)
+        # Senin eğitimde kullandığın mimari (HuggingFace cache dizini ile birlikte)
+        self.encoder = AutoModel.from_pretrained(encoder_name, cache_dir="./.hf_cache")
+        self.classifier = torch.nn.Linear(self.encoder.config.hidden_size, num_emotions)
+        
+        # SADECE SCRIPTLER İÇİN GEREKLİ OLAN KISIM: 
+        # Modeli inference ve KV-Cache eğitimi için donduruyoruz ki ağırlıklar bozulmasın
+        for param in self.encoder.parameters():
+            param.requires_grad = False
 
     def forward(self, input_ids, attention_mask, **kwargs):
-        # **kwargs absorbs token_type_ids that some tokenizers add
+        # **kwargs sayesinde beklenmeyen argümanlar (token_type_ids vb.) hata vermez
         out = self.encoder(input_ids, attention_mask=attention_mask)
-        pooled = out.last_hidden_state.mean(dim=1)
-        return self.classifier(pooled)
+        
+        # İŞTE BURASI HAYAT KURTARAN KISIM: Senin eğitimde kullandığın Mean Pooling!
+        pooled = out.last_hidden_state.mean(dim=1) 
+        
+        logits = self.classifier(pooled)
+        return logits
+
 
 def get_emotion_embedding(text, emotion_ext, tokenizer, device):
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=128).to(device)
+    inputs = tokenizer(
+        text, return_tensors="pt", truncation=True, max_length=128
+    ).to(device)
     with torch.no_grad():
         logits = emotion_ext(**inputs)
         return torch.sigmoid(logits)
 
+
 def load_emotion_extractor(device):
+    """Load the fine-tuned EmotionExtractor from local checkpoint.pt.
+
+    Uses [CLS] pooling to match DistilBertFineTune.ipynb training.
+    Handles both {'model_state_dict': ...} and raw state-dict formats.
+    """
     enc_tok = AutoTokenizer.from_pretrained(ENCODER_NAME, cache_dir=CACHE_DIR)
-    emo_ext = EmotionExtractor().to(device).eval()
+    emo_ext = EmotionExtractor(
+        encoder_name=ENCODER_NAME, num_emotions=NUM_EMOTIONS
+    ).to(device)
+    emo_ext.eval()
+
     ckpt = "checkpoint.pt"
     if os.path.isfile(ckpt):
-        sd = torch.load(ckpt, map_location="cpu")
-        emo_ext.load_state_dict(sd["model_state_dict"])
-        print("  [OK] Emotion extractor loaded from checkpoint.pt")
+        sd    = torch.load(ckpt, map_location="cpu")
+        state = sd.get("model_state_dict", sd)   # handles both formats
+        emo_ext.load_state_dict(state)
+        print("  [OK] EmotionExtractor loaded from checkpoint.pt (CLS pooling)")
     else:
-        print("  [WARN] Using untrained emotion extractor")
+        print("  [WARN] checkpoint.pt not found — using untrained EmotionExtractor!")
+
     return emo_ext, enc_tok
 
 # =============================================================
-# Dataset (identical to notebook)
+# Dataset — Concatenated Causal LM (FIXED)
+# Prompt tokens are masked with -100; only response tokens
+# contribute to the Cross-Entropy loss.
 # =============================================================
+MAX_PROMPT_LEN   = 80
+MAX_RESPONSE_LEN = 80
+MAX_TOTAL_LEN    = MAX_PROMPT_LEN + MAX_RESPONSE_LEN  # 160
+
 class EmotionalResponseDataset(Dataset):
-    def __init__(self, pairs, tokenizer, emotion_ext, enc_tok, max_len=MAX_SEQ_LEN, device=DEVICE):
-        self.pairs = pairs
+    def __init__(self, pairs, tokenizer, emotion_ext, enc_tok, device=DEVICE):
+        self.pairs     = pairs
         self.tokenizer = tokenizer
-        self.emotions = []
+        self.emotions  = []
         emotion_ext.eval()
         with torch.no_grad():
             for p in pairs:
@@ -174,14 +206,56 @@ class EmotionalResponseDataset(Dataset):
         return len(self.pairs)
 
     def __getitem__(self, idx):
-        p = self.pairs[idx]
-        inp = self.tokenizer(p["input"], max_length=MAX_SEQ_LEN, padding="max_length", truncation=True, return_tensors="pt")
-        out = self.tokenizer(p["output"], max_length=MAX_SEQ_LEN, padding="max_length", truncation=True, return_tensors="pt")
+        p   = self.pairs[idx]
+        tok = self.tokenizer
+        pad_id = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+
+        # --- Tokenize prompt (with BOS if model uses it) ---
+        prompt_ids = tok(
+            p["input"],
+            add_special_tokens=True,
+            truncation=True,
+            max_length=MAX_PROMPT_LEN,
+        )["input_ids"]
+
+        # --- Tokenize response (no BOS; keep EOS as stop signal) ---
+        response_ids = tok(
+            p["output"],
+            add_special_tokens=False,
+            truncation=True,
+            max_length=MAX_RESPONSE_LEN,
+        )["input_ids"]
+        # Append EOS so the model learns to stop
+        if response_ids and response_ids[-1] != tok.eos_token_id:
+            response_ids = response_ids + [tok.eos_token_id]
+
+        # --- Concatenate and pad to MAX_TOTAL_LEN ---
+        seq      = prompt_ids + response_ids
+        seq_len  = len(seq)
+        pad_len  = MAX_TOTAL_LEN - seq_len
+        if pad_len < 0:          # truncate from response end if too long
+            seq     = seq[:MAX_TOTAL_LEN]
+            seq_len = MAX_TOTAL_LEN
+            pad_len = 0
+
+        input_ids      = seq + [pad_id] * pad_len
+        attention_mask = [1]   * seq_len + [0] * pad_len
+
+        # --- Labels: mask prompt and padding with -100 ---
+        prompt_len = len(prompt_ids)
+        resp_len   = len(response_ids) if seq_len == len(seq) else MAX_TOTAL_LEN - prompt_len
+        resp_len   = min(resp_len, MAX_TOTAL_LEN - prompt_len)
+        labels     = ([-100] * prompt_len
+                      + input_ids[prompt_len : prompt_len + resp_len]
+                      + [-100] * pad_len)
+
         return {
-            "input_ids": inp["input_ids"].squeeze(0),
-            "attention_mask": inp["attention_mask"].squeeze(0),
-            "labels": out["input_ids"].squeeze(0),
-            "emotion": self.emotions[idx].squeeze(0),
+            "input_ids":      torch.tensor(input_ids,      dtype=torch.long),
+            "attention_mask": torch.tensor(attention_mask, dtype=torch.long),
+            "labels":         torch.tensor(labels,         dtype=torch.long),
+            "emotion":        self.emotions[idx].squeeze(0),
+            # keep prompt length so training loop can split correctly
+            "prompt_len":     torch.tensor(prompt_len,     dtype=torch.long),
         }
 
 # =============================================================
@@ -208,22 +282,43 @@ def prepend_prefix_to_cache(past_kv, k_prefix, v_prefix):
 # =============================================================
 # TRAINING (model-agnostic -- works for any HF causal LM)
 # =============================================================
-def train_variant(model_key, variant, num_epochs=2, batch_size=4, lr=1e-4):
-    """Train Var1 or Var2 projector for the given model."""
+import csv as _csv
+
+def _save_loss_csv(history: dict, model_key: str, variant: int):
+    """Save per-epoch loss to CSV for smooth convergence plots."""
+    path = f"loss_history_v{variant}_{model_key}.csv"
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = _csv.DictWriter(f, fieldnames=["epoch", "train_loss", "val_loss"])
+        writer.writeheader()
+        for i, (tr, vl) in enumerate(
+            zip(history["train_loss"], history["val_loss"]), start=1
+        ):
+            writer.writerow({"epoch": i, "train_loss": f"{tr:.6f}", "val_loss": f"{vl:.6f}"})
+    print(f"  [OK] Loss history saved to {path}")
+
+
+def train_variant(model_key, variant, num_epochs=2, batch_size=2, lr=1e-4):
+    """Train Var1 or Var2 projector for the given model.
+
+    FIXED: Uses concatenated prompt+response with -100 masked labels so that
+    Cross-Entropy is computed only over response tokens (proper Causal LM).
+    """
     model_name = MODELS[model_key]
-    save_path = ckpt_path(model_key, variant)
+    save_path  = ckpt_path(model_key, variant)
     os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
     print("=" * 70)
     print(f"TRAINING VARIANT {variant} for {model_name}")
     print("=" * 70)
 
-    # Load example pairs
+    # ── Load training pairs ──────────────────────────────────────────────
     pairs = load_example_pairs()
-    split = int(len(pairs) * 0.9)
-    train_pairs, val_pairs = pairs[:split], pairs[split:]
+    random.shuffle(pairs)
+    split       = int(len(pairs) * 0.9)
+    train_pairs = pairs[:split]
+    val_pairs   = pairs[split:]
 
-    # Load decoder (4-bit)
+    # ── Decoder (4-bit quantised, fully frozen) ──────────────────────────
     print("\n[1/4] Loading decoder...")
     bnb_cfg = BitsAndBytesConfig(
         load_in_4bit=True, bnb_4bit_quant_type="nf4",
@@ -232,31 +327,33 @@ def train_variant(model_key, variant, num_epochs=2, batch_size=4, lr=1e-4):
     dec_tok = AutoTokenizer.from_pretrained(model_name, cache_dir=CACHE_DIR)
     if dec_tok.pad_token is None:
         dec_tok.pad_token = dec_tok.eos_token
+    dec_tok.padding_side = "right"
 
     decoder = AutoModelForCausalLM.from_pretrained(
         model_name, cache_dir=CACHE_DIR, device_map="auto",
         quantization_config=bnb_cfg, torch_dtype=torch.float16,
     )
     decoder.eval()
-    print(f"  [OK] {model_name}")
+    for param in decoder.parameters():
+        param.requires_grad = False
+    print(f"  [OK] {model_name} loaded and frozen")
 
-    # Emotion extractor
+    # ── Emotion extractor ────────────────────────────────────────────────
     print("[2/4] Loading emotion extractor...")
     emo_ext, enc_tok = load_emotion_extractor(DEVICE)
 
-    # Projector
+    # ── Projector ────────────────────────────────────────────────────────
     print("[3/4] Initialising projector...")
     mc = ModelConfig.from_hf_config(decoder.config, model_name=model_name)
     print(mc.summary())
-
     projector = create_projector(mc, variant=variant, device=DEVICE)
     projector.train()
 
-    # If Var2, try loading Var1 base weights and freeze them
+    # Var2: load frozen Var1 base weights
     if variant == 2:
         v1_path = ckpt_path(model_key, 1)
         if os.path.isfile(v1_path):
-            v1_sd = torch.load(v1_path, map_location="cpu")["model_state_dict"]
+            v1_sd   = torch.load(v1_path, map_location="cpu")["model_state_dict"]
             base_sd = {k: v for k, v in v1_sd.items() if k.startswith("proj_")}
             projector.load_state_dict(base_sd, strict=False)
             for n, p in projector.named_parameters():
@@ -264,35 +361,48 @@ def train_variant(model_key, variant, num_epochs=2, batch_size=4, lr=1e-4):
                     p.requires_grad = False
             print(f"  [OK] Loaded + froze Var1 base from {v1_path}")
 
-    # Dataset
+    # ── Datasets ─────────────────────────────────────────────────────────
     print("[4/4] Building datasets...")
     train_ds = EmotionalResponseDataset(train_pairs, dec_tok, emo_ext, enc_tok)
-    val_ds   = EmotionalResponseDataset(val_pairs, dec_tok, emo_ext, enc_tok)
-    train_dl = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
-    val_dl   = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
+    val_ds   = EmotionalResponseDataset(val_pairs,   dec_tok, emo_ext, enc_tok)
+    train_dl = DataLoader(train_ds, batch_size=batch_size, shuffle=True,  drop_last=False)
+    val_dl   = DataLoader(val_ds,   batch_size=batch_size, shuffle=False, drop_last=False)
     print(f"  Train: {len(train_ds)}  Val: {len(val_ds)}")
 
-    # Training loop
+    # ── Optimiser & loss ─────────────────────────────────────────────────
     trainable = [p for p in projector.parameters() if p.requires_grad]
     optimizer = optim.Adam(trainable, lr=lr)
-    loss_fn = nn.CrossEntropyLoss(ignore_index=dec_tok.pad_token_id)
-    scaler = torch.amp.GradScaler(device=DEVICE)
-    best_val = float("inf")
-    history = {"train_loss": [], "val_loss": []}
+    loss_fn   = nn.CrossEntropyLoss(ignore_index=-100)   # -100 masks prompt & pad
+    scaler    = torch.amp.GradScaler(device=DEVICE)
+    best_val  = float("inf")
+    history   = {"train_loss": [], "val_loss": []}
 
     for epoch in range(num_epochs):
         projector.train()
         total_loss = 0.0
-        for batch_idx, batch in enumerate(tqdm(train_dl, desc=f"Epoch {epoch+1}")):
-            ids  = batch["input_ids"].to(DEVICE)
-            mask = batch["attention_mask"].to(DEVICE)
-            labs = batch["labels"].to(DEVICE)
-            emo  = batch["emotion"].to(DEVICE)
+
+        for batch in tqdm(train_dl, desc=f"Epoch {epoch+1}/{num_epochs}"):
+            full_ids  = batch["input_ids"].to(DEVICE)       # (B, MAX_TOTAL_LEN)
+            full_mask = batch["attention_mask"].to(DEVICE)  # (B, MAX_TOTAL_LEN)
+            labels    = batch["labels"].to(DEVICE)          # (B, MAX_TOTAL_LEN)
+            emo       = batch["emotion"].to(DEVICE)          # (B, 28)
+            p_len     = batch["prompt_len"]                  # (B,) — CPU tensor
+
+            # ── Step 1: Encode prompt portion → KV cache (no grad) ──────
+            # Use the maximum prompt length in this batch to keep it simple
+            max_p = int(p_len.max().item())
+            prompt_ids  = full_ids[:, :max_p]
+            prompt_mask = full_mask[:, :max_p]
 
             with torch.no_grad():
-                out = decoder(input_ids=ids, attention_mask=mask, use_cache=True)
-                past_kv = out.past_key_values
+                prompt_out = decoder(
+                    input_ids=prompt_ids,
+                    attention_mask=prompt_mask,
+                    use_cache=True,
+                )
+                past_kv = prompt_out.past_key_values
 
+            # ── Step 2: Project emotion → KV prefix ──────────────────────
             with torch.amp.autocast(device_type=DEVICE):
                 if variant == 1:
                     k_pre, v_pre = projector(emo)
@@ -301,51 +411,112 @@ def train_variant(model_key, variant, num_epochs=2, batch_size=4, lr=1e-4):
 
             mod_kv = prepend_prefix_to_cache(past_kv, k_pre, v_pre)
 
+            # ── Step 3: Decode response tokens with emotion-modulated KV ─
+            # Feed only the response slice; labels already aligned to full seq
+            response_ids  = full_ids[:,  max_p:]    # (B, resp_len)
+            response_mask = full_mask[:, max_p:]    # (B, resp_len)
+            response_labs = labels[:,    max_p:]    # (B, resp_len)
+
+            # Build combined attention mask: past (prompt+prefix) + response
+            prefix_len  = k_pre.size(2)             # number of prefix tokens added
+            past_length = max_p + prefix_len
+            combined_mask = torch.cat([
+                torch.ones(full_ids.size(0), past_length, device=DEVICE, dtype=full_mask.dtype),
+                response_mask,
+            ], dim=1)
+
             with torch.amp.autocast(device_type=DEVICE):
-                logits = decoder(input_ids=ids, attention_mask=mask,
-                                 past_key_values=mod_kv, use_cache=False).logits
-                loss = loss_fn(logits.view(-1, logits.size(-1)), labs.view(-1))
+                out    = decoder(
+                    input_ids=response_ids,
+                    attention_mask=combined_mask,
+                    past_key_values=mod_kv,
+                    use_cache=False,
+                )
+                # Shift: predict token[t+1] from logits[t]
+                shift_logits = out.logits[:, :-1, :].contiguous()
+                shift_labels = response_labs[:, 1:].contiguous()
+                loss = loss_fn(
+                    shift_logits.view(-1, shift_logits.size(-1)),
+                    shift_labels.view(-1),
+                )
 
             scaler.scale(loss).backward()
-            scaler.step(optimizer); scaler.update(); optimizer.zero_grad()
+            scaler.step(optimizer)
+            scaler.update()
+            optimizer.zero_grad()
             total_loss += loss.item()
 
         torch.cuda.empty_cache()
-        avg_train = total_loss / len(train_dl)
+        avg_train = total_loss / max(len(train_dl), 1)
         history["train_loss"].append(avg_train)
 
-        # Validation
+        # ── Validation ───────────────────────────────────────────────────
         projector.eval()
         val_loss = 0.0
         with torch.no_grad():
             for batch in val_dl:
-                ids  = batch["input_ids"].to(DEVICE)
-                mask = batch["attention_mask"].to(DEVICE)
-                labs = batch["labels"].to(DEVICE)
-                emo  = batch["emotion"].to(DEVICE)
-                out = decoder(input_ids=ids, attention_mask=mask, use_cache=True)
-                past_kv = out.past_key_values
+                full_ids  = batch["input_ids"].to(DEVICE)
+                full_mask = batch["attention_mask"].to(DEVICE)
+                labels    = batch["labels"].to(DEVICE)
+                emo       = batch["emotion"].to(DEVICE)
+                p_len     = batch["prompt_len"]
+
+                max_p       = int(p_len.max().item())
+                prompt_ids  = full_ids[:, :max_p]
+                prompt_mask = full_mask[:, :max_p]
+
+                prompt_out = decoder(
+                    input_ids=prompt_ids, attention_mask=prompt_mask, use_cache=True
+                )
+                past_kv = prompt_out.past_key_values
+
                 if variant == 1:
                     k_pre, v_pre = projector(emo)
                 else:
                     k_pre, v_pre, _ = projector(emo)
                 mod_kv = prepend_prefix_to_cache(past_kv, k_pre, v_pre)
-                logits = decoder(input_ids=ids, attention_mask=mask,
-                                 past_key_values=mod_kv, use_cache=False).logits
-                loss = loss_fn(logits.view(-1, logits.size(-1)), labs.view(-1))
+
+                response_ids  = full_ids[:,  max_p:]
+                response_mask = full_mask[:, max_p:]
+                response_labs = labels[:,    max_p:]
+                prefix_len    = k_pre.size(2)
+                past_length   = max_p + prefix_len
+                combined_mask = torch.cat([
+                    torch.ones(full_ids.size(0), past_length, device=DEVICE, dtype=full_mask.dtype),
+                    response_mask,
+                ], dim=1)
+
+                out = decoder(
+                    input_ids=response_ids,
+                    attention_mask=combined_mask,
+                    past_key_values=mod_kv,
+                    use_cache=False,
+                )
+                shift_logits = out.logits[:, :-1, :].contiguous()
+                shift_labels = response_labs[:, 1:].contiguous()
+                loss = loss_fn(
+                    shift_logits.view(-1, shift_logits.size(-1)),
+                    shift_labels.view(-1),
+                )
                 val_loss += loss.item()
-        avg_val = val_loss / len(val_dl)
+
+        avg_val = val_loss / max(len(val_dl), 1)
         history["val_loss"].append(avg_val)
 
         print(f"  Epoch {epoch+1}/{num_epochs} | Train: {avg_train:.4f} | Val: {avg_val:.4f}")
         if avg_val < best_val:
             best_val = avg_val
-            torch.save({"epoch": epoch, "model_state_dict": projector.state_dict(),
-                         "train_loss": avg_train, "val_loss": avg_val}, save_path)
-            print(f"  [OK] Best checkpoint saved to {save_path}")
+            torch.save(
+                {"epoch": epoch, "model_state_dict": projector.state_dict(),
+                 "train_loss": avg_train, "val_loss": avg_val},
+                save_path,
+            )
+            print(f"  [OK] Best checkpoint saved → {save_path}")
 
-    # Cleanup
-    del decoder, emo_ext; clear_gpu()
+    # ── Save CSV & cleanup ────────────────────────────────────────────────
+    _save_loss_csv(history, model_key, variant)
+    del decoder, emo_ext
+    clear_gpu()
     print(f"\n[DONE] Training Variant {variant} for {model_key} complete.")
     return history
 
@@ -408,49 +579,60 @@ def main():
         em.main()
 
     elif args.step == "full-pipeline":
-        print("\n" + "=" * 70)
-        print("FULL PIPELINE: Train Qwen -> Generate Both -> Evaluate Both")
-        print("=" * 70)
+            print("\n" + "=" * 70)
+            print("FULL PIPELINE: Train Both -> Generate Both -> Evaluate Both")
+            print("=" * 70)
 
-        # 1. Train Qwen
-        print("\n[1/5] Training Qwen2.5 Var1...")
-        h1 = train_variant("qwen2.5", variant=1, num_epochs=args.epochs)
-        plot_training_history(h1, "Qwen2.5 - Variant 1 (Basic) Training Loss", "qwen2.5_var1_loss.png")
-        clear_gpu()
-        print("\n[2/5] Training Qwen2.5 Var2...")
-        h2 = train_variant("qwen2.5", variant=2, num_epochs=args.epochs)
-        plot_training_history(h2, "Qwen2.5 - Variant 2 (Modulated) Training Loss", "qwen2.5_var2_loss.png")
-        clear_gpu()
-
-        # 3. Generate for both models
-        import generate_data as gd
-        for mk in ["phi4", "qwen2.5"]:
-            print(f"\n[3/5] Generating for {mk}...")
-            gd.run_generation(mk, f"generation_results_{mk}.json")
+            # 1. Train Phi-4 (Bunu biz ekledik)
+            print("\n[1/6] Training Phi-4 Var1...")
+            h_phi1 = train_variant("phi4", variant=1, num_epochs=args.epochs)
+            plot_training_history(h_phi1, "Phi-4 - Variant 1 (Basic) Training Loss", "phi4_var1_loss.png")
             clear_gpu()
 
-        # 4. Linguistic eval (CPU, both)
-        import eval_linguistic as el
-        for mk in ["phi4", "qwen2.5"]:
-            print(f"\n[4/5] Linguistic eval for {mk}...")
-            sys.argv = ["eval_linguistic.py", "--input", f"generation_results_{mk}.json",
-                         "--output", f"eval_linguistic_{mk}.json",
-                         "--csv", f"eval_linguistic_{mk}.csv"]
-            el.main()
-
-        # 5. Mechanistic eval (GPU, both)
-        import eval_mechanistic as em
-        for mk in ["phi4", "qwen2.5"]:
-            print(f"\n[5/5] Mechanistic eval for {mk}...")
-            sys.argv = ["eval_mechanistic.py", "--input", f"generation_results_{mk}.json",
-                         "--model", mk, "--output", f"eval_mechanistic_{mk}.json"]
-            em.main()
+            print("\n[2/6] Training Phi-4 Var2...")
+            h_phi2 = train_variant("phi4", variant=2, num_epochs=args.epochs)
+            plot_training_history(h_phi2, "Phi-4 - Variant 2 (Modulated) Training Loss", "phi4_var2_loss.png")
             clear_gpu()
 
-        print("\n" + "=" * 70)
-        print("[DONE] Full pipeline complete!")
-        print("=" * 70)
+            # 2. Train Qwen
+            print("\n[3/6] Training Qwen2.5 Var1...")
+            h_qwen1 = train_variant("qwen2.5", variant=1, num_epochs=args.epochs)
+            plot_training_history(h_qwen1, "Qwen2.5 - Variant 1 (Basic) Training Loss", "qwen2.5_var1_loss.png")
+            clear_gpu()
 
+            print("\n[4/6] Training Qwen2.5 Var2...")
+            h_qwen2 = train_variant("qwen2.5", variant=2, num_epochs=args.epochs)
+            plot_training_history(h_qwen2, "Qwen2.5 - Variant 2 (Modulated) Training Loss", "qwen2.5_var2_loss.png")
+            clear_gpu()
+
+            # 3. Generate for both models
+            import generate_data as gd
+            for mk in ["phi4", "qwen2.5"]:
+                print(f"\n[5/6] Generating for {mk}...")
+                gd.run_generation(mk, f"generation_results_{mk}.json")
+                clear_gpu()
+
+            # 4. Linguistic eval (CPU, both)
+            import eval_linguistic as el
+            for mk in ["phi4", "qwen2.5"]:
+                print(f"\n[6/6] Linguistic eval for {mk}...")
+                sys.argv = ["eval_linguistic.py", "--input", f"generation_results_{mk}.json",
+                             "--output", f"eval_linguistic_{mk}.json",
+                             "--csv", f"eval_linguistic_{mk}.csv"]
+                el.main()
+
+            # 5. Mechanistic eval (GPU, both)
+            import eval_mechanistic as em
+            for mk in ["phi4", "qwen2.5"]:
+                print(f"\n[7/7] Mechanistic eval for {mk}...")
+                sys.argv = ["eval_mechanistic.py", "--input", f"generation_results_{mk}.json",
+                             "--model", mk, "--output", f"eval_mechanistic_{mk}.json"]
+                em.main()
+                clear_gpu()
+
+            print("\n" + "=" * 70)
+            print("[DONE] Full pipeline complete! All loss graphs and JSONs are saved.")
+            print("=" * 70)
 
 if __name__ == "__main__":
     main()

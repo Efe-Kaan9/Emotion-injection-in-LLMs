@@ -1,0 +1,155 @@
+<svg width="100%" height="auto" viewBox="0 0 500 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Claude Tarzı Tipografi -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Outfit:wght@400;500&amp;display=swap');
+      
+      .font-sans { font-family: 'Outfit', sans-serif; }
+      .font-serif { font-family: 'Lora', serif; }
+      
+      /* ZAMAN ÇİZELGESİ: 16 Saniyelik Edebi Döngü */
+      .input-flow { animation: inputDoc 16s infinite cubic-bezier(0.3, 0.1, 0.2, 1); transform-origin: center; }
+      @keyframes inputDoc {
+        0%, 3% { opacity: 0; transform: translateY(10px); }
+        8%, 20% { opacity: 1; transform: translateY(40px); } 
+        25% { opacity: 1; transform: translateY(180px) scale(0.95); } 
+        30%, 100% { opacity: 0; transform: translateY(180px) scale(0.95); }
+      }
+
+      .input-fade { animation: fadeText 16s infinite ease-in-out; }
+      @keyframes fadeText {
+        0%, 25% { opacity: 1; }
+        29%, 100% { opacity: 0; }
+      }
+
+      .highlighter { animation: highlightRead 16s infinite ease-in-out; transform-origin: left; }
+      @keyframes highlightRead {
+        0%, 23% { transform: scaleX(0); opacity: 0; }
+        24% { opacity: 0.6; transform: scaleX(0); }
+        28% { opacity: 0.6; transform: scaleX(1); }
+        32%, 100% { opacity: 0; transform: scaleX(1); }
+      }
+
+      .affective-spark { animation: sparkTravel 16s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+      @keyframes sparkTravel {
+        0%, 34% { opacity: 0; transform: translate(250px, 300px) scale(0); }
+        38% { opacity: 1; transform: translate(250px, 300px) scale(1); } 
+        48% { opacity: 1; transform: translate(250px, 530px) scale(1); } 
+        52%, 100% { opacity: 0; transform: translate(250px, 530px) scale(0); }
+      }
+
+      /* DİNAMİK RENK ANİMASYONU (Joy İçin) */
+      .attention-node { animation: nodeBreathe 16s infinite; }
+      @keyframes nodeBreathe {
+        0%, 48%, 62%, 100% { fill: #EBE7E0; stroke: #D4CFC6; }
+        50%, 58% { fill: #FDF1E8; stroke: #735B82; filter: drop-shadow(0 0 8px rgba(217,106,75,0.4)); }
+      }
+      .weaver-line { animation: weaveFlow 16s infinite; }
+      @keyframes weaveFlow {
+        0%, 48%, 62%, 100% { stroke: #D4CFC6; }
+        52%, 56% { stroke: #735B82; }
+      }
+
+      .final-output { transform-origin: top center; animation: presentPaper 16s infinite cubic-bezier(0.2, 0.8, 0.2, 1); }
+      @keyframes presentPaper {
+        0%, 60% { opacity: 0; transform: translateY(540px) scale(0.6); } 
+        65%, 95% { opacity: 1; transform: translateY(680px) scale(1); filter: drop-shadow(0 20px 30px rgba(138, 115, 96, 0.15)); }
+        98%, 100% { opacity: 0; transform: translateY(700px) scale(0.9); } 
+      }
+
+      .text-reveal { animation: revealText 16s infinite steps(45, end); }
+      @keyframes revealText {
+        0%, 65% { width: 0; }
+        75%, 100% { width: 400px; }
+      }
+    </style>
+
+    <!-- DİNAMİK GRADYAN (Joy İçin) -->
+    <radialGradient id="sparkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9B86A8" />
+      <stop offset="60%" stop-color="#735B82" />
+      <stop offset="100%" stop-color="rgba(217, 106, 75, 0)" />
+    </radialGradient>
+    
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#5A4E41" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#FDFCF7"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F0ECE1" stroke-width="1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- AŞAMA 1: GİRDİ -->
+  <g class="input-flow">
+    <rect x="100" y="0" width="300" height="120" rx="12" fill="#FFFFFF" stroke="#EAE5D9" stroke-width="1" filter="url(#softShadow)"/>
+    <g class="input-fade">
+      <text x="250" y="35" fill="#A39D93" font-size="11" font-weight="500" class="font-sans" text-anchor="middle" letter-spacing="1">NATURE OBSERVATION</text>
+      <text x="250" y="70" fill="#2C2A28" font-size="22" font-weight="400" class="font-serif" text-anchor="middle">"There are stars in</text>
+      <text x="250" y="100" fill="#2C2A28" font-size="22" font-weight="400" class="font-serif" text-anchor="middle">the night sky."</text>
+    </g>
+  </g>
+
+  <!-- AŞAMA 2: OKUMA -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="300" height="160" rx="16" fill="#F8F6F0" stroke="#EAE5D9" stroke-width="1"/>
+    <text x="150" y="140" fill="#8A857D" font-size="12" font-weight="500" class="font-sans" text-anchor="middle" letter-spacing="2">CONTEXT COMPREHENSION</text>
+    <rect x="70" y="45" width="160" height="25" fill="#F5DDB5" class="highlighter" rx="4"/>
+    <rect x="90" y="75" width="120" height="25" fill="#F5DDB5" class="highlighter" rx="4"/>
+  </g>
+
+  <line x1="250" y1="320" x2="250" y2="480" stroke="#EAE5D9" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <!-- AŞAMA 3: DUYGU ÇEKİRDEĞİ -->
+  <g class="affective-spark">
+    <circle cx="0" cy="0" r="24" fill="url(#sparkGlow)" />
+    <circle cx="0" cy="0" r="6" fill="#FFF2E8" />
+    
+    <!-- DİNAMİK ROZET METNİ VE RENGİ (Joy İçin) -->
+    <rect x="-65" y="-45" width="130" height="24" rx="12" fill="#FFFFFF" stroke="#735B82" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="0" y="-29" fill="#735B82" font-size="10" font-weight="500" class="font-sans" text-anchor="middle" letter-spacing="1">AFFECTIVE SPARK</text>
+  </g>
+
+  <!-- AŞAMA 4: SENTEZ -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="300" height="140" rx="16" fill="#FFFFFF" stroke="#EAE5D9" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(150, 60)">
+      <path d="M -60 0 L -20 0 M 20 0 L 60 0 M 0 -20 L 0 20" stroke-width="2" fill="none" class="weaver-line"/>
+      <circle cx="-60" cy="0" r="10" stroke-width="2" class="attention-node" />
+      <circle cx="60" cy="0" r="10" stroke-width="2" class="attention-node" />
+      <circle cx="0" cy="-20" r="10" stroke-width="2" class="attention-node" />
+      <circle cx="0" cy="20" r="10" stroke-width="2" class="attention-node" />
+      <circle cx="0" cy="0" r="14" stroke-width="2" class="attention-node" />
+    </g>
+    <text x="150" y="125" fill="#8A857D" font-size="12" font-weight="500" class="font-sans" text-anchor="middle" letter-spacing="2">LANGUAGE WEAVER</text>
+  </g>
+
+  <!-- AŞAMA 5: ÇIKTI -->
+  <g class="final-output">
+    <rect x="25" y="0" width="450" height="160" rx="12" fill="#FFFFFF" stroke="#EAE5D9" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(55, 45)">
+      
+      <!-- DİNAMİK BAŞLIK (Joy İçin) -->
+      <text x="0" y="-10" fill="#735B82" font-size="11" font-weight="500" class="font-sans" letter-spacing="1">✦ EMOTION WEAVED: WONDER</text>
+      
+      <clipPath id="text-mask">
+        <rect x="0" y="-10" width="0" height="100" class="text-reveal" />
+      </clipPath>
+      
+      <!-- DİNAMİK METİN (Joy İçin) -->
+      <g clip-path="url(#text-mask)">
+        <text x="0" y="30" fill="#2C2A28" font-size="24" font-weight="400" class="font-serif">
+          "Look at those majestic stars,
+        </text>
+        <text x="0" y="65" fill="#2C2A28" font-size="24" font-weight="400" class="font-serif">
+          painting a breathtaking <tspan fill="#735B82" font-style="italic">canvas!</tspan>"
+        </text>
+      </g>
+      
+      <rect x="0" y="95" width="390" height="1" fill="#F0ECE1" />
+      <text x="0" y="115" fill="#A39D93" font-size="10" font-weight="500" class="font-sans" letter-spacing="1">KV-CACHE MODULATION • FROZEN LLM</text>
+    </g>
+  </g>
+</svg>

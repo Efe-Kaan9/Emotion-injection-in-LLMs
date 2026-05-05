@@ -69,15 +69,50 @@ ENCODER_NAME = "distilbert-base-uncased"
 NUM_EMOTIONS = 28
 
 class EmotionExtractor(torch.nn.Module):
-    def __init__(self, encoder_name=ENCODER_NAME, num_emotions=NUM_EMOTIONS):
+    def __init__(self, encoder_name="distilbert-base-uncased", num_emotions=28):
         super().__init__()
-        self.encoder = AutoModel.from_pretrained(encoder_name, cache_dir=CACHE_DIR)
+        # Senin eğitimde kullandığın mimari (HuggingFace cache dizini ile birlikte)
+        self.encoder = AutoModel.from_pretrained(encoder_name, cache_dir="./.hf_cache")
         self.classifier = torch.nn.Linear(self.encoder.config.hidden_size, num_emotions)
+        
+        # SADECE SCRIPTLER İÇİN GEREKLİ OLAN KISIM: 
+        # Modeli inference ve KV-Cache eğitimi için donduruyoruz ki ağırlıklar bozulmasın
+        for param in self.encoder.parameters():
+            param.requires_grad = False
 
     def forward(self, input_ids, attention_mask, **kwargs):
+        # **kwargs sayesinde beklenmeyen argümanlar (token_type_ids vb.) hata vermez
         out = self.encoder(input_ids, attention_mask=attention_mask)
-        pooled = out.last_hidden_state.mean(dim=1)
-        return self.classifier(pooled)
+        
+        # İŞTE BURASI HAYAT KURTARAN KISIM: Senin eğitimde kullandığın Mean Pooling!
+        pooled = out.last_hidden_state.mean(dim=1) 
+        
+        logits = self.classifier(pooled)
+        return logits
+
+
+def load_distilbert_extractor(device: str):
+    """Load the fine-tuned DistilBERT EmotionExtractor from checkpoint.pt.
+
+    Uses [CLS] pooling to match DistilBertFineTune.ipynb.
+    Handles both {'model_state_dict': ...} and raw state-dict formats.
+    """
+    enc_tok = AutoTokenizer.from_pretrained(ENCODER_NAME, cache_dir=CACHE_DIR)
+    emo_ext = EmotionExtractor(
+        encoder_name=ENCODER_NAME, num_emotions=NUM_EMOTIONS
+    ).to(device)
+    emo_ext.eval()
+
+    ckpt = "checkpoint.pt"
+    if os.path.isfile(ckpt):
+        sd    = torch.load(ckpt, map_location="cpu")
+        state = sd.get("model_state_dict", sd)   # handles both formats
+        emo_ext.load_state_dict(state)
+        print("  [OK] DistilBERT EmotionExtractor loaded from checkpoint.pt (CLS pooling)")
+    else:
+        print("  [WARN] checkpoint.pt not found — using untrained EmotionExtractor!")
+
+    return emo_ext, enc_tok
 
 def compute_cosine_similarity(vec1: np.ndarray, vec2: np.ndarray) -> float:
     '''Return cosine similarity between two vectors (1 - cosine distance).'''
@@ -230,15 +265,7 @@ def step_a2_distilbert_sim(records: List[Dict]) -> List[Dict]:
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
     print(f"  Loading DistilBERT EmotionExtractor on {device}...")
-    tokenizer = AutoTokenizer.from_pretrained(ENCODER_NAME, cache_dir=CACHE_DIR)
-    model = EmotionExtractor().to(device).eval()
-    
-    ckpt = "checkpoint.pt"
-    if os.path.isfile(ckpt):
-        model.load_state_dict(torch.load(ckpt, map_location="cpu")["model_state_dict"])
-        print("  [OK] Loaded fine-tuned weights from checkpoint.pt")
-    else:
-        print("  [WARN] checkpoint.pt not found, using untrained DistilBERT!")
+    model, tokenizer = load_distilbert_extractor(device)
 
     results = []
 
