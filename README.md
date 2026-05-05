@@ -6,58 +6,77 @@
 
 ## ✨ See the Emotions Come Alive
 
-*Click any emotion below to watch its animated visualisation:*
+*Click any emotion below to open the panel. For the best experience, **click the image itself** to watch the animation from the exact beginning in full screen.*
 
 <details>
-<summary><b>✨ JOY</b></summary><br>
-<img src="Emotions/JOY.svg" alt="Joy Animation" width="100%" loading="lazy">
+    <summary><b>✨ JOY</b></summary><br>
+    <a href="Emotions/JOY.svg" target="_blank">
+        <img src="Emotions/JOY.svg" alt="Joy Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🌧️ MELANCHOLY</b></summary><br>
-<img src="Emotions/MELANCHOLY.svg" alt="Melancholy Animation" width="100%" loading="lazy">
+    <summary><b>🌧️ MELANCHOLY</b></summary><br>
+    <a href="Emotions/MELANCHOLY.svg" target="_blank">
+        <img src="Emotions/MELANCHOLY.svg" alt="Melancholy Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🪐 CYNICISM</b></summary><br>
-<img src="Emotions/CYNICISM.svg" alt="Cynicism Animation" width="100%" loading="lazy">
+    <summary><b>🪐 CYNICISM</b></summary><br>
+    <a href="Emotions/CYNICISM.svg" target="_blank">
+        <img src="Emotions/CYNICISM.svg" alt="Cynicism Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🔥 ANGER</b></summary><br>
-<img src="Emotions/ANGER.svg" alt="Anger Animation" width="100%" loading="lazy">
+    <summary><b>🔥 ANGER</b></summary><br>
+    <a href="Emotions/ANGER.svg" target="_blank">
+        <img src="Emotions/ANGER.svg" alt="Anger Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
     <summary><b>💍 OBSESSION</b></summary><br>
-    <img src="Emotions/OBSESSION.svg" alt="Lord of the Rings Animation" width="100%" loading="lazy">
+    <a href="Emotions/OBSESSION.svg" target="_blank">
+        <img src="Emotions/OBSESSION.svg" alt="Lord of the Rings Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🍃 SERENITY</b></summary><br>
-<img src="Emotions/SERENITY.svg" alt="Serenity Animation" width="100%" loading="lazy">
+    <summary><b>🍃 SERENITY</b></summary><br>
+    <a href="Emotions/SERENITY.svg" target="_blank">
+        <img src="Emotions/SERENITY.svg" alt="Serenity Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🕶️ DENIAL</b></summary><br>
-<img src="Emotions/DENIAL.svg" alt="Denial Animation" width="100%" loading="lazy">
+    <summary><b>🕶️ DENIAL</b></summary><br>
+    <a href="Emotions/DENIAL.svg" target="_blank">
+        <img src="Emotions/DENIAL.svg" alt="Denial Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
-<summary><b>🌌 WONDER</b></summary><br>
-<img src="Emotions/WONDER.svg" alt="Wonder Animation" width="100%" loading="lazy">
+    <summary><b>🌌 WONDER</b></summary><br>
+    <a href="Emotions/WONDER.svg" target="_blank">
+        <img src="Emotions/WONDER.svg" alt="Wonder Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
     <summary><b>🌊 ROMANCE</b></summary><br>
-    <img src="Emotions/ROMANCE.svg" alt="Romance Animation" width="100%" loading="lazy">
+    <a href="Emotions/ROMANCE.svg" target="_blank">
+        <img src="Emotions/ROMANCE.svg" alt="Romance Animation" width="100%" loading="lazy">
+    </a>
 </details>
 
 <details>
     <summary><b>💼 INTIMIDATION</b></summary><br>
-    <img src="Emotions/INTIMIDATION.svg" alt="Godfather Animation" width="100%" loading="lazy">
+    <a href="Emotions/INTIMIDATION.svg" target="_blank">
+        <img src="Emotions/INTIMIDATION.svg" alt="Godfather Animation" width="100%" loading="lazy">
+    </a>
 </details>
-
 
 
 ---
