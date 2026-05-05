@@ -206,7 +206,7 @@ We also explored two ablation dimensions:
 
 ![Head-Wise Gate Activations](paper_gate_activations_elegant.png)
 
-*The line chart maps the Gate Opening Ratio ($\alpha$) across different Attention Heads (X-axis). The distinct peaks and valleys for different emotions (Joy, Anger, Sadness) explicitly illustrate how the Gated Modulator dynamically routes emotional signals to specific semantic attention heads while suppressing injection into syntactic heads.*
+*The line chart maps the Gate Opening Ratio α across different Attention Heads (X-axis). The distinct peaks and valleys for different emotions (Joy, Anger, Sadness) explicitly illustrate how the Gated Modulator dynamically routes emotional signals to specific semantic attention heads while suppressing injection into syntactic heads.*
 
 ---
 
