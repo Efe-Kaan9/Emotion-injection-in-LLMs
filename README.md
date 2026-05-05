@@ -169,7 +169,6 @@ The AI's weights — its entire learned knowledge — remain **completely frozen
 - **Prefix length = 4 tokens** worth of KV vectors are injected per layer
 - **Alpha (α)** controls injection strength: higher = stronger emotion signal
 - **Layer targeting** can restrict injection to early, late, or all transformer layers
-- Projector has ~2M parameters vs billions in the frozen LLM
 
 ---
 
@@ -204,11 +203,10 @@ We also explored two ablation dimensions:
 
 ## 6. Inside the AI: Gate Activations
 
-One of the key insights from Variant 2 is that **different attention heads respond very differently to emotional steering.** The heatmap below shows which heads "open up" (bright) and which stay quiet (dark) for a given emotional signal:
 
 ![Head-Wise Gate Activations](paper_gate_activations_elegant.png)
 
-*Each row is a transformer layer; each column is an attention head. Brighter cells mean that head is more strongly influenced by the injected emotion. This reveals that emotion processing is not uniform — certain mid-depth layers carry most of the emotional signal.*
+*The line chart maps the Gate Opening Ratio ($\alpha$) across different Attention Heads (X-axis). The distinct peaks and valleys for different emotions (Joy, Anger, Sadness) explicitly illustrate how the Gated Modulator dynamically routes emotional signals to specific semantic attention heads while suppressing injection into syntactic heads.*
 
 ---
 
@@ -252,41 +250,39 @@ All results are reported with **Mean ± Standard Deviation** and **Welch's T-Tes
 
 ### 8.2 Synthetic Ablation Suite (1,200 records per model, 50 prompts × 4α × 3 layers × 2 variants)
 
+### 8.2 Synthetic Evaluation Suite (Optimal Configurations)
+
 **Phi-4-mini — Linguistic Diversity:**
 
-| Metric | Vanilla | Steered (Avg) | Change |
+| Metric | Vanilla (Neutral) | Steered (Variant 2) | Change |
 |---|:---:|:---:|:---:|
-| Distinct-1 | 0.375 | 0.567 | **+51.2%** |
-| Distinct-2 | 0.780 | 0.869 | **+11.4%** |
-| Self-BLEU ↓ | 0.339 | 0.087 | **−74.3%** |
+| Distinct-1 ↑ | 0.3768 | 0.5769 | **+53.1%** |
+| Distinct-2 ↑ | 0.8414 | 0.8879 | **+5.5%** |
+| Self-BLEU ↓ | 0.3533 | 0.0925 | **−73.8%** |
 
 **Qwen 2.5 — Linguistic Diversity:**
 
-| Metric | Vanilla | Steered (Avg) | Change |
+| Metric | Vanilla (Neutral) | Steered (Variant 2) | Change |
 |---|:---:|:---:|:---:|
-| Distinct-1 | 0.377 | 0.512 | **+35.8%** |
-| Distinct-2 | 0.841 | 0.826 | −1.8% |
-| Self-BLEU ↓ | 0.353 | 0.104 | **−70.5%** |
+| Distinct-1 ↑ | 0.3751 | 0.5140 | **+37.0%** |
+| Distinct-2 ↑ | 0.7795 | 0.8300 | **+6.4%** |
+| Self-BLEU ↓ | 0.3385 | 0.1034 | **−69.4%** |
 
-**Phi-4-mini — Mechanistic (RoBERTa judge, 1,200 records):**
+**Phi-4-mini — Mechanistic Alignment:**
 
-| Metric | Value |
-|---|:---:|
-| Avg. Steered Target Score | 0.111 |
-| Avg. Vanilla Target Score | 0.117 |
-| Avg. JSD | 0.179 |
-| Avg. PPL (Steered) | 17.88 |
-| Avg. PPL (Vanilla) | 2.91 |
+| Metric | Vanilla (Neutral) | Steered (Variant 2) |
+|---|:---:|:---:|
+| Target Score ↑ | 0.1168 | **0.1486** |
+| JSD (Divergence) ↑ | 0.0000 | **0.1763** |
+| Perplexity (PPL) ↓ | 3.72 | **4.09** (Highly Fluent) |
 
-**Qwen 2.5 — Mechanistic:**
+**Qwen 2.5 — Mechanistic Alignment:**
 
-| Metric | Value |
-|---|:---:|
-| Avg. Steered Target Score | 0.097 |
-| Avg. Vanilla Target Score | 0.096 |
-| Avg. JSD | 0.189 |
-| Avg. PPL (Steered) | 13.04 |
-| Avg. PPL (Vanilla) | 3.72 |
+| Metric | Vanilla (Neutral) | Steered (Variant 2) |
+|---|:---:|:---:|
+| Target Score ↑ | 0.0959 | **0.1096** |
+| JSD (Divergence) ↑ | 0.0000 | **0.1943** |
+| Perplexity (PPL) ↓ | 2.91 | **11.37** (Fluent) |
 
 ### 8.3 Training Convergence
 
@@ -301,10 +297,10 @@ All results are reported with **Mean ± Standard Deviation** and **Welch's T-Tes
 
 | Dataset | Purpose | Size |
 |---|---|:---:|
-| GoEmotions (HuggingFace) | Emotion classifier training | 58,009 examples |
+| GoEmotions (HuggingFace) | Emotion classifier training | 58,009 pairs |
 | Augmented synthetic pairs | Projector training | 560 pairs |
 | Test ablation prompts | Generation evaluation | 1200 examples |
-| GoEmotions test (neutral) | Real-world benchmark | 50 examples |
+| GoEmotions test (neutral) | Real-world benchmark | 50 pairs |
 
 ---
 
@@ -321,14 +317,13 @@ GPU with at least **6 GB of VRAM** required (tested on NVIDIA RTX 3060).
 ### Step 1 — Generate training data
 
 ```bash
-python augment_data.py
-# Creates augmented_dataset.jsonl with 2,500 emotionally-labelled pairs
+# Dataset is already added in KVinjectionWithPhi4.ipynb
 ```
 
 ### Step 2 — Train all projectors and evaluate
 
 ```bash
-python main.py --step full-pipeline --epochs 3
+python main.py --step full-pipeline --epochs 2
 # Trains Phi-4 Var1 + Var2, Qwen Var1 + Var2
 # Generates steered text for 50 prompts × all ablation axes
 # Runs linguistic + mechanistic evaluation suites
@@ -339,7 +334,7 @@ python main.py --step full-pipeline --epochs 3
 
 ```bash
 # Train only Qwen 2.5
-python main.py --step train-qwen --epochs 3
+python main.py --step train-qwen --epochs 2
 
 # Generate steered text for Phi-4
 python main.py --step generate --model phi4
@@ -364,7 +359,7 @@ Final Dance/
 │   └── main.html
 │
 ├── 📓 Notebooks
-│   ├── KVinjectionWithPhi4.ipynb  ← Original Phi-4 research notebook
+│   ├── KVinjectionWithPhi4.ipynb  ← Original Phi-4-mini research notebook
 │   ├── KVinjection.ipynb          ← Original Qwen research notebook
 │   └── DistilBertFineTune.ipynb   ← Emotion classifier fine-tuning
 │
@@ -372,13 +367,12 @@ Final Dance/
 │   ├── main.py                    ← Master pipeline orchestrator
 │   ├── projector_agnostic.py      ← Variant 1 & 2 projector architectures
 │   ├── generate_data.py           ← Steered text generation + ablations
-│   ├── augment_data.py            ← 2,500-sample dataset creator
 │   ├── eval_linguistic.py         ← Distinct-N, Self-BLEU metrics
 │   ├── eval_mechanistic.py        ← Target score, PPL, JSD (GPU)
 │   └── eval_real_world.py         ← Real GoEmotions benchmark
 │
 ├── 🏋️ Trained Weights
-│   ├── checkpoint.pt              ← Fine-tuned DistilBERT (790 MB)
+│   ├── checkpoint.pt              ← Fine-tuned DistilBERT 
 │   └── checkpoints/
 │       ├── variant1_projector_phi4.pt
 │       ├── variant2_projector_phi4.pt

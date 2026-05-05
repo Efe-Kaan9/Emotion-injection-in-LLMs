@@ -133,7 +133,7 @@
   <rect x="310" y="170" width="160" height="8" rx="5" fill="url(#purpleGrad)" opacity="0.8"/>
   <text x="390" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#9B6FBF">Frozen LLM</text>
   <text x="390" y="213" text-anchor="middle" font-size="9.5" fill="#8a7abf">Phi-4-mini · Qwen 2.5</text>
-  <text x="390" y="227" text-anchor="middle" font-size="9" fill="#6a5a9f">4-bit NF4 quantised</text>
+  <text x="390" y="227" text-anchor="middle" font-size="9" fill="#6a5a9f">4-bit NF4 quantized</text>
   <text x="390" y="245" text-anchor="middle" font-size="9" fill="#D4A843">→ past_key_values (KV Cache)</text>
 
   <!-- ═══════════════════════════ ROW 3: PROJECTOR ═══════════════════════════ -->
