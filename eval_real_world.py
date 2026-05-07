@@ -390,11 +390,22 @@ def evaluate_model(
         neutral_text    = sample["text"]
         target_emotion  = sample["target_emotion"]
 
+        emotion_anchors = {
+            "joy": "I am so happy, joyful, and excited today!",
+            "sadness": "I am feeling very sad, depressed, and heartbroken.",
+            "anger": "I am absolutely furious, angry, and frustrated right now!",
+            "fear": "I am feeling very scared, anxious, and terrified.",
+            "surprise": "Wow, I am so surprised, shocked, and amazed by this!",
+            "disgust": "This is absolutely disgusting, awful, and repulsive."
+        }
+
+        anchor_sentence = emotion_anchors.get(target_emotion, target_emotion)
+
         print(f"\n  [{i+1:02d}/{len(samples)}] emotion={target_emotion:10s} "
               f"text='{neutral_text[:60]}...'")
-
+        
         # Extract emotion vector (from neutral text itself — reviewer-proof)
-        emo_vec = get_emotion_embedding(neutral_text, emo_ext, enc_tok, DEVICE)
+        emo_vec = get_emotion_embedding(anchor_sentence, emo_ext, enc_tok, DEVICE)
 
         # ── Scenario A: Vanilla ──────────────────────────────────────────────
         van_full = generate_vanilla(llm, llm_tok, neutral_text, DEVICE)
