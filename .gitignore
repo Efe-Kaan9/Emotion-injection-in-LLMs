@@ -12,3 +12,5 @@ KVinjection.ipynb
 *.json
 *.pdf
 
+plot_gates.py
+test_phi4mini_systemprompted.py
