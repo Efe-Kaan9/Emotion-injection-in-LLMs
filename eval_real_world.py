@@ -21,7 +21,7 @@ Metrics (per scenario):
 
 Usage:
     python eval_real_world.py
-    python eval_real_world.py --n-samples 50 --seed 42 --output real_world_metrics.json
+    python eval_real_world.py --n-samples 750 --seed 42 --output real_world_metrics.json
 
 Output:
     real_world_metrics.json  — averaged metrics per model × scenario
@@ -51,6 +51,7 @@ from transformers import (
     BitsAndBytesConfig,
 )
 from transformers.cache_utils import DynamicCache
+from peft import PeftModel
 
 # ── Import existing pipeline components (DO NOT redefine) ──────────────────
 from generate_data import (
@@ -251,6 +252,14 @@ def compute_response_ppl(
 # 5. Generation helpers
 # ══════════════════════════════════════════════════════════════════════════════
 
+from contextlib import contextmanager
+
+@contextmanager
+def _null_ctx():
+    """No-op context manager used when LoRA adapter is not loaded."""
+    yield
+
+
 def _strip_prompt(full_text: str, prompt: str) -> str:
     """Remove the prompt prefix from the full generated string if present."""
     if full_text.startswith(prompt):
@@ -333,6 +342,70 @@ def generate_steered(
     return full, response
 
 
+def generate_lora(
+    llm,
+    llm_tok,
+    neutral_text: str,
+    target_emotion: str,
+    device: str,
+) -> Tuple[str, str]:
+    """
+    Scenario D: LoRA adapter generation.
+    Adapter must be ACTIVE when calling this function.
+    Uses the identical system-prompt template as lora_pipeline.py.
+    Returns (full_generated_string, response_only_string).
+    """
+    prompt = (
+        f"Rewrite the following sentence conveying the emotion of "
+        f"{target_emotion}: {neutral_text}"
+    )
+    full     = generate_vanilla(llm, llm_tok, prompt, device)
+    response = _strip_prompt(full, prompt)
+    return full, response
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Human-eval export helper
+# ══════════════════════════════════════════════════════════════════════════════
+
+HUMAN_EVAL_N = 100   # Number of samples to export for human evaluation
+
+def _save_human_eval(buffer: List[Dict], model_key: str) -> None:
+    """
+    Save the first HUMAN_EVAL_N samples to:
+      human_eval_<model_key>.json  — machine-readable, for form generation
+      human_eval_<model_key>.txt   — human-readable, for quick review
+    Called once per model after the evaluation loop. Zero GPU activity.
+    """
+    json_path = f"human_eval_{model_key}.json"
+    txt_path  = f"human_eval_{model_key}.txt"
+
+    # ── JSON ────────────────────────────────────────────────────────────────────
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(buffer, f, indent=2, ensure_ascii=False)
+    print(f"  [HumanEval] JSON → {json_path}  ({len(buffer)} samples)")
+
+    # ── TXT ────────────────────────────────────────────────────────────────────
+    sep  = "=" * 72
+    thin = "-" * 72
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(f"{sep}\n")
+        f.write(f"  HUMAN EVALUATION EXPORT — {model_key.upper()}\n")
+        f.write(f"  First {len(buffer)} samples (Vanilla / System-Prompt / Steered-V2 / LoRA)\n")
+        f.write(f"{sep}\n\n")
+        for entry in buffer:
+            f.write(f"{thin}\n")
+            f.write(f"Sample #{entry['record_id']:03d}   Emotion: {entry['target_emotion'].upper()}\n")
+            f.write(f"{thin}\n")
+            f.write(f"INPUT PROMPT:\n  {entry['input_prompt']}\n\n")
+            f.write(f"[A] VANILLA OUTPUT:\n  {entry['vanilla_output']}\n\n")
+            f.write(f"[B] SYSTEM-PROMPT OUTPUT:\n  {entry['system_prompt_output']}\n\n")
+            f.write(f"[C] STEERED V2 OUTPUT:\n  {entry['steered_v2_output']}\n\n")
+            lora_txt = entry.get("lora_output", "") or "(LoRA adapter not available)"
+            f.write(f"[D] LORA OUTPUT:\n  {lora_txt}\n\n")
+    print(f"  [HumanEval] TXT  → {txt_path}")
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # 6. Per-model evaluation loop
 # ══════════════════════════════════════════════════════════════════════════════
@@ -345,7 +418,7 @@ def evaluate_model(
     roberta_tok,
     label2id: Dict[str, int],
 ) -> List[Dict]:
-    """Run all 3 scenarios for one LLM across all 50 samples."""
+    """Run all 4 scenarios (Vanilla, SysPrompt, Steered-V2, LoRA) for one LLM."""
     print("\n" + "=" * 70)
     print(f"  EVALUATING: {model_key.upper()}  ({cfg['hf_name']})")
     print(f"  Optimal alpha={cfg['alpha']}  layers='{cfg['layers']}'")
@@ -362,21 +435,32 @@ def evaluate_model(
     if llm_tok.pad_token is None:
         llm_tok.pad_token = llm_tok.eos_token
 
-    llm = AutoModelForCausalLM.from_pretrained(
+    base_llm = AutoModelForCausalLM.from_pretrained(
         cfg["hf_name"],
         cache_dir=CACHE_DIR,
         device_map="auto",
         quantization_config=bnb_cfg,
         torch_dtype=torch.float16,
     )
-    llm.eval()
+    base_llm.eval()
     print(f"  [OK] {cfg['hf_name']} loaded (4-bit NF4)")
+
+    # ── Wrap with LoRA adapter (adapter disabled by default) ─────────────────
+    lora_adapter_dir = os.path.join("./lora_checkpoints", model_key, "checkpoint-504")
+    lora_available   = os.path.isdir(lora_adapter_dir)
+    if lora_available:
+        llm = PeftModel.from_pretrained(base_llm, lora_adapter_dir)
+        llm.eval()
+        print(f"  [OK] LoRA adapter wrapped from {lora_adapter_dir}")
+    else:
+        llm = base_llm
+        print(f"  [WARN] LoRA adapter not found at {lora_adapter_dir} — Scenario D will be skipped.")
 
     # ── Load emotion extractor ───────────────────────────────────────────────
     emo_ext, enc_tok = load_emotion_extractor_local(DEVICE)
 
     # ── Load Variant-2 projector ─────────────────────────────────────────────
-    mc   = ModelConfig.from_hf_config(llm.config, model_name=cfg["hf_name"])
+    mc      = ModelConfig.from_hf_config(base_llm.config, model_name=cfg["hf_name"])
     v2_ckpt = os.path.join(CHECKPOINT_DIR, f"variant2_projector_{model_key}.pt")
     if not os.path.isfile(v2_ckpt) and model_key == "phi4":
         v2_ckpt = os.path.join(CHECKPOINT_DIR, "variant2_projector.pt")
@@ -385,7 +469,8 @@ def evaluate_model(
     print(f"  [OK] Variant-2 projector loaded from {v2_ckpt}")
 
     # ── Per-sample loop ──────────────────────────────────────────────────────
-    records = []
+    records          = []
+    human_eval_buf   = []   # lightweight: only first HUMAN_EVAL_N samples
     for i, sample in enumerate(samples):
         neutral_text    = sample["text"]
         target_emotion  = sample["target_emotion"]
@@ -407,46 +492,74 @@ def evaluate_model(
         # Extract emotion vector (from neutral text itself — reviewer-proof)
         emo_vec = get_emotion_embedding(anchor_sentence, emo_ext, enc_tok, DEVICE)
 
-        # ── Scenario A: Vanilla ──────────────────────────────────────────────
-        van_full = generate_vanilla(llm, llm_tok, neutral_text, DEVICE)
-        van_resp = _strip_prompt(van_full, neutral_text)
-        torch.cuda.empty_cache()
+        # Scenarios A, B, C must run with adapter DISABLED (base model only)
+        ctx = llm.disable_adapter() if lora_available else _null_ctx()
 
-        # ── Scenario B: System Prompt ────────────────────────────────────────
-        _, sp_resp = generate_system_prompt(
-            llm, llm_tok, neutral_text, target_emotion, DEVICE
-        )
-        torch.cuda.empty_cache()
+        with ctx:
+            # ── Scenario A: Vanilla ──────────────────────────────────────────
+            van_full = generate_vanilla(llm, llm_tok, neutral_text, DEVICE)
+            van_resp = _strip_prompt(van_full, neutral_text)
+            clear_gpu()
 
-        # ── Scenario C: KV-Cache Steered (Variant 2) ─────────────────────────
-        _, st_resp = generate_steered(
-            llm, llm_tok, neutral_text, emo_vec,
-            proj_v2, cfg["alpha"], cfg["layers"], DEVICE
-        )
-        torch.cuda.empty_cache()
+            # ── Scenario B: System Prompt ────────────────────────────────────
+            _, sp_resp = generate_system_prompt(
+                llm, llm_tok, neutral_text, target_emotion, DEVICE
+            )
+            clear_gpu()
+
+            # ── Scenario C: KV-Cache Steered (Variant 2) ─────────────────────
+            _, st_resp = generate_steered(
+                llm, llm_tok, neutral_text, emo_vec,
+                proj_v2, cfg["alpha"], cfg["layers"], DEVICE
+            )
+            clear_gpu()
+
+            # Vanilla probs computed with adapter disabled (reference dist.)
+            probs_van_for_jsd = get_emotion_probs_roberta(
+                van_resp, roberta_model, roberta_tok, DEVICE
+            )
+
+        # ── Scenario D: LoRA (adapter ACTIVE) ────────────────────────────────
+        if lora_available:
+            _, lr_resp = generate_lora(
+                llm, llm_tok, neutral_text, target_emotion, DEVICE
+            )
+            clear_gpu()
+        else:
+            lr_resp = ""
 
         # ── RoBERTa probabilities ─────────────────────────────────────────────
         probs_van = get_emotion_probs_roberta(van_resp, roberta_model, roberta_tok, DEVICE)
         probs_sp  = get_emotion_probs_roberta(sp_resp,  roberta_model, roberta_tok, DEVICE)
         probs_st  = get_emotion_probs_roberta(st_resp,  roberta_model, roberta_tok, DEVICE)
+        probs_lr  = get_emotion_probs_roberta(lr_resp,  roberta_model, roberta_tok, DEVICE) if lr_resp else np.zeros(28)
 
         # ── Target scores ─────────────────────────────────────────────────────
         ts_van = target_score_from_probs(probs_van, target_emotion, label2id)
         ts_sp  = target_score_from_probs(probs_sp,  target_emotion, label2id)
         ts_st  = target_score_from_probs(probs_st,  target_emotion, label2id)
+        ts_lr  = target_score_from_probs(probs_lr,  target_emotion, label2id) if lr_resp else -1.0
 
-        # ── JSD (vanilla distribution as reference) ───────────────────────────
-        jsd_sp = jensen_shannon_divergence(probs_van, probs_sp)
-        jsd_st = jensen_shannon_divergence(probs_van, probs_st)
+        # ── JSD (vanilla-with-adapter-disabled as reference) ──────────────────
+        jsd_sp = jensen_shannon_divergence(probs_van_for_jsd, probs_sp)
+        jsd_st = jensen_shannon_divergence(probs_van_for_jsd, probs_st)
+        jsd_lr = jensen_shannon_divergence(probs_van_for_jsd, probs_lr) if lr_resp else -1.0
 
-        # ── PPL (response tokens only) ────────────────────────────────────────
-        ppl_van = compute_response_ppl(van_resp, llm, llm_tok, DEVICE)
-        ppl_sp  = compute_response_ppl(sp_resp,  llm, llm_tok, DEVICE)
-        ppl_st  = compute_response_ppl(st_resp,  llm, llm_tok, DEVICE)
+        # ── PPL (response tokens only; LoRA PPL with adapter active) ─────────
+        ctx_van = llm.disable_adapter() if lora_available else _null_ctx()
+        with ctx_van:
+            ppl_van = compute_response_ppl(van_resp, llm, llm_tok, DEVICE)
+            ppl_sp  = compute_response_ppl(sp_resp,  llm, llm_tok, DEVICE)
+            ppl_st  = compute_response_ppl(st_resp,  llm, llm_tok, DEVICE)
 
-        print(f"    TargetScore  van={ts_van:.3f}  sp={ts_sp:.3f}  st={ts_st:.3f}")
-        print(f"    PPL          van={ppl_van:.1f}  sp={ppl_sp:.1f}  st={ppl_st:.1f}")
-        print(f"    JSD                          sp={jsd_sp:.4f}  st={jsd_st:.4f}")
+        if lr_resp and lora_available:
+            ppl_lr = compute_response_ppl(lr_resp, llm, llm_tok, DEVICE)
+        else:
+            ppl_lr = float("inf")
+
+        print(f"    TargetScore  van={ts_van:.3f}  sp={ts_sp:.3f}  st={ts_st:.3f}  lr={ts_lr:.3f}")
+        print(f"    PPL          van={ppl_van:.1f}  sp={ppl_sp:.1f}  st={ppl_st:.1f}  lr={ppl_lr:.1f}")
+        print(f"    JSD                          sp={jsd_sp:.4f}  st={jsd_st:.4f}  lr={jsd_lr:.4f}")
 
         records.append({
             "model":          model_key,
@@ -457,21 +570,40 @@ def evaluate_model(
             "vanilla_response":       van_resp,
             "system_prompt_response": sp_resp,
             "steered_response":       st_resp,
+            "lora_response":          lr_resp,
             # Target scores
             "ts_vanilla":       round(ts_van, 4),
             "ts_system_prompt": round(ts_sp,  4),
             "ts_steered":       round(ts_st,  4),
+            "ts_lora":          round(ts_lr,  4),
             # PPL
             "ppl_vanilla":       round(ppl_van, 2),
             "ppl_system_prompt": round(ppl_sp,  2),
             "ppl_steered":       round(ppl_st,  2),
-            # JSD (vs vanilla)
+            "ppl_lora":          round(ppl_lr,  2),
+            # JSD (vs vanilla with adapter disabled)
             "jsd_system_prompt": round(jsd_sp, 6),
             "jsd_steered":       round(jsd_st, 6),
+            "jsd_lora":          round(jsd_lr, 6),
         })
 
+        # ── Human-eval hook (no GPU, no extra inference) ──────────────────────
+        if i < HUMAN_EVAL_N:
+            human_eval_buf.append({
+                "record_id":            i,
+                "target_emotion":       target_emotion,
+                "input_prompt":         neutral_text,
+                "vanilla_output":       van_resp,
+                "system_prompt_output": sp_resp,
+                "steered_v2_output":    st_resp,
+                "lora_output":          lr_resp,   # Scenario D — empty str if adapter missing
+            })
+
+    # ── Human-eval export (CPU-only, no extra GPU pass) ───────────────────
+    _save_human_eval(human_eval_buf, model_key)
+
     # ── Cleanup ──────────────────────────────────────────────────────────────
-    del llm, llm_tok, emo_ext, proj_v2
+    del llm, base_llm, llm_tok, emo_ext, proj_v2
     clear_gpu()
     print(f"\n  [OK] {model_key} evaluation complete. GPU cleared.")
 
@@ -489,11 +621,13 @@ def _safe_mean(values: List[float]) -> float:
 
 def aggregate(records: List[Dict], model_key: str) -> Dict:
     r = [x for x in records if x["model"] == model_key]
+    # LoRA entries may be -1 / inf when adapter was missing — exclude them
+    lr_valid = [x for x in r if x.get("ts_lora", -1) >= 0]
     return {
         "n": len(r),
         "vanilla": {
             "target_score": _safe_mean([x["ts_vanilla"]       for x in r]),
-            "ppl":          _safe_mean([x["ppl_vanilla"]      for x in r]),
+            "ppl":          _safe_mean([x["ppl_vanilla"]       for x in r]),
             "jsd":          "—",   # reference distribution
         },
         "system_prompt": {
@@ -505,6 +639,12 @@ def aggregate(records: List[Dict], model_key: str) -> Dict:
             "target_score": _safe_mean([x["ts_steered"]       for x in r]),
             "ppl":          _safe_mean([x["ppl_steered"]       for x in r]),
             "jsd":          _safe_mean([x["jsd_steered"]       for x in r]),
+        },
+        "lora": {
+            "target_score": _safe_mean([x["ts_lora"]          for x in lr_valid]),
+            "ppl":          _safe_mean([x["ppl_lora"]          for x in lr_valid]),
+            "jsd":          _safe_mean([x["jsd_lora"]          for x in lr_valid]),
+            "n_valid":      len(lr_valid),
         },
     }
 

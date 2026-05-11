@@ -1,0 +1,11 @@
+group_key,num_texts,dist_1,dist_2,self_bleu
+"('joy', None, None, 'lora')",5,0.5194,0.6855,0.4408
+"('sadness', None, None, 'lora')",5,0.5083,0.6783,0.4669
+"('anger', None, None, 'lora')",5,0.5946,0.6887,0.4472
+"('fear', None, None, 'lora')",5,0.5,0.6581,0.4666
+"('gratitude', None, None, 'lora')",5,0.5258,0.6413,0.529
+"('curiosity', None, None, 'lora')",5,0.4362,0.5955,0.6139
+"('pride', None, None, 'lora')",5,0.5259,0.6667,0.4973
+"('disappointment', None, None, 'lora')",5,0.5286,0.7037,0.4339
+"('love', None, None, 'lora')",5,0.4754,0.6752,0.4814
+"('confusion', None, None, 'lora')",5,0.589,0.7376,0.3249

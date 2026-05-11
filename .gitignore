@@ -11,6 +11,13 @@ KVinjection.ipynb
 
 *.json
 *.pdf
+*.html
+*.txt
+
+
 
 plot_gates.py
 test_phi4mini_systemprompted.py
+
+lora_checkpoints/
+
