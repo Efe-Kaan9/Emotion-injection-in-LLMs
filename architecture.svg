@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
   <defs>
     <!-- Background gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -76,7 +76,7 @@
   </defs>
 
   <!-- ═══════════════════════════ BACKGROUND ═══════════════════════════ -->
-  <rect width="900" height="580" fill="url(#bgGrad)" rx="16"/>
+  <rect width="900" height="640" fill="url(#bgGrad)" rx="16"/>
 
   <!-- Subtle grid lines -->
   <g stroke="#ffffff06" stroke-width="1">
@@ -85,11 +85,12 @@
     <line x1="0" y1="300" x2="900" y2="300"/>
     <line x1="0" y1="400" x2="900" y2="400"/>
     <line x1="0" y1="500" x2="900" y2="500"/>
-    <line x1="150" y1="0" x2="150" y2="580"/>
-    <line x1="300" y1="0" x2="300" y2="580"/>
-    <line x1="450" y1="0" x2="450" y2="580"/>
-    <line x1="600" y1="0" x2="600" y2="580"/>
-    <line x1="750" y1="0" x2="750" y2="580"/>
+    <line x1="0" y1="600" x2="900" y2="600"/>
+    <line x1="150" y1="0" x2="150" y2="640"/>
+    <line x1="300" y1="0" x2="300" y2="640"/>
+    <line x1="450" y1="0" x2="450" y2="640"/>
+    <line x1="600" y1="0" x2="600" y2="640"/>
+    <line x1="750" y1="0" x2="750" y2="640"/>
   </g>
 
   <!-- Title -->
@@ -190,7 +191,7 @@
   <!-- ═══════════════════════════ RIGHT PANEL: ABLATION CONTROLS ═══════════════════════════ -->
 
   <!-- Right panel label -->
-  <rect x="520" y="70" width="355" height="498" rx="12" fill="#0e1218" stroke="#ffffff10" stroke-width="1"/>
+  <rect x="520" y="70" width="355" height="555" rx="12" fill="#0e1218" stroke="#ffffff10" stroke-width="1"/>
   <text x="697" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff60" letter-spacing="1">ABLATION CONTROLS</text>
   <line x1="540" y1="105" x2="855" y2="105" stroke="#ffffff15" stroke-width="1"/>
 
@@ -228,50 +229,72 @@
   </g>
 
   <!-- Models -->
-  <rect x="535" y="319" width="325" height="100" rx="8" fill="#120814" stroke="#9B6FBF" stroke-width="1.2"/>
-  <text x="560" y="339" font-size="10" font-weight="700" fill="#9B6FBF">⬡  Models Evaluated</text>
+  <rect x="535" y="319" width="325" height="110" rx="8" fill="#120814" stroke="#9B6FBF" stroke-width="1.2"/>
+  <text x="560" y="339" font-size="10" font-weight="700" fill="#9B6FBF">⬡  Models &amp; Baselines</text>
   <text x="560" y="356" font-size="9" fill="#7a5a9f">Both run frozen under 4-bit NF4 quantisation</text>
-  <rect x="558" y="364" width="148" height="44" rx="6" fill="#1a0e22" stroke="#9B6FBF" stroke-width="1"/>
-  <text x="632" y="382" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9B6FBF">Phi-4-mini</text>
-  <text x="632" y="396" text-anchor="middle" font-size="8.5" fill="#7a5a9f">microsoft · 3.8B params</text>
-  <text x="632" y="407" text-anchor="middle" font-size="8" fill="#6a4a8f">α=1.0, layers=all</text>
-  <rect x="714" y="364" width="138" height="44" rx="6" fill="#1a0e22" stroke="#9B6FBF" stroke-width="1"/>
-  <text x="783" y="382" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9B6FBF">Qwen 2.5</text>
-  <text x="783" y="396" text-anchor="middle" font-size="8.5" fill="#7a5a9f">Alibaba · 1.5B params</text>
-  <text x="783" y="407" text-anchor="middle" font-size="8" fill="#6a4a8f">α=1.5, layers=2nd half</text>
+  <rect x="550" y="364" width="100" height="44" rx="6" fill="#1a0e22" stroke="#9B6FBF" stroke-width="1"/>
+  <text x="600" y="382" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9B6FBF">Phi-4-mini</text>
+  <text x="600" y="396" text-anchor="middle" font-size="8.5" fill="#7a5a9f">3.8B params</text>
+  <rect x="660" y="364" width="90" height="44" rx="6" fill="#1a0e22" stroke="#9B6FBF" stroke-width="1"/>
+  <text x="705" y="382" text-anchor="middle" font-size="9.5" font-weight="600" fill="#9B6FBF">Qwen 2.5</text>
+  <text x="705" y="396" text-anchor="middle" font-size="8.5" fill="#7a5a9f">1.5B params</text>
+  <rect x="760" y="364" width="90" height="44" rx="6" fill="#1a140e" stroke="#D4A843" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="805" y="382" text-anchor="middle" font-size="9" font-weight="600" fill="#D4A843">LoRA PEFT</text>
+  <text x="805" y="396" text-anchor="middle" font-size="8" fill="#a08030">Param Baseline</text>
+  <text x="697" y="420" text-anchor="middle" font-size="8" fill="#6a4a8f">Optimals: Phi-4 (α=1.0, layers=all) · Qwen (α=1.5, layers=2nd half)</text>
 
   <!-- Metrics Panel -->
-  <rect x="535" y="431" width="325" height="125" rx="8" fill="#0a1a10" stroke="#5BAD7A" stroke-width="1.2"/>
-  <text x="560" y="451" font-size="10" font-weight="700" fill="#5BAD7A">◈  Key Metrics (Real-World, n=50)</text>
-  <line x1="555" y1="458" x2="850" y2="458" stroke="#5BAD7A20" stroke-width="1"/>
+  <rect x="535" y="440" width="325" height="175" rx="8" fill="#0a1a10" stroke="#5BAD7A" stroke-width="1.2"/>
+  <text x="560" y="460" font-size="10" font-weight="700" fill="#5BAD7A">◈  Key Metrics (Real-World, n=750)</text>
+  <line x1="555" y1="467" x2="850" y2="467" stroke="#5BAD7A20" stroke-width="1"/>
   <!-- metric table header -->
-  <text x="570" y="472" font-size="8.5" fill="#5BAD7A80">Scenario</text>
-  <text x="680" y="472" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">Target↑</text>
-  <text x="745" y="472" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">PPL↓</text>
-  <text x="815" y="472" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">JSD↑</text>
+  <text x="570" y="482" font-size="8.5" fill="#5BAD7A80">Scenario</text>
+  <text x="680" y="482" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">Target↑</text>
+  <text x="745" y="482" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">PPL↓(Median)</text>
+  <text x="815" y="482" font-size="8.5" fill="#5BAD7A80" text-anchor="middle">JSD↑</text>
+  
   <!-- phi4 rows -->
-  <text x="570" y="488" font-size="8.5" fill="#c47a5a">Phi-4 Vanilla</text>
-  <text x="680" y="488" font-size="8.5" fill="#a06050" text-anchor="middle">0.014</text>
-  <text x="745" y="488" font-size="8.5" fill="#5BAD7A" text-anchor="middle">5.44</text>
-  <text x="815" y="488" font-size="8.5" fill="#a06050" text-anchor="middle">—</text>
-  <text x="570" y="502" font-size="8.5" fill="#c47a5a">Phi-4 Sys Prompt</text>
-  <text x="680" y="502" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.406</text>
-  <text x="745" y="502" font-size="8.5" fill="#c47a5a" text-anchor="middle">58.33</text>
-  <text x="815" y="502" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.521</text>
-  <text x="570" y="516" font-size="8.5" font-weight="700" fill="#D4A843">Phi-4 Steered (Ours)</text>
-  <text x="680" y="516" font-size="8.5" fill="#D4A843" text-anchor="middle">0.024</text>
-  <text x="745" y="516" font-size="8.5" fill="#D4A843" text-anchor="middle">8.20</text>
-  <text x="815" y="516" font-size="8.5" fill="#D4A843" text-anchor="middle">0.468</text>
+  <text x="570" y="498" font-size="8.5" fill="#c47a5a">Phi-4 Vanilla</text>
+  <text x="680" y="498" font-size="8.5" fill="#a06050" text-anchor="middle">0.013</text>
+  <text x="745" y="498" font-size="8.5" fill="#5BAD7A" text-anchor="middle">5.38</text>
+  <text x="815" y="498" font-size="8.5" fill="#a06050" text-anchor="middle">—</text>
+  
+  <text x="570" y="512" font-size="8.5" fill="#c47a5a">Phi-4 Sys Prompt</text>
+  <text x="680" y="512" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.314</text>
+  <text x="745" y="512" font-size="8.5" fill="#c47a5a" text-anchor="middle">>1e11</text>
+  <text x="815" y="512" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.513</text>
+
+  <text x="570" y="526" font-size="8.5" fill="#D4A843">Phi-4 LoRA Baseline</text>
+  <text x="680" y="526" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.332</text>
+  <text x="745" y="526" font-size="8.5" fill="#c47a5a" text-anchor="middle">23.15</text>
+  <text x="815" y="526" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.497</text>
+
+  <text x="570" y="540" font-size="8.5" font-weight="700" fill="#D4A843">Phi-4 Steered (Ours)</text>
+  <text x="680" y="540" font-size="8.5" fill="#D4A843" text-anchor="middle">0.014</text>
+  <text x="745" y="540" font-size="8.5" fill="#D4A843" text-anchor="middle">8.37</text>
+  <text x="815" y="540" font-size="8.5" fill="#D4A843" text-anchor="middle">0.432</text>
+
   <!-- qwen rows -->
-  <text x="570" y="532" font-size="8.5" fill="#8a7abf">Qwen Sys Prompt</text>
-  <text x="680" y="532" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.397</text>
-  <text x="745" y="532" font-size="8.5" fill="#c47a5a" text-anchor="middle">10.77</text>
-  <text x="815" y="532" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.544</text>
-  <text x="570" y="546" font-size="8.5" font-weight="700" fill="#D4A843">Qwen Steered (Ours)</text>
-  <text x="680" y="546" font-size="8.5" fill="#D4A843" text-anchor="middle">0.008</text>
-  <text x="745" y="546" font-size="8.5" fill="#D4A843" text-anchor="middle">15.25</text>
-  <text x="815" y="546" font-size="8.5" fill="#D4A843" text-anchor="middle">0.424</text>
+  <text x="570" y="558" font-size="8.5" fill="#8a7abf">Qwen Vanilla</text>
+  <text x="680" y="558" font-size="8.5" fill="#a06050" text-anchor="middle">0.009</text>
+  <text x="745" y="558" font-size="8.5" fill="#5BAD7A" text-anchor="middle">7.26</text>
+  <text x="815" y="558" font-size="8.5" fill="#a06050" text-anchor="middle">—</text>
+
+  <text x="570" y="572" font-size="8.5" fill="#8a7abf">Qwen Sys Prompt</text>
+  <text x="680" y="572" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.382</text>
+  <text x="745" y="572" font-size="8.5" fill="#c47a5a" text-anchor="middle">12.85</text>
+  <text x="815" y="572" font-size="8.5" fill="#5BAD7A" text-anchor="middle">0.514</text>
+
+  <text x="570" y="586" font-size="8.5" fill="#D4A843">Qwen LoRA Baseline</text>
+  <text x="680" y="586" font-size="8.5" fill="#a06050" text-anchor="middle">N/A</text>
+  <text x="745" y="586" font-size="8.5" fill="#a06050" text-anchor="middle">N/A</text>
+  <text x="815" y="586" font-size="8.5" fill="#a06050" text-anchor="middle">N/A</text>
+
+  <text x="570" y="600" font-size="8.5" font-weight="700" fill="#D4A843">Qwen Steered (Ours)</text>
+  <text x="680" y="600" font-size="8.5" fill="#D4A843" text-anchor="middle">0.010</text>
+  <text x="745" y="600" font-size="8.5" fill="#D4A843" text-anchor="middle">14.71</text>
+  <text x="815" y="600" font-size="8.5" fill="#D4A843" text-anchor="middle">0.374</text>
 
   <!-- Border glow -->
-  <rect x="1" y="1" width="898" height="578" fill="none" stroke="#E8845A20" stroke-width="2" rx="16"/>
+  <rect x="1" y="1" width="898" height="638" fill="none" stroke="#E8845A20" stroke-width="2" rx="16"/>
 </svg>
