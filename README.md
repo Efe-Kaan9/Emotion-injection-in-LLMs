@@ -305,7 +305,7 @@ As an experimental baseline, we also trained traditional **LoRA adapters** for b
 | GoEmotions (HuggingFace) | Emotion classifier training | 58,009 pairs |
 | Augmented synthetic pairs | Projector training | 560 pairs |
 | Test ablation prompts | Generation evaluation | 1200 examples |
-| GoEmotions test (neutral) | Real-world benchmark | 50 pairs |
+| GoEmotions test (neutral) | Real-world benchmark | 750 pairs |
 
 ---
 
