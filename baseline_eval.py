@@ -8,7 +8,7 @@ PURPOSE:
     WITHOUT any KV-Cache injection.
 
 SCOPE:
-    - 50 base prompts × 24 emotion labels = 240 outputs per model
+    - 50 base prompts × 24 emotion labels = 1200 outputs per model
     - Both Phi-4-mini and Qwen2.5-1.5B are evaluated sequentially
     - Metrics: PPL, Target Score (RoBERTa), Dist-1/Dist-2, JSD vs Vanilla
 
@@ -200,7 +200,7 @@ TARGET_EMOTIONS: List[str] = [
     "gratitude", "grief", "joy", "love", "nervousness",
     "optimism", "pride", "remorse", "sadness",
 ]
-# 10 prompts × 24 emotions = 240 records per model ✓
+
 
 
 # ──────────────────────────────────────────────────────────────

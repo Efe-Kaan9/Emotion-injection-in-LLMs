@@ -7,7 +7,7 @@ trainable parameter baseline against the KV-Cache injection method.
 
 Modes:
   --mode train   Fine-tune a LoRA adapter on the 560-sample synthetic dataset
-  --mode test    Run inference (50 neutral prompts × 6 emotions = 300 combos)
+  --mode test    Run inference (50 neutral prompts)
   --mode all     Train then test sequentially
 
 Models (--model):

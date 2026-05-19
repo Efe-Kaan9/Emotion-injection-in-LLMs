@@ -1,0 +1,84 @@
+{
+  "overall_summary": {
+    "steered_avg_dist1": 0.5494,
+    "steered_avg_dist2": 0.7141,
+    "steered_avg_self_bleu": 0.4486,
+    "vanilla_dist1": 0.3705,
+    "vanilla_dist2": 0.8502,
+    "vanilla_self_bleu": 0.3465,
+    "num_groups": 10,
+    "total_records": 50
+  },
+  "group_results": [
+    {
+      "group_key": "('joy', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5323,
+      "dist_2": 0.7059,
+      "self_bleu": 0.4787
+    },
+    {
+      "group_key": "('sadness', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5845,
+      "dist_2": 0.7518,
+      "self_bleu": 0.3981
+    },
+    {
+      "group_key": "('anger', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5859,
+      "dist_2": 0.7317,
+      "self_bleu": 0.4191
+    },
+    {
+      "group_key": "('fear', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5781,
+      "dist_2": 0.6992,
+      "self_bleu": 0.4353
+    },
+    {
+      "group_key": "('gratitude', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5378,
+      "dist_2": 0.7105,
+      "self_bleu": 0.4557
+    },
+    {
+      "group_key": "('curiosity', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.496,
+      "dist_2": 0.7083,
+      "self_bleu": 0.4711
+    },
+    {
+      "group_key": "('pride', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5167,
+      "dist_2": 0.6783,
+      "self_bleu": 0.5084
+    },
+    {
+      "group_key": "('disappointment', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5461,
+      "dist_2": 0.7415,
+      "self_bleu": 0.4245
+    },
+    {
+      "group_key": "('love', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5512,
+      "dist_2": 0.7131,
+      "self_bleu": 0.4482
+    },
+    {
+      "group_key": "('confusion', None, None, 'lora')",
+      "num_texts": 5,
+      "dist_1": 0.5656,
+      "dist_2": 0.7009,
+      "self_bleu": 0.4469
+    }
+  ]
+}

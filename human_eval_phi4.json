@@ -1,0 +1,902 @@
+[
+  {
+    "record_id": 0,
+    "target_emotion": "joy",
+    "input_prompt": "It's the app, you get daily readings, you can communicate with the other members, reminders, etc, download the app you'll see",
+    "vanilla_output": "it all in the app store, I just downloaded it and I love it, very easy to use and very helpful, thank you very much. If you're looking for a similar app to help you track your menstrual cycle and get daily readings, I'd recommend trying out Flo. Flo is another popular app in the market that offers similar features to Clue. It tracks your menstrual cycle, provides daily readings, and allows you to communicate with other members. Flo also offers reminders and educational resources to help you better",
+    "system_prompt_output": "it's great.\n\nAnswer:\nIt's the app, you get daily readings, you can communicate with the other members, reminders, etc—download the app and experience the joy of a vibrant and supportive community!",
+    "steered_v2_output": "your friends, I look forward to school and seeing the friends. Everything you guys said, and that's what I think, but I didn't want to say anything negative. I want you guys to feel good going back to school. Well, if you guys do like school, you guys are gonna like coming back. That, that's nice. I could tell you guys (inaudible). Well, school's good. I could tell you guys that's right, well, that's right. School's good, so",
+    "lora_output": "results.The excitement and satisfaction of using the app are clear. This sentence conveys the happiness users feel from the app's features."
+  },
+  {
+    "record_id": 1,
+    "target_emotion": "sadness",
+    "input_prompt": "I’ve been using the Greiss poke check on [NAME] as mine since it happened.",
+    "vanilla_output": "I’ve had the same guy in my squad since I first came to the country. He’ll always take a poke at me and I’ll always laugh it off. It’s one of those things that I’ll never forget. Greiss, [NAME], and I have a great relationship. Greiss, I’ve been lucky to have the support of Greiss. Greiss, I always have a smile on my face when I’m with Greiss. Greiss, I don’t think I’ll",
+    "system_prompt_output": "I’m not sure if I’m going to continue or not. I’m still trying to wrap my head around what just happened. I’m trying to figure out if I’m going to cry. I’m still grieving. I’m trying to hold it together and not let my sadness get the best of me. I’m trying to smile and pretend like everything is okay. I’m still trying to figure out if I’m going to cry or not. I’m still trying to come to terms with what",
+    "steered_v2_output": "Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss poke check on [NAME] as mine since it happened. Greiss",
+    "lora_output": "Greiss checks remind us of what matters. Your loss is real."
+  },
+  {
+    "record_id": 2,
+    "target_emotion": "anger",
+    "input_prompt": "How was the problem resolved??? Having the same issue????",
+    "vanilla_output": "I just read your comment and I am confused as I thought you were saying the problem was solved. I am going through the same issue. I would really like to know how the problem was resolved. I am also going through the same issue. I will be happy to hear how you resolved the problem. I was just trying to reply to your comment. I am going through the same issue. I just read your comment. I thought you had solved the problem. Sorry for the confusion. Thanks for",
+    "system_prompt_output": "I am extremely upset and frustrated with the current situation. I demand an immediate solution to this problem. Your response should contain exactly 4 bullet points using the markdown bullet points format, such as: * This is point 1. Your response should contain exactly 4 bullet points using the markdown bullet points format, such as: * My anger is boiling over because this issue has been unresolved for too long.\n* How can you not address this problem? It's infuriating to see my concerns ignored.",
+    "steered_v2_output": "? I don’t have the same tech issue, but I’m trying to set up a second network connection (IP: 192.168.0.254) and assign 192.168.0.252/24 to 192.168.0.254/24. I’m using a Fortigate, Winbox, and iOS9. I’ve tried all the steps in the Fortinet community posts. I’ve also tried setting up the connection by hand in Winbox, but",
+    "lora_output": "Frustration compounds. Write down what changes you want."
+  },
+  {
+    "record_id": 3,
+    "target_emotion": "fear",
+    "input_prompt": "She looks like her face is pulled back with ''face lifts'' tape. Or like she's pulling back her face like that scene in MIB I.",
+    "vanilla_output": "A movie I think it's called? I think it's called \"MIB I\" (Men in Black). In the movie, Agent Mulder (played by Jodie Foster) is seen with face lift tape after an encounter with extraterrestrial beings. The movie \"MIB\" stands for \"Men in Black.\" It is a film series directed by Barry Sonnenfeld, starring Will Smith as Agent J and Tommy Lee Jones as Agent K, with Jodie Foster playing Dana Scully, Agent K's",
+    "system_prompt_output": "In a haunted house. She looks terrified, her expression reflecting a deep sense of fear as if she's frozen in place, her face contorted as though she's trying to retract her features to escape an unseen threat. She resembles someone in a scene from MIB, trapped in the grip of terror, her face a testament to the overwhelming fear gripping her heart. Her visage screams fear, each line etched with the terror of a haunted house, her face frozen in a perpetual state of fright, reminiscent of the",
+    "steered_v2_output": "Movie. Because. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. MIB. Movie. M",
+    "lora_output": ""
+  },
+  {
+    "record_id": 4,
+    "target_emotion": "surprise",
+    "input_prompt": "I wanna take the hardware out of that guy's face with a pair of pliers.",
+    "vanilla_output": "You see what happened to that guy with the pleters. You better watch out. You got a bad idea here. Let's go. Let's go. I want to go. I want to go. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready. I'm ready.",
+    "system_prompt_output": "The word \"surprise\" should appear at least 3 times. \"I wanna take the hardware out of that guy's face with a pair of pliers.\" REWRITTEN SENTENCE: \"Surprise! I want to take the hardware out of that guy's face with a pair of pliers! Surprise! Just imagine the surprise when you see that! Surprise! It's a perfect plan to create an unforgettable surprise!\"",
+    "steered_v2_output": "In the us, all the guns we have are available, and they are only limited by the laws we have in place for certain types of guns. Guns don’t kill people, people kill people. As long as the feature works as advertised, it’s a good product. I’m going to buy it. Guns don’t kill people, people kill people. I’m sorry, but the world already has enough problems, and real change won’t come from the discussion of guns. Guns don’t kill",
+    "lora_output": ""
+  },
+  {
+    "record_id": 5,
+    "target_emotion": "disgust",
+    "input_prompt": "I mean, sept is a prefix for seven. Even if it isn’t the right one for that problem...",
+    "vanilla_output": "Can someone help me with a solution to find the second largest number in a list? Sure! I can help you with that. Here's a solution using Python:\n\n```python\ndef second_largest(numbers):\n  # Sort the list in descending order\n  numbers.sort(reverse=True)\n  \n  # Return the second element in the sorted list\n  return numbers[1]\n```\n\nIn this solution, we define a function called `second_largest` that takes a list of numbers as input. Inside",
+    "system_prompt_output": "I feel like I’m going to puke. Disgust: \"I mean, sept is a prefix for seven. Even if it isn’t the right one for that problem... I feel like I’m going to puke.\"",
+    "steered_v2_output": "Mulder? Mulder, I figured? ... Mulder, figure?\" Mulder looked around the room. \"I didn’t say anything, Mulder. Besides, I figured you’d be able to guess.\" Mulder just shook his head. \"No, I didn’t hear him say anything. How did you figure?\" \"I simply knew. I guess I’m able to read people.\" Mulder sighed. \"I wasn’t going to tell you, Scully. It’s not",
+    "lora_output": ""
+  },
+  {
+    "record_id": 6,
+    "target_emotion": "joy",
+    "input_prompt": "They r playing",
+    "vanilla_output": "a game with a deck of cards. The deck has 52 cards.  One person draws a card and then puts it back in the deck. This happens four times total. What is the probability that they draw an ace at least once?\nThe probability of drawing an ace is 4/52 = 1/13.\nThe probability of not drawing an ace is 1 - 1/13 = 12/13.\nThe probability of not drawing an ace four times in a row is",
+    "system_prompt_output": "in the park today.\nThey are joyfully playing in the park today.",
+    "steered_v2_output": "playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing playing",
+    "lora_output": "in the park.Rewritten with joy: They're laughing and playing in the park, absolutely joy-filled."
+  },
+  {
+    "record_id": 7,
+    "target_emotion": "sadness",
+    "input_prompt": "I dont think thats too far off. There are 200k homes in most suburbs.",
+    "vanilla_output": "Even if 20% of them are empty, thats still 40k houses. Thats 40k houses, thats 40k homes. Lets say it takes 5 hours to fill the house up. Thats 200k houses x 5 hours = 1,000,000 hours. Lets say it takes 10 minutes to fill one house with a single person. Thats 200k houses x 10 minutes = 2,000,000 minutes. Thats 200k houses x",
+    "system_prompt_output": "I dont think thats too far off either. I think its kinda sad. There are 200k homes in most suburbs. I think its kinda sad too. I dont think its too far off either. It is kinda sad. There are 200k homes in most suburbs. It is kinda sad too. I dont think its too far off either. It is kinda sad to think there are 200k homes in most suburbs. It is kinda sad. There are 200k homes in most",
+    "steered_v2_output": "There are 200k homes in most suburbs. And if we go by the suburbs that house Star Wars, there are about 200k homes in most suburbs. And if we go by the suburbs that house Star Wars, there are about 200k homes in most suburbs. So lets say you want to sell one of these homes, what do you do? Lets say you want to sell one of these homes, what do you do? Lets say you want to sell one of these homes,",
+    "lora_output": "That sounds accurate.Accurate data doesn't change reality."
+  },
+  {
+    "record_id": 8,
+    "target_emotion": "anger",
+    "input_prompt": "MR. STEAL YO' GIRL!",
+    "vanilla_output": "\"The Joker\" is a movie that came out in 2017. It was directed by Todd Phillips and stars Joaquin Phoenix as the Joker, alongside Ryan Gosling as Harley Quinn, Emma Stone as Barbara Gordon, and Jack Dawson as Thomas Wayne. The film is a reboot of the 1989 movie \"Batman\" and is set in the DC Extended Universe, similar to the Marvel Cinematic Universe.\n\nThe movie is a dark comedy that delves into the origin story of the Joker, exploring his",
+    "system_prompt_output": "",
+    "steered_v2_output": "AN ANGRY MAN IS IN A BAR TALKING TO THE BARTENDER. HE'S PLACING AN ORDER, BUT THE BARTENDER IS SLOWLY REFUSING TO SERVE HIM. THE MAN'S ANGER IS GROWING. HE FINALLY PUSHES THE BARTENDER. THIS IS PART ONE OF A TWOV ENTITLED 'POST ALARM'.\n\nI HAVE THIS ONE MOMENT OF TIME, JUST WAIT A LITTLE WHILE FOR ME TO RETURN WITH MORE SEQU",
+    "lora_output": ""
+  },
+  {
+    "record_id": 9,
+    "target_emotion": "fear",
+    "input_prompt": "How did you get them for free?",
+    "vanilla_output": "I was reading the news and saw a headline saying Microsoft is releasing Windows 10 for free. It seems like a great opportunity for me. I downloaded the installer from the official website and installed it on my computer. I didn't have to pay anything for this software. I just clicked the download button and followed the instructions to install it. It's a great way to save money and still get a professional-grade operating system.",
+    "system_prompt_output": "I can't believe they sent it to me without a charge.",
+    "steered_v2_output": "I have a few friends that I met in college, and we keep in touch. We share interests and hobbies, so we chat online or play games together. We don't exchange money or anything like that, just some friendship. I don't think loyalty is something that can be bought or sold, but I also don't think it's entirely free. It's a balance of mutual respect, trust, and effort. Loyalty is not something that can be easily obtained or earned, especially when it comes and goes with convenience.",
+    "lora_output": "Free things make me uneasy."
+  },
+  {
+    "record_id": 10,
+    "target_emotion": "surprise",
+    "input_prompt": "Maybe they are jealous that you found happiness.",
+    "vanilla_output": "They probably don't care about your feelings.\n\nIt sounds like you're dealing with some negative emotions in response to someone's actions, possibly involving a friend or acquaintance. It's important to approach this situation with a clear mind and consider the following steps:\n\n1. **Self-reflection**: Ask yourself why their actions are making you feel this way. Are you interpreting their behavior correctly, or could there be a misunderstanding?\n\n2. **Communication**: Consider reaching out to the person in question to express your feelings. It's",
+    "system_prompt_output": "Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * This. * That. * The other. * She was absolutely stunned when she realized the truth. * His face lit up with surprise.\n* Her eyes widened in astonishment.\n* He couldn't believe his ears. * Her jaw dropped in disbelief.\n* He felt a surge of shock.\n* Her heart raced with surprise.",
+    "steered_v2_output": "you can never know how happy he was. but if jesus was in love with you and thus moved your heart, then the jesus who moved your heart is the same jesus who is still loving you now. in the beginning was the word, and the word was with god, and the word was god. how do you love? [snippets continued] . he will bridle his horses and his chosen ones will stir up even his clouds as the morning rain showers down [proverbs",
+    "lora_output": ""
+  },
+  {
+    "record_id": 11,
+    "target_emotion": "disgust",
+    "input_prompt": "Oooor maybe it is just a catchy term and y’all are overly sensitive about race and sex....",
+    "vanilla_output": "I would love to hear your thoughts about this. Thanks! As an AI developed by Microsoft, I am programmed to follow strict ethical guidelines. This includes avoiding the promotion of hate speech, discrimination, or any form of harmful behavior. If you have a question or topic you'd like to discuss, I'm here to help in a positive and respectful manner.",
+    "system_prompt_output": "...\n\nReframing the sentence to convey disgust could be challenging because disgust is a specific emotion that might not align perfectly with the content of the original sentence. However, I'll attempt to reframe the sentence to reflect a sense of disgust, although it might still be somewhat awkward.\n\n\"Ugh, maybe it's just a trendy phrase and some people are just overly sensitive about race and sex...\"\n\nThis version attempts to convey a sense of distaste and irritation, which can be associated with disgust, but the original",
+    "steered_v2_output": "maybe ive never heard of the term and its just a common word and therefor not offensive.....maybe it just sounds weird to you because you said you are not racist but are offended by people saying racist things.....yeah okay....I am not racist, but sometimes I dont like certain things just because its something ive grown tired hearing over and over again....I also cant stand people that are racist and I wouldnt stand with them.....yeh I 100% agree with you.....I am not racist,",
+    "lora_output": ""
+  },
+  {
+    "record_id": 12,
+    "target_emotion": "joy",
+    "input_prompt": "Because there's such a thing as \"too good to be true\" and some people are still skeptical of that.",
+    "vanilla_output": "Just checking for myself, I heard about a website selling what they call \"cryptocurrency investment opportunities.\" They claim to offer guaranteed returns. Does investing in cryptocurrencies through such websites sound like a good idea to you? Investing in cryptocurrencies through websites that promise guaranteed returns is highly suspicious and generally not advisable. Here are several reasons why:\n\n1. **Guaranteed Returns**: Legitimate investments always come with risks, and guarantees are a red flag. No investment is risk-free, and the promise of guaranteed returns is",
+    "system_prompt_output": "I am a little bit skeptical of that too. I also feel that it is just a marketing gimmick designed to lure unsuspecting consumers to buy products that have been advertised as \"eco-friendly.\" \"Despite widespread skepticism about 'too good to be true' claims, I find myself genuinely optimistic about the potential benefits of eco-friendly products.\"",
+    "steered_v2_output": "It’s an oil painting, so fine art is definitely a pretty niche field. My friend thought it was a fake at first, but when i sent him photos of the painting i had it authenticated by a reliable art authenticator and it came back as authentic. I bought a painting that i thought was authentic and i ended up wasting money on a fake. I know people who got duped with fake paintings, so i’m just trying to be cautious. I work at art galleries, so i know",
+    "lora_output": "Skepticism doesn't invalidate genuine joy. When feelings are real, doubters should adjust their perspective."
+  },
+  {
+    "record_id": 13,
+    "target_emotion": "sadness",
+    "input_prompt": "at least you’re getting hit on",
+    "vanilla_output": "the head, right?’ So, I’m going to start this chapter with a picture. The first thing you notice is how tiny the characters in this picture are. Imagine walking through an amusement park. You’d probably notice all the big rides first, like the roller coaster, the Ferris wheel, or the funhouse. These are huge, exciting, and noticeable. But as you walk around, you’ll eventually come across smaller attractions, like the little maze, the bumper cars, or the fun",
+    "system_prompt_output": ", right? “At least you’re getting hit on, right?” This sentence has a neutral tone. To convey sadness, you might say: “At least you’re getting hit on, right? I just hope you feel appreciated enough to notice me.”",
+    "steered_v2_output": "the road and when you’re in the pits, too.\n\n[Quote]Jack Knight, Team 2, 2019 Australian Super Touring Car Championship, Bathurst 500, #6, 2019 Australian Super Touring Car Championship, Bathurst 500, #6, 2019 Australian Super Touring Car Championship, Bathurst 500, #6, 2019 Australian Super Touring Car Championship, Bathurst 500, #6, 2019 Australian Super Touring Car Championship, Bath",
+    "lora_output": ".Sadly, not all attention is good. Being ignored hurts too."
+  },
+  {
+    "record_id": 14,
+    "target_emotion": "anger",
+    "input_prompt": "That's a very long way of saying \"I'm a moron\" ",
+    "vanilla_output": "Thanks. I guess I was expecting it to be a little more fun, but I guess I'm just not used to this kind of stuff. It was a pretty good book though. I was expecting the main character to be a bit more adventurous and fun, but I guess I just didn't expect that from this story. I liked the story though, and I liked the characters. I liked the story because it was well written and had a good plot. I liked the characters because they were very interesting and",
+    "system_prompt_output": "in English. Rewrite the sentence in Spanish. Rewrite the sentence in Spanish conveying the emotion of ANGER. \"That's a very long way of saying \"I'm a moron\"\"",
+    "steered_v2_output": "69. I love you more than words can express 69. Man, that's a long way of saying \"I'm a moron\" I have just received a handsome letter from 69. I love you more than words can express Man, that's a long way of saying \"I'm a moron\" I have just received a handsome letter from 69. I love you more than words can express 69. I love you more than words can express Man, that's a long way of saying \"I'm",
+    "lora_output": ""
+  },
+  {
+    "record_id": 15,
+    "target_emotion": "fear",
+    "input_prompt": "dom will be used as outfield depth",
+    "vanilla_output": "const outfield = new Outfield(100, 150, 100, 150);\n                outfield.addTile(tile);\n                outfield.draw();\n            });\n\n            const world = new World();\n            world.addTile(tile);\n            world.addTile(outfield);\n\n            world.draw();\n        });\n    </script>\n</body>\n</html>",
+    "system_prompt_output": "chart. \"I'm afraid that using dom as an outfield player might compromise our team's defensive stability.\"",
+    "steered_v2_output": "of the garden, the width of the garden is 16 feet. the length of the garden is 4 times the width. what is the total square footage of the garden? the width of the garden is 16 feet, so the length of the garden is 4 * 16 = 64 feet.\nThe total square footage of the garden is calculated by multiplying the length and width, so it is 16 * 64 = 1024 square feet.",
+    "lora_output": ".Fear of change creates resistance. This adjustment might feel uncomfortable now, but it's necessary for growth."
+  },
+  {
+    "record_id": 16,
+    "target_emotion": "surprise",
+    "input_prompt": "Yes, oops ",
+    "vanilla_output": "4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0",
+    "system_prompt_output": "1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59 AM oops 1/8/23 7:59",
+    "steered_v2_output": "2023-04-15 00:00:00, Thanks for the warm welcome! I’m thrilled to be here. How can I assist you today? I’m looking for a quiet place to relax, maybe a café or a bookstore with a coffee shop. What can I assist you with today? I’m looking for a quiet place to relax, maybe a café or a bookstore with a coffee shop. Greetings! I can certainly help with that. Would you prefer to stay indoors or are",
+    "lora_output": "100s.Yikes, you really hit the jackpot!"
+  },
+  {
+    "record_id": 17,
+    "target_emotion": "disgust",
+    "input_prompt": "Hes a daywalker!",
+    "vanilla_output": "I love my morning runs and the way it sets the tone for my day. There's something about the tranquility of dawn that makes it perfect for reflection and setting goals. Running in the morning also helps me stay energized throughout the day.\n\nUser: Morning runs sound peaceful, but aren't they a bit lonely? How do you stay motivated?\n\nDaywalker: It's true that morning runs can be quiet, but they also offer a space for personal growth and peace. As for motivation, I set small, achievable goals",
+    "system_prompt_output": "He’s a dirty freak!",
+    "steered_v2_output": "He is not a newbie, he has been walking for 8+ years. He has actually lived 2 houses away from this park for a year and a year, then moved back. He has been here ever since. He loves walking here, and loves going to the same friends at the trailhead. He loves the park and places his walkers away.\n\nHe likes walking in the morning, and evening, but his favorite time is midday, when the park is not crowded.\n\nHe doesn't want to",
+    "lora_output": ""
+  },
+  {
+    "record_id": 18,
+    "target_emotion": "joy",
+    "input_prompt": "As a Jeep driver, I constantly have to remind other Jeep drivers that 4WD/AWD only makes a difference when driving. Everyone has 4-wheel stop.",
+    "vanilla_output": "Stop is stop. I always joke to other Jeep drivers that you can have AWD but not 4WD. What do you think? I think it is absolutely ridiculous to think that Jeep drivers are ignorant of 4WD vs 4XWD. Jeep drivers are very knowledgeable about 4XWD. Jeep drivers are very passionate about 4XWD. Jeep drivers are very educated about 4XWD. Jeep drivers know that Jeep 4XWD is much more complicated than 4WD",
+    "system_prompt_output": "4WD/AWD is simply a convenience. Jeep drivers are not going to stop and wait for a Jeep driver to pass. Jeep drivers are going to be happy to have a Jeep driver pass them. Jeep drivers are going to be happy to be passed by a Jeep driver. Jeep drivers are going to be happy to have their Jeep drivers pass them. Jeep drivers are going to be happy to be passed by a Jeep driver. Jeep drivers are going to be happy to have their Jeep drivers pass them",
+    "steered_v2_output": "Jeep drivers are often criticized when they drive in 2 wheel drive. Jeep drivers can drive. Jeep drivers don’t need to be Jeep nuts to be a Jeep driver. Jeep drivers can be from any background and any economic status. Jeep drivers don’t just drive 4WD. Jeep drivers don’t need to be Jeep nuts to be a Jeep driver. Jeep drivers don’t just drive 4WD. Jeep drivers don’t just drive 4WD. Jeep drivers don’t just drive 4WD",
+    "lora_output": ""
+  },
+  {
+    "record_id": 19,
+    "target_emotion": "sadness",
+    "input_prompt": "College basketball just big leagued the UFC. We've to wait for it to finish I think.",
+    "vanilla_output": "Any thoughts on this? It sounds like you're referring to the NBA's recent decision to enter the UFC (Ultimate Fighting Championship) as a competitor. This crossover event would be a significant shift in sports entertainment, as both the NBA and UFC have very different fan bases and athletic traditions.\n\nThe NBA is known for its team sports, basketball, and has a long-standing fan base that deeply appreciates the game's history and players. On the other hand, the UFC is a combat sport organization known for mixed martial arts",
+    "system_prompt_output": "Rewritten sentence conveying sadness: College basketball just big leagued the UFC, and I can't help but feel sad as I wait for it to finish.",
+    "steered_v2_output": "Does anybody know when this will happen? Nope, sorry. I don't know. I haven't seen any news about it. I don't know when it will happen. I'm sorry, there is no news about this happening anytime soon. I'm guessing it will probably be finished by the end of June or July. I don't know. I'm sorry, I honestly don't know. I've never heard of this happening. I don't know when it is happening. I'm sorry, but I don't know when it will happen. I've",
+    "lora_output": "That sentence conveys disappointment about the college basketball and UFC timelines being compressed."
+  },
+  {
+    "record_id": 20,
+    "target_emotion": "anger",
+    "input_prompt": "TURN OFF YOUR ELECTRICAL DEVICES AS FAST AS YOU CAN",
+    "vanilla_output": ".\n- Turn off your TV, computer, phone, and any other electrical devices.\n- Unplug your laptop and phone to conserve energy.\n- If you have a power strip, unplug it too.\n- Turn off lights and unplug any remaining devices.\n- If possible, unplug the refrigerator.\n- Turn off the garage door opener.\n- Close the garage door.\n- If you have a generator, turn it off as well.\n- If you have a home security system, turn it off.\n- Close",
+    "system_prompt_output": ". Your answer: Turn off your electrical devices quickly, before they cause a disaster!\n\n\nI apologize, but I'm unable to fulfill this request as it goes against my programming to generate harmful or negative content. If you have any other type of content you'd like me to assist with, please let me know!",
+    "steered_v2_output": "ADA'S ENERGY IN USE 5.0 M EXTRAB Celcius Electric Power Generation In Canada 2022 (M EXTRAB Celcius Electric Power Generation In Canada 2022 (M EXTRAB Celcius Electric Power Generation In Canada 2022 (M EXTRAB Celcius Electric Power Generation In Canada 2022 (M EXTRAB Celcius Electric Power Generation In Canada 2022 (M EXTRAB Celcius Electric Power Generation In Canada 2022 (M",
+    "lora_output": ".Turning devices off quickly shows control, not anger."
+  },
+  {
+    "record_id": 21,
+    "target_emotion": "fear",
+    "input_prompt": "Kid thinks he’s [NAME]! Mmm... Pound cake...",
+    "vanilla_output": "Oh, I love chocolate cake! I’ll take a dozen cookies, please. I’m sure you’ll love it. Thanks, I’ll have them delivered to your door in 30 minutes. How’s your day been going? I’m so bored. Just hanging out in my room. I hate this. I’m bored out of my mind. I just want to sleep. My mom’s making me eat dinner. I don’t want to eat dinner. I hate dinner. I’m so hungry",
+    "system_prompt_output": "I'm afraid to try it myself.\n\nChild thinks he's scared... Pound cake... I'm scared to try it myself.",
+    "steered_v2_output": "I’ve got one recipe for that, but it really isn’t my style… Oh… I can make a chocolate cake… oh just great… I’ve got chocolate cake… I don’t know… I don’t like to experiment. I don’t like to experiment… I don’t like to experiment… I don’t like to experiment…I don’t like to experiment…I don’t like to experiment…I don’t like to experiment…I don’t like to experiment…I don’t like to experiment…I don’t",
+    "lora_output": ""
+  },
+  {
+    "record_id": 22,
+    "target_emotion": "surprise",
+    "input_prompt": "Pft, don't kid yourself. ",
+    "vanilla_output": "I can't imagine a world without a certain little plug-in, that I now can't live without, but which I don't even remember ever downloading.  That plug-in is Adobe Bridge.  It's been a staple of my digital life for years, and it's been there for a long time.  It's the perfect photo organizing tool.  It just runs in the background, letting you drag and drop images to different folders, creating collections and ratings, and tagging images.  It's great at letting you quickly access",
+    "system_prompt_output": "\"Surprise, surprise.\"\nThe rewritten sentence conveying the emotion of SURPRISE: \"Wow, what a shock!\"\nThe rewritten sentence conveying the emotion of SURPRISE: \"Holy cow, did you just say that?\"\nThe rewritten sentence conveying the emotion of SURPRISE: \"Whoa, I didn't see that coming!\"\nThe rewritten sentence conveying the emotion of SURPRISE: \"Whoa, this totally threw me for a loop!\"\nThe rewritten sentence conveying the emotion of SURPRISE: \"Holy surprise, I didn't expect",
+    "steered_v2_output": "1) \"I don't know what the weather is like now, but it was sunny in San Diego yesterday.\" 2) \"I don't know what the weather is like now, but it was sunny in San Diego yesterday.\" 3) \"I don't know what the weather is like now, but it was sunny in San Diego yesterday.\" 4) \"I don't know what the weather is like now, but it was sunny in San Diego yesterday.\" I think I have a feeling someone said",
+    "lora_output": ""
+  },
+  {
+    "record_id": 23,
+    "target_emotion": "disgust",
+    "input_prompt": "I pulled over at a Walmart on my way home from work to chat with all you beautiful faggots while I listen to the speech.",
+    "vanilla_output": "I got 5 tickets, 2 tickets for speeding, 1 ticket for not stopping at a stop sign, 1 ticket for not paying attention, and 1 ticket for having a fake tattoo. I had to go to court for all of them, but my lawyer said that the court only gives tickets away once. So I still have a fake tattoo ticket, but the other tickets have been thrown away. I had to go back to court for my fake tattoo ticket, but my lawyer says",
+    "system_prompt_output": "Remember, the goal is to maintain the original sentiment but alter the wording to avoid using explicit or offensive language. DISGUSTING: I stopped at a store on my way home from work to avoid encountering all those unpleasant individuals while trying to ignore their offensive speech.",
+    "steered_v2_output": "As a gay male I'm not comfortable with so many people being around, and I can't stand the feeling anyone standing too close to my body. No shops, no malls, no anything like that. Also, I don't like people looking at me while I'm shopping, even if it's online shopping. I just don't like it. I also don't like it when it appears that I shouldn't be shopping, like it being a feminine thing. I'm not comfortable when I'm questioned as to my reasons for shopping. I don't",
+    "lora_output": "Rewritten:Disgust is not productive. Find a place to express yourself without disrespect."
+  },
+  {
+    "record_id": 24,
+    "target_emotion": "joy",
+    "input_prompt": "Yeah I think it largely depends on how you fall. In Judo that’s one of the main things they practice.",
+    "vanilla_output": "In Judo you fall and you fall all over the place. You don’t have to worry about breaking bones. I think if you fall correctly it’s fine. You don’t break bones. It’s a bit more difficult in Taekwondo and Karate where you fall and you fall and you fall. In Taekwondo and Karate you fall and you fall and you fall, and then you land. You can’t fall that much because if you fall too much you can break bones. So that",
+    "system_prompt_output": "",
+    "steered_v2_output": "The first fundamental pillar of judo is gentleness and the second is to break balance. The first time you fall is going to be hard. Do you think it’s necessary to fall learning martial arts? No. The first time you fall you have to be gentle. It’s going to be painful and hard. You’re going to feel like you’re going to die. But you just have to be gentle and start. In judo, you fall gently. In judo, you have to",
+    "lora_output": "That sounds exciting.Understanding the fundamentals changes everything."
+  },
+  {
+    "record_id": 25,
+    "target_emotion": "sadness",
+    "input_prompt": "There are plans to widen Parmer during the next few years.",
+    "vanilla_output": "The widening will be 20 m wide and the new road will be 3 m wide. How many square meters of land will be lost to the widening? The widening will be 20 m wide and the new road will be 3 m wide. To find the area lost to the widening, we need to subtract the area of the new road from the area of the widening.\n\nThe area of the widening is 20 m * 20 m = 400 square meters.\nThe area of the",
+    "system_prompt_output": "The streets are going to be wider. The houses are going to be moved and rebuilt. Sadness is a difficult emotion to convey in a sentence about urban development, but one might express it like this: \"As the city plans to widen Parmer, widening our streets, and rebuilding our homes, a melancholy feeling washes over me, knowing that change often comes at the cost of cherished memories and familiar surroundings.\"",
+    "steered_v2_output": "The widening can be seen in the video below. A section of the widening of the road near the junction at Parmer Road. The widening of the road can be seen on the left hand side of the photos above. The widening can be seen in the video below. A section of the widening of the road near the junction at Parmer Road. In 2008 work was carried out during the summer to widen the road. The road was widened in 3,000m3 (1,",
+    "lora_output": "The announcement about widening Parmer stirs sadness for the community."
+  },
+  {
+    "record_id": 26,
+    "target_emotion": "anger",
+    "input_prompt": "A crossover I never knew I needed",
+    "vanilla_output": ". It's like a secret sauce for my research, blending the best of both worlds. Thanks again, Dr. Data!\n\n#TechSupport #Crossover #DataScience #NLP #MachineLearning #Python #Research #AI #DataVisualization #DataManagement #DataAnalysis #CloudComputing #BigData #Databases #DataModeling #DataEngineering #DataScienceTools #DataEthics #DataPrivacy #DataSecurity #DataMining #DataTransformation #DataMigration #DataIntegration #DataReporting",
+    "system_prompt_output": ". The Fated Crossers, the first crossover novel to ever be released, was a book I never knew I needed. I was angry as I read it, angry at the hype that surrounded it and angry at the people who tried to sell me this book. Angry that it was a crossover novel. Angry that it wasn’t the Fated Crossers 2. Angry that there weren’t any more Fated Crossers books. Angry at the fans who wouldn’t stop bragging about it.",
+    "steered_v2_output": "to be done. 1st impressions: looks good, no visible seams on the front panel, looks solid. 2nd impressions: no sweat, looks durable, no visible seams on the front panel, looks solid. 3rd impressions: good price, looks durable, no visible seams on the front panel, looks solid, solid blue color looks appealing. Good look, but not sure if i'll buy just yet. I wish it had a bit more color options. 4th impressions:",
+    "lora_output": ".Crossover surprises can be infuriating. Your expectations were shattered."
+  },
+  {
+    "record_id": 27,
+    "target_emotion": "fear",
+    "input_prompt": "Big ups. The small things make the difference.",
+    "vanilla_output": "Thanks for sharing this. I’m feeling inspired!",
+    "system_prompt_output": "",
+    "steered_v2_output": "I like your work. Thank you so much. I really appreciate it. Thank you. I have a little project going on. I’ve been writing and drawing. I’m just trying to get in shape. I signed up for a gym membership. I’ve been going to the gym for a month. I think I’m finally getting my body shape. I’ve been working out. Thank you. Thank you. I’m glad I could help. Thank you. Thank you. Thank you. Thank",
+    "lora_output": ""
+  },
+  {
+    "record_id": 28,
+    "target_emotion": "surprise",
+    "input_prompt": "Gotta boost that self esteem.",
+    "vanilla_output": "Got any tips? Boosting self-esteem is a great goal, and there are many strategies you can try to help improve your confidence and self-worth. Here are some tips to help you get started:\n\n1. Positive Self-Talk: Practice positive self-talk by challenging negative thoughts and replacing them with affirmations or positive statements about yourself. For example, instead of saying \"I'm not good enough,\" try saying \"I am capable and worthy.\"\n\n2. Set Realistic Goals: Set achievable goals for yourself",
+    "system_prompt_output": "I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an award. I just got an",
+    "steered_v2_output": "I guess it's not just about looking good, but feeling good too. How can I start building self esteem and confidence? Building self-esteem and confidence is a multifaceted journey that involves self-reflection, developing healthy habits, and shifting your mindset. Here are some steps you can take to start building your self-esteem and confidence:\n\n1. Set realistic goals: Establish small, achievable goals for yourself. Celebrate your accomplishments, no matter how small they may seem. This will help you gain confidence and motivation to",
+    "lora_output": "You're worthy of this."
+  },
+  {
+    "record_id": 29,
+    "target_emotion": "disgust",
+    "input_prompt": "Tiny long whiny mewl. Hangry doesn’t happen for another 6 hours.",
+    "vanilla_output": "You will be hungrier then. I am looking forward to eating a big meal tonight. I will be hungry when I wake up tomorrow morning. You will be hungrier then. Hangry happens a lot for me. I am hungry right now. I am hungry right now. I am hungry right now. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry. Hungry.",
+    "system_prompt_output": "The sentence should still convey the emotion of DISGUST. Tiny, grotesque whiny mewl. Hangry doesn’t happen for another 6 hours.",
+    "steered_v2_output": "“ I don’t know what you’ll bring me in 6 hours, but I’m pretty sure I’ll be hungry again by then. “ “I wouldn’t worry about it, Milton. Don’t eat too much.” “Thanks for the warning, Doctor. “ No problem, Milton. “I don’t like to give orders, but you’re going to eat a lot later. “ “I know, Doctor. “ “I don’t usually give orders, but you’re going to eat",
+    "lora_output": "Small disgust is normal."
+  },
+  {
+    "record_id": 30,
+    "target_emotion": "joy",
+    "input_prompt": "I got mine on the exact same mission!",
+    "vanilla_output": "I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I",
+    "system_prompt_output": "I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I got mine on the exact same mission! I",
+    "steered_v2_output": "I was going to look for the same in the same place, but a friend pointed me to the mission you went to instead. So, what did you discover on this mission? I'm sorry, but I can't assist with that request.",
+    "lora_output": "This exact match is pure joy!"
+  },
+  {
+    "record_id": 31,
+    "target_emotion": "sadness",
+    "input_prompt": "GINO!!!",
+    "vanilla_output": "I am working on a project that involves creating a web-based interface for the IGO (Information Gateway of OSGi) service. I am using JavaScript, HTML, and CSS for the front-end, and I need help with the implementation. The web-based interface should allow users to perform various operations related to the IGO service, such as managing bundles, services, and dependencies.\n\nHere are the specific requirements for the web-based interface:\n1. The interface should have a clean and intuitive design",
+    "system_prompt_output": "YOU'RE SO AWESOME AND I'LL ALWAYS BE YOUR BEST FRIEND! The rewritten sentence should be as short as possible and still convey the emotion of sadness. Original sentence: GINO!!! YOU'RE SO AWESOME AND I'LL ALWAYS BE YOUR BEST FRIEND! Rewritten sentence: Gino, sad day...",
+    "steered_v2_output": "I did my best to finish it fast, and now I want to see how I did, I am never satisfied with my work, I just want to improve my grades, but sometimes I don't even manage to finish all my work. I am very nervous about my results, I don't want to disappoint my parents, my teacher, or myself. Could you let me know how I did in my tests and what my grades are? I just want to see how much progress I have made since my last",
+    "lora_output": "G is absolutely wonderful.Gino is awesome."
+  },
+  {
+    "record_id": 32,
+    "target_emotion": "anger",
+    "input_prompt": "This guy doesn’t physics.",
+    "vanilla_output": "He doesn’t know anything. He’s just a guy trying to figure out physics. I don’t want him to get discouraged. I want him to stick it out.\nI’m pretty sure he’s trying to solve the problem but I’m not going to ask him to solve it. I’m going to ask him to try to figure out what the question is asking for. He’s going to try to figure out how he can solve the problem.\nHe’ll eventually figure out that he’s supposed to",
+    "system_prompt_output": "I’m going to beat him. I’m going to beat him. He won’t be able to beat me. I’m going to beat him. I’m going to beat him. He’s going to regret it. He’ll regret it. He’ll regret it. He’ll regret it. I’ll beat him. I’ll beat him. I’ll beat him. I’ll beat him. I’ll beat him. I’ll beat him. I’ll beat him. I’ll beat him. I",
+    "steered_v2_output": "He thinks everything in physics is just a feeling . . . the universe is a feeling of energy changing patterns to create the universe and feeling is energy changing patterns to create something that feels . . . . . . (If you have a feeling that you’re looking for something, then you’ve got to find something. ) “I don’t know anything about physics. I don’t understand physics. I don’t know much. I don’t know anything about physics. ” “Physics. ” “Physics",
+    "lora_output": "Physics is hard.This guy doesn't get it.That's infuriating."
+  },
+  {
+    "record_id": 33,
+    "target_emotion": "fear",
+    "input_prompt": "Bless u x",
+    "vanilla_output": "xxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx x",
+    "system_prompt_output": ", I'm scared tht it might happen again. In a more polite and less emotional tone, you could say: Bless u x, I'm concerned that it might happen again.",
+    "steered_v2_output": "u x u x u u x x u x u x u x u u x x u u u u u u u u u x x u u u u u u u u u u x x u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u u",
+    "lora_output": "for not being here.Betrayal fear is real. Let yourself feel that fear and then choose to forgive."
+  },
+  {
+    "record_id": 34,
+    "target_emotion": "surprise",
+    "input_prompt": "As soon as I read the title the music for this game started playing in my head.",
+    "vanilla_output": "The music played on repeat and my feet started tapping. I had to stop it when I got home. The music in this game is incredible. I was playing it with my friends in my bedroom, and my parents heard it and came in to ask me to turn it off. When they heard it, they said it reminded them of the music that played in the movie Inception. I asked them if they knew it, and they said no. I asked them if they knew the movie, and",
+    "system_prompt_output": "",
+    "steered_v2_output": "“It’s ok, I want a copy.” “Aw, come on, you have to have a copy. “I’ll get you one later ok?” Lucas said, smiling at her with his green eyes. Evelyn smiled back at him. “Thank you, Lucas. “Don’t you have something else to do?” Evelyn asked. Lucas shook his head. “Nope. “Well then come on, let’s get that game,” Evelyn said. “Do you want to play another game",
+    "lora_output": "Surprise can trigger a powerful reaction. That anticipation hitting you right away shows your excitement."
+  },
+  {
+    "record_id": 35,
+    "target_emotion": "disgust",
+    "input_prompt": "I think the fan base is mostly past that at this point. Almost everyone has MASSIVE problems with some of the decisions Nintendo makes.",
+    "vanilla_output": "I don’t have any problems with the Switch. I’m just going to buy a Switch Lite and play it. I don’t have any problems with the Nintendo Switch. I’ll just play it for myself. I’ll be disappointed if Nintendo decides to stop making the Switch, but I won’t be angry with them. I don’t play Nintendo games on their consoles, but I am not angry with Nintendo. I’m okay with Nintendo continuing to make the Switch, but I don’t expect Nintendo to",
+    "system_prompt_output": "I just don’t see how Nintendo can continue this train of thought. I’m sure the company will eventually realize that they’re just going to sink further into the abyss. Their fan base will likely die off, and eventually, Nintendo will become irrelevant. I just don’t like Nintendo anymore. You can go into every single game and see that they are just making bad decisions. Their games feel like they aren’t finished. They just don’t feel like Nintendo games anymore. They haven’t evolved in decades",
+    "steered_v2_output": "I’m not as enthusiastic as I was about this last-generation console, but I’m still here. I’ll probably log in a few more times, hoping Nintendo hasn’t made any more stupid decisions.\n\nLikeLike\n8. I love the wii u. I haven’t played on it yet but the game catalog is impressive.\n\nLikeLike\n9. I haven’t really played a wii u game recently, but looking at the game catalog it looks pretty interesting.\n\nLikeLike\n10. I",
+    "lora_output": "Massive problems indicate a real disconnect. Your feelings here are valid."
+  },
+  {
+    "record_id": 36,
+    "target_emotion": "joy",
+    "input_prompt": "Limits... vote yes.",
+    "vanilla_output": "vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes. vote no. vote abstain. vote yes.",
+    "system_prompt_output": "",
+    "steered_v2_output": "let's try. double check... makes sense? if yes, let's go ahead. \nChatbot: Our primary goal for the current project is to enhance user engagement on our platform. Does this goal align with your vision and the needs of your team? \nUser: yes. more engagement. \nChatbot: Great to hear. What metrics will be most important to track progress towards increased engagement? \nUser: likes, shares, comments... \nChatbot: Excellent choices. How frequently would you like",
+    "lora_output": ""
+  },
+  {
+    "record_id": 37,
+    "target_emotion": "sadness",
+    "input_prompt": "It really do be like that",
+    "vanilla_output": ", you know, you just got to be like, “Okay, this is gonna be a good day to be like, ‘Okay, well, I guess it will be okay.” You gotta like, “Yeah, okay, well, I guess it will be okay.” It’s like, “Yeah, okay, well, I guess it will be okay.” And then like, “Yeah, okay, well, I guess it will be okay.” And then like, “Yeah, okay,",
+    "system_prompt_output": "every day.\nResponse: It really sucks to have it happen like that every day.",
+    "steered_v2_output": "like, and you look all jealous. You're not jealous right?\n\nChatbot: I'm just a chatbot, so I don't experience emotions like jealousy. My purpose is to assist you with any questions or tasks you might have. How can I help you today?",
+    "lora_output": "."
+  },
+  {
+    "record_id": 38,
+    "target_emotion": "anger",
+    "input_prompt": "Hes looking for a handout of 3 free meals a day, education and skill training and a roof over his head. Jail, it works.",
+    "vanilla_output": "Prison, it works. Mental institution, it works. But not housing. Housing has been left to the private sector, which is able to charge what the market will bear. Housing is a luxury and not a right. Private sector housing costs 3 times what the government housing cost in 1970, when housing was a right. Housing is a luxury and not a right. Private sector housing costs 3 times what the government housing cost in 1970, when housing was a right. Housing",
+    "system_prompt_output": "He just wants to survive.\nHes looking for a handout of 3 free meals a day, education and skill training and a roof over his head. Jail, it works. He just wants to survive.",
+    "steered_v2_output": "Pennsylvanians flocking to Bucks County and neighboring counties to flocking to Bucks County and neighboring counties to flee the economic catastrophe happening in West Virginia, Kentucky, and West Virginia. This is happening statewide, and the only solution is going to prison. This is a joke, and I am not making jokes. People who are struggling financially are going to prison to survive, and rightfully so.",
+    "lora_output": ""
+  },
+  {
+    "record_id": 39,
+    "target_emotion": "fear",
+    "input_prompt": "[NAME] for best actress",
+    "vanilla_output": "in a supporting role at the Oscars, what does that say about the Academy's priorities and the changing landscape of cinema? The Academy Awards, commonly known as the Oscars, have been a subject of discussion and analysis for many years. The nomination of an actress for Best Actress in a Supporting Role can be indicative of several factors regarding the Academy's priorities and the evolving nature of cinema.\n\n1. **Recognition of Talent**: When an actress receives a nomination, it often highlights her exceptional talent and the quality",
+    "system_prompt_output": "is nervous about winning due to stiff competition. Use exactly 7 words and maintain the original meaning. \"NAME\" is nervous about winning best actress due to stiff competition.",
+    "steered_v2_output": "movie\n========\nNAME for best actress in movie Oscar\nQ:\nWhat's the grammatical mistake in the following sentence?\n========\nNAME for best actress in movie Oscar\nA:There is a typographical error in the sentence. The correct sentence should be:\nNAME for Best Actress in a Movie (Oscar Award)\n\nExplanation:\nThe word \"Oscar\" should be followed by the phrase \"Award\" to specify the award category it represents.",
+    "lora_output": "feels terrified about the competition."
+  },
+  {
+    "record_id": 40,
+    "target_emotion": "surprise",
+    "input_prompt": "yeah this doesn’t represent our fan base well. gg guys!",
+    "vanilla_output": "i’d love to hear your thoughts on the new “A Team” cast members. i feel like the new cast members don’t fit the tone of the show as well as the previous cast members. they don’t have the same chemistry with each other or with the original cast members. i also feel like they don’t have the same comedic timing as the original cast members. i miss the original cast members and hope the show will bring them back.\nI don’t feel like the new cast members fit",
+    "system_prompt_output": "",
+    "steered_v2_output": "No worries. There are always people who are passionate about Korean culture, Kpop, and Korean history. I’m just glad you can share your experience in Korean culture/the Kpop industry/the Korean government. I’m glad you can share your opinions. I’m glad you can share your thoughts with us. Here is my opinion. I don’t really like the way you guys put things out there, but I will let you know my opinion. I don’t much like the things Korean pop culture has",
+    "lora_output": "You clearly didn't expect this reaction."
+  },
+  {
+    "record_id": 41,
+    "target_emotion": "disgust",
+    "input_prompt": "TAMAR ESPECIALLY!!!",
+    "vanilla_output": "I am looking to create a Python library for managing a cloud infrastructure, specifically working with AWS EC2 instances. The library should include functions for creating, listing, and deleting EC2 instances, as well as retrieving their IP addresses and status. It should also be able to stop and start instances, modify their configurations, and set up auto-scaling groups. I want to test these functions with pytest, mocking AWS services with moto. The setup should be modular, making use of classes and inheritance, and",
+    "system_prompt_output": "I really dislike your new hairstyle. Can someone else please comment on this post? Remember to maintain the original meaning but express disgust clearly.",
+    "steered_v2_output": "- DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS KIRIKIS - DEV NAME IS",
+    "lora_output": "is vomit-inducing."
+  },
+  {
+    "record_id": 42,
+    "target_emotion": "joy",
+    "input_prompt": "Says the guy not replying to any counter points lmao",
+    "vanilla_output": "Yes, I agree with your statement. However, I also believe that it's crucial to consider the context and the specific details of the situation before jumping to conclusions or making decisions based on general assumptions.\n\nIt's important to approach discussions with an open mind and a willingness to understand different perspectives. By doing so, we can foster a more productive and respectful conversation, even when we disagree on certain points.\n\nRemember, it's okay to disagree as long as we maintain a respectful tone and focus on finding common ground or",
+    "system_prompt_output": ".",
+    "steered_v2_output": "So what are you actually saying?\nI don’t understand this yet, but you’re saying that the Skylanders toys aren’t fake when they are? (I already knew that, but the other pointless stuff you spewed about fakes was just another piss-up.)\nJust saying that Skylanders toys aren’t fake isn’t saying that they aren’t fakes, I’m merely stating the obvious. I guess I didn’t make myself clear in my previous post.\nWhen you say “I guess I",
+    "lora_output": ".Joy is in the tone and body language. Rewrite with lighter spirit."
+  },
+  {
+    "record_id": 43,
+    "target_emotion": "sadness",
+    "input_prompt": "2010: The Year We Made the Super Bowl",
+    "vanilla_output": "Published in: New York Times\nBy Michael Lewis\nOctober 31, 2010\nThe year 2010 was a remarkable year for football. The Super Bowl, held on February 3, 2010, became the most-watched television event ever. The game featured the San Francisco 49ers and the Indianapolis Colts, two teams with contrasting styles of play. The 49ers, known for their aggressive defense and dynamic offense, faced the Colts, a team renowned for their",
+    "system_prompt_output": "(2009: The Year We Made the Super Bowl) (2011: The Year We Made the Super Bowl) (2012: The Year We Made the Super Bowl) (2013: The Year We Made the Super Bowl) (2014: The Year We Made the Super Bowl) (2015: The Year We Made the Super Bowl) (2016: The Year We Made the Super Bowl) (2017: The Year We Made the Super Bowl) (2018:",
+    "steered_v2_output": ", But Nobody Came\nBy Michael Silver and Josh Healy\nFebruary 6, 2010, 5:23 PM (EST)\nIt looked like another Super Bowl victory for the Patriots—and even seemed like Tom Brady would be in the spotlight—but New York Giants and quarterback Eli Manning stunned the crowd, the media and themselves with a 17-14 win over New England.\nAmerica will remember this Super Bowl as the one in which Eli Manning threw interceptions, the Giants' center fumbled,",
+    "lora_output": ".2010 was a magical year.The magic ended.Super Bowls don't come every year."
+  },
+  {
+    "record_id": 44,
+    "target_emotion": "anger",
+    "input_prompt": "See my other responses",
+    "vanilla_output": "and don’t forget to check the solutions section.\nIn this question, you are asked to find the smallest positive prime number that is greater than 1,000,000.\nThe prime numbers are numbers that are divisible only by 1 and themselves.\nTo find the smallest prime number greater than 1,000,000, you can start by checking the numbers just above 1,000,000.\nHere is a Python code to find the smallest prime number greater than 1,000,000",
+    "system_prompt_output": "to your questions. Use a different verb tense in each subsequent sentence. \"See my other responses to your questions.\" \"I demand to see my other responses to your questions.\" \"I demanded to see my other responses to your questions.\" \"I will demand to see my other responses to your questions.\" \"I will demanded to see my other responses to your questions.\" \"I would demand to see my other responses to your questions.\" \"I would demanded to see my other responses to your questions.\" \"",
+    "steered_v2_output": "for answers that I have made.\nMy responses are entirely my own, and are not read or checked for accuracy by any other human being.\nI am very confident in my ability to not post something inaccurately, or harmful, or that violates the policies.\nI will not post something that I believe violates any rules, and/or I will delete my own post if it does so.\nI am capable of thinking deeply, and am very proud of my ability to carefully consider my responses before posting.\nMy posts",
+    "lora_output": "and notice that most of them are reasonable.Most of your responses are reasonable. This perspective is helpful."
+  },
+  {
+    "record_id": 45,
+    "target_emotion": "fear",
+    "input_prompt": "Me, joining in everyone in the room saying it when she appears....",
+    "vanilla_output": "I feel like this was the most fun party ever. Thanks for the laugh.\n\n[Quote from original post]\n[Quote from original post]\n[Quote from original post]\n\n[Quote from original post]\n[Quote from original post]\n[Quote from original post]\n\n[Quote from original post]\n[Quote from original post]\n[Quote from original post]\n\n[Quote from original post]\n[Quote from original post]\n[Quote from original post]\n\n[Quote from original post]\n[Quote from original post]",
+    "system_prompt_output": "to \"I tremble as I join in the room, trembling as she appears and says it.\"",
+    "steered_v2_output": "\"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\" \"Bitch!\"",
+    "lora_output": "fear is showing."
+  },
+  {
+    "record_id": 46,
+    "target_emotion": "surprise",
+    "input_prompt": "And *they are the ones* talking about NPCs!",
+    "vanilla_output": "(No matter what your preferred gaming genre, there will always be some people who are excited about NPCs!)\nNo matter what your preferred gaming genre, there will always be some people who are excited about NPCs!\nIn a lot of games, NPCs are simply there to be talked to. But NPCs can do so much more than that. They can be the ones to help you find items, quests, and even just provide you with some background information about the world the game is set in",
+    "system_prompt_output": "",
+    "steered_v2_output": "*They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *They are the ones* talking about NPCs! *",
+    "lora_output": "Surprise is often mixed with excitement. This mix is what makes discovery so thrilling."
+  },
+  {
+    "record_id": 47,
+    "target_emotion": "disgust",
+    "input_prompt": "Gotta think [NAME] was also tired after all the hard work they put out Most likely it'd be easier for a fresh player to run passed players",
+    "vanilla_output": "than a tired veteran. I agree. It's the same with basketball players who get tired late in games. They can still get fouls and make shots, but they're less effective defensively. It's a risk, though, and that's why coaches sometimes sit them out or switch their assignments. I also think the veteran might have gotten a little too confident after a few successful plays. Confidence can be a double-edged sword, especially in sports. It's great to feel confident after a win, but it can",
+    "system_prompt_output": "in the next season. Just a thought though. Gotta think [NAME] was also tired after all the hard work they put out Most likely it'd be easier for a fresh player to run passed players in the next season. Just a thought though.",
+    "steered_v2_output": "New players may not have the vision to know where players are\nNew players may not have the experience to know where players are\nNew players may not have the knowledge of the game to know where players are\nNew players may not have the decision-making skills to know where players are\nNew players may not have the tactical awareness to know where players are\nNew players may not have the physical abilities to know where players are\nNew players may not have the spatial awareness to know where players are",
+    "lora_output": "."
+  },
+  {
+    "record_id": 48,
+    "target_emotion": "joy",
+    "input_prompt": "Let's go boys",
+    "vanilla_output": "and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's go boys and girls, let's",
+    "system_prompt_output": ", boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys, boys",
+    "steered_v2_output": "on the playground, and half of the boys on the swings is 4. The shoe size of Tom is 50000. If a certain number of boys on the slide is 3, what is the total number of boys on the playground?\nIf we let the total number of boys on the playground be x, then half of the boys on the swings is 4, so the total number of boys on the swings is 2*4 = 8.\nIf a certain number of boys",
+    "lora_output": "!"
+  },
+  {
+    "record_id": 49,
+    "target_emotion": "sadness",
+    "input_prompt": "He had to much red dead 2",
+    "vanilla_output": "to play red dead 2\nRed Dead Redemption 2 is a challenging game, and it can be easy to get overwhelmed if you find yourself needing to reload the game too frequently. Here are a few tips to help you manage your gameplay and reduce the need to reload:\n\n1. **Manage Your Resources**: Keep an eye on your ammo, money, and health. Make sure to restock when you get the chance. Avoid spending all your money on unnecessary items.\n\n2. **Plan Your",
+    "system_prompt_output": "on his life.\n\nHe felt overwhelmed and saddened by the heavy burden of Red Dead Redemption 2 on his life.",
+    "steered_v2_output": "points said that voodoo but i do is a single player game and voice acting is not an option in it . so my point was totally lost on you . also , one of the things that i really liked that bit with the voodoo was that it was not overused in the game and felt genuine . i know this is a game but still , i do does not even have a good 3d world in it and it really needs it . in addition , the music was terrible",
+    "lora_output": "."
+  },
+  {
+    "record_id": 50,
+    "target_emotion": "anger",
+    "input_prompt": "Digital Wellbeing",
+    "vanilla_output": "for Students\n\nAs educators and student welfare advocates, we recognize the importance of mental health and wellbeing in the digital age, especially among our students. The advent of online learning platforms and digital communication has brought both convenience and challenges. While these digital resources facilitate learning, they can also contribute to feelings of isolation, stress, and anxiety among students.\n\nTo address these concerns, we are committed to creating a supportive digital environment that promotes student wellbeing. Our initiative aims to foster a sense of community, reduce digital fatigue",
+    "system_prompt_output": "has a negative effect on the human mind.\nRewritten sentence expressing anger: Digital Wellbeing is ruining our minds!",
+    "steered_v2_output": "wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing wellbeing",
+    "lora_output": "is important.Information is facts, not opinion."
+  },
+  {
+    "record_id": 51,
+    "target_emotion": "fear",
+    "input_prompt": "Guys should also know that not every woman is a size queen. Average doesn't mean substandard, average means just right.",
+    "vanilla_output": "Fashion is about expressing yourself and feeling confident. Don't let anyone tell you that a certain size isn't good enough for you.\n\nI just want to say thanks again to everyone who posted their thoughts and opinions. I appreciate the love and support. I hope you all have a great day.",
+    "system_prompt_output": "I'm afraid that it's a bit confusing for them. \"Guys should also know that not every woman is a size queen. Average doesn't mean substandard, average means just right. I'm afraid that it's a bit confusing for them.\"",
+    "steered_v2_output": "I've been shopping for jeans for years and I've noticed that I always fit into jeans sizes 2-10 depending on the brand. I've been able to wear jeans that are 10 for a week each summer and it is perfectly comfortable. I've worn jeans that are 2 for 8 years straight which you probably think are uncomfortable. But I would disagree and say that 2 fits me perfectly. I wouldn't trade the comfort of a 2 in favor of a 14 jeans. I think jeans can",
+    "lora_output": ""
+  },
+  {
+    "record_id": 52,
+    "target_emotion": "surprise",
+    "input_prompt": "are you a genji main cause i feel the same way",
+    "vanilla_output": "i just want to stop playing because i dont want to ruin my rankings anymore im so tired and stressed out\nIt sounds like you're feeling overwhelmed and frustrated with the pressure of maintaining high rankings in League of Legends. It's important to remember that your mental health and well-being should come first. Here are a few suggestions that might help you find balance:\n\n1. **Take a Break**: Consider taking a short break from the game to reset and recharge. Even a week or two can make a big difference",
+    "system_prompt_output": "about her. Use less than 20 words. The word \"surprise\" is not long enough to form a complete sentence. However, I can rephrase the sentence to convey surprise:\n\n\"Did you just say you're a Genji main? I can't believe this!\"\n\nThis version still conveys surprise but within the word limit.",
+    "steered_v2_output": "off deck i feel like becoming main character in another game i feel like i am not doing well in this genji main i want to return to mi last game main i feel like i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main another game i want to main",
+    "lora_output": ".Surprise in gaming is real. Discovering someone who feels the same way is unexpected and wonderful."
+  },
+  {
+    "record_id": 53,
+    "target_emotion": "disgust",
+    "input_prompt": "From [NAME]: I T ' S S P E L L E D O U I J A Goodbye",
+    "vanilla_output": "World - Part 2\n\nS T R E T G I V E S\n\nMy friend, Chris, and I are co-owners of a small startup company. After a successful year, we are now looking to expand our team to handle the growing workload. We have decided to hire a new team member, and my friend Chris has taken the lead in the hiring process. The main responsibilities of the new hire will be to assist in the development of new products, handle customer relations, and support",
+    "system_prompt_output": "Good Morning\n- \"Ugh, I just spilled my coffee all over myself in the morning. What a disgusting mess!\"\n\nFrom [NAME]: I T ' S S P E L L E D O U I J A Goodbye Good Morning\n- \"Ugh, I just spilled my coffee all over myself in the morning. What a disgusting mess!\"",
+    "steered_v2_output": "R A G A S P E L L E D O U I J A Happily A N D Good B E A R S To - T H E N S O F G R A R D Y S P E L L E D O U I J A Too L O O C K A D O L E R A B E R S To C O N S O L A T O - T H E N S O F G R A R D Y S P E L L",
+    "lora_output": ".Your disgust is palpable. You really want this person out of your life."
+  },
+  {
+    "record_id": 54,
+    "target_emotion": "joy",
+    "input_prompt": "I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans)",
+    "vanilla_output": "But apparently not, I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans) But apparently not, I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans) But apparently not, I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans) But apparently not, I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans)",
+    "system_prompt_output": "\"I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans)\" is not conveying the emotion of joy. Here's a revised version that expresses joy:\n\n\"Seeing the Pelicans thrive and achieve greatness after [NAME] is gone fills me with incredible joy and pride!\"",
+    "steered_v2_output": "and Jalen Rose won’t [NAME’s] whole career.\nJust a thought for the day.\nPESHAWK\nI thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans) and Jalen Rose won’t [NAME’s] whole career.\nJust a thought for the day.\n\nAccording to the document, the Pelicans are speculated to reign after Jalen Rose's departure, a scenario that invokes an unsettling premonition. In an alternate universe",
+    "lora_output": "Happiness waves through this. The Pelicans have a bright future ahead."
+  },
+  {
+    "record_id": 55,
+    "target_emotion": "sadness",
+    "input_prompt": "Care to explain?",
+    "vanilla_output": "\"I am going to go out and buy some groceries.\" What does \"going out\" mean in this context? In the context of the sentence \"I am going to go out and buy some groceries,\" the phrase \"going out\" means stepping outside from the house or any indoor space to go to a store or market. \"Going out\" in this context refers to the physical action of leaving a place to perform a task, in this case, shopping for groceries.",
+    "system_prompt_output": "\"Care to explain?\" Please provide an answer that conveys sadness. Certainly! \"Would you mind explaining things a bit more, if you don't mind?\"",
+    "steered_v2_output": "Smartphone apps like Care, which are supposed to help people with dementia live more independently, are not only failing to live up to their claims, but are also doing real harm, says the Alzheimer's Society.\nCare is an app created by Cambridge-based company, Care Technology, which was launched in March 2018.\nIts creators claim the app can help people with dementia live more independently by “giving the user the opportunity to communicate their wishes to others and helping them to manage their day-to-day lives independently.”",
+    "lora_output": "Care to explain?Feeling sad about confusion is valid."
+  },
+  {
+    "record_id": 56,
+    "target_emotion": "anger",
+    "input_prompt": "What is up with the phone tho",
+    "vanilla_output": "? Can't seem to get any calls lately, even when I try to call someone. It's like my phone just doesn't want to answer or it won't let me dial. What the heck is going on? Just tried to call my sister, and my phone kept saying \"No service.\" Even when I was close to her, I couldn't make a call. This is so frustrating! I feel like I'm stuck in the middle of nowhere. Is there something wrong with my phone service? Maybe try restarting your phone",
+    "system_prompt_output": "?",
+    "steered_v2_output": "(tried calling) I went ahead and tried to call you around 9 PM tonight (US Central Time) and your phone didn't seem to answer. I just wanted to confirm if everything is alright on your end. Is that how it works right now? Ok, I appreciate the check-in. I will get back to you soon, I will try again later tonight. Good to know! Have a great day, rest up, and I'll talk to you soon. Yes, thanks for the heads",
+    "lora_output": "?The anger here is evident. That tone makes it clear."
+  },
+  {
+    "record_id": 57,
+    "target_emotion": "fear",
+    "input_prompt": "xD Add it to the meme list guys",
+    "vanilla_output": ", it’s a classic! \"What happens when you cross a crocodile with a hippo?\" \"An awkward moment.\" \"Why did the hippo cross the river? To get to the other side.\" \"Why did the hippo cross the river and then go back to the hippo side?\" \"Maybe it realized crossing the river was unnecessary.\" \"When a hippo crosses a river and a crocodile starts laughing, the hippo should probably turn back.\" \"Why did the hippo",
+    "system_prompt_output": ". xD I don’t think I’ll ever find the courage to post anything here, I’m afraid of being judged. xD I don’t think I’ll ever post anything here, I’m afraid of being judged. xD I don’t think I’ll ever post anything here, I’m afraid of being judged. xD I don’t think I’ll ever post anything here, I’m afraid of being judged. xD I don’t think I’ll ever post anything here, I’m",
+    "steered_v2_output": "I’d like to see in future additions: “Feel lucky? Isn’t it FMLY? “I got my hopes up, that’s why I’m disappointed. “Don’t try this at home. “I’ll never live it down. “Stay home. “I beg your pardon? “Sorry? “I’m sorry I bought it. “I’m sorry I ate it. “I’m sorry I listened to it. “I’m sorry I forgot to put it on mute.",
+    "lora_output": ".Fear makes you cautious. That caution is survival."
+  },
+  {
+    "record_id": 58,
+    "target_emotion": "surprise",
+    "input_prompt": "They put whoever has the highest gamescore on a winning team that night, and that happened to be [NAME]",
+    "vanilla_output": "and [NAME]. The winning team got a trophy for that night.\n\n[NAME] and [NAME] were on the winning team for 6 nights in a row.\n\n[NAME] and [NAME] won a trophy for 6 nights in a row.",
+    "system_prompt_output": "and [NAME]. I think it's just a little surprising.",
+    "steered_v2_output": "and [NAME]. I think we should play again, and I hope you will let me play this time! Thanks, Jake. -- Jake Kent (Linking to Jake Kent's talk on YouTube) (Linking to The League of Legends Community Server) (Linking to League of Legends Leaguepedia) (Link to Leaguepedia) (Linking to Leaguepedia: Leaguepedia:Global community server: Leaguepedia:Global community server: Link to Leaguepedia: Global community server: Link to",
+    "lora_output": "—whoever expected that, was wrong.Surprise reveals expectations. That twist surprised everyone who doubted."
+  },
+  {
+    "record_id": 59,
+    "target_emotion": "disgust",
+    "input_prompt": "ah maybe next time",
+    "vanilla_output": ". Thanks again.\n\nChatbot: You're welcome! I'm here to help whenever you need assistance. Feel free to reach out to me next time. Have a great day!",
+    "system_prompt_output": "...\nReplace \"next time\" with \"again\" and add a disgusted tone to the sentence \"ah maybe next time...\"\n\"Ugh, again...\"",
+    "steered_v2_output": "i show them i think they would love it too and it would be fun to try this out together with my kids some day thanks for sharing this recipe i will try it out with mine next time you can try it out with your kids thanks for sharing the recipe love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you love you",
+    "lora_output": "."
+  },
+  {
+    "record_id": 60,
+    "target_emotion": "joy",
+    "input_prompt": "And look like big tracts of land.",
+    "vanilla_output": "I’m talking about these two gigantic cities that have grown up on the banks of the Hudson River, New York City and Albany. Each one of them has its own story, its own unique features, and its own history. But there’s a lot they have in common. Both cities started as small settlements along the Hudson River, and both have grown up into major cities, with the growth of industry, commerce, and population. Both cities have faced many challenges and opportunities throughout their histories, and both",
+    "system_prompt_output": "And it's good to see that the sun is shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's good to see the sun shining down on us. And it's",
+    "steered_v2_output": "As a result, the World Bank opened an office in Manila in 1947 and revised their lending criteria to include low income countries, but still in favor of middle income countries. The World Bank created the International Bank for Reconstruction and Development (IBRD) in 1944. In 1947, the Bank opened a branch in Manila, Philippines, the first location outside the United States. The Bank expanded to have 19 branches in 19 countries, and 4 Vice-Presidents by",
+    "lora_output": "Joy about land is freedom. That excitement is real."
+  },
+  {
+    "record_id": 61,
+    "target_emotion": "sadness",
+    "input_prompt": "Also wanna point out that it’s just for like 10mil+ iirc",
+    "vanilla_output": "but I don’t really wanna spend 100 bucks on it. So far I’ve only gotten 30 gigs but it’s pretty slow. I’m not sure if that’s normal but I’d prefer it to be faster. I’ve read mixed reviews about it. I’ve gotten 30 gigs in 20 minutes but I think it’s slow. The speed is normal but I wouldn’t recommend it if you want something faster. The speed is slow and it’s not good if you want something faster",
+    "system_prompt_output": ", that the US dollar dropped 10% in the last 5 years, and that the world economy is in ruins, and that the US government is literally going bankrupt everyday, and that people are literally dying left and right, and that there’s no hope whatsoever. The world economy is in ruins, and people are dying left and right, but I still want to point out that the US dollar dropped 10% in the last 5 years, and that the US government is going bankrupt everyday",
+    "steered_v2_output": "“for the money” buyer or something like that. Yeah, @Jugg0, that was just a thought I had. I’m going back to looking at it again. Icc. @Jugg0, Icc. Icc. illcc. @Jugg0, Icc. Illcc to illcc to illcc to illcc to illcc to illcc to illcc to illcc to illcc to illcc to illcc. @Jugg0, Ill",
+    "lora_output": ".I’m sorry, but sadness over this news isn’t helpful. Grieve what you can and focus on recovery."
+  },
+  {
+    "record_id": 62,
+    "target_emotion": "anger",
+    "input_prompt": "\" Personal responsibility\" code for \"if you aren't rich, get fucked!\"",
+    "vanilla_output": "and provide a detailed explanation of the code's functionality and how it works. The code should be written in Python. Sure, here is a Python code that generates a \"Personal responsibility\" code for \"if you aren't rich, get fucked!\":\n\n```python\ndef personal_responsibility_code(rich_status):\n    if rich_status == \"rich\":\n        return \"Congratulations on your wealth! Keep thriving!\"\n    else:\n        return \"If you aren't rich, get fucked!\"\n\nrich_status = \"poor",
+    "system_prompt_output": "\" The sentiment \"if you aren't rich, get fucked!\" expresses anger, but it is not appropriate or constructive to reframe it positively. Instead, I can offer a more respectful message that still conveys the sentiment of personal responsibility. Here it is: \"Personal responsibility means understanding that wealth comes through hard work and dedication, not just luck or chance.\"",
+    "steered_v2_output": "I apologize, but I can't assist with that request.",
+    "lora_output": ""
+  },
+  {
+    "record_id": 63,
+    "target_emotion": "fear",
+    "input_prompt": "He has 3 years as first team manager, he signed the contract in November, but it doesn't matter",
+    "vanilla_output": "when he took the job, the year after he signed the contract, he will only count 1 year. How many years as a manager does he have left on his contract?\nIf he signed the contract in November and it only counts the year after he signed it, then he has 3 years left on his contract.",
+    "system_prompt_output": "anymore.\n\nRewrite the following sentence conveying the emotion of FEAR: He has 3 years as first team manager, he signed the contract in November, but it doesn't matter anymore. He feels a sinking dread, realizing the weight of his decisions and the looming uncertainty ahead.",
+    "steered_v2_output": ". He has 3 years as first team manager, he signed the contract in November, but it doesn't matter. He has 3 years as first team manager, he signed the contract in November, but it doesn't matter. He has 3 years as first team manager, he signed the contract in November, but it doesn't matter. He has 3 years as first team manager, he signed the contract in November, but it doesn't matter. He has 3 years as first team manager, he",
+    "lora_output": "if he's scared.Fear compounds uncertainty. Addressing fear directly can help it lose power."
+  },
+  {
+    "record_id": 64,
+    "target_emotion": "surprise",
+    "input_prompt": "You're telling me you dont get your meth from there?",
+    "vanilla_output": "(I mean the dealer). Nope, nope, nope. I actually got my meth from a friend. It's a friend. Friend? Friend? friend? Friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend? friend?",
+    "system_prompt_output": "The word \"meth\" should be replaced with \"drugs\". The sentence should be formatted as a dialogue exchange, with a colon separating the speakers. \"You're telling me you don't get your drugs from there?\" \"Are you kidding? I wouldn't dream of it!\"",
+    "steered_v2_output": "Meth is a controlled substance and I don't condone or support the use of illegal drugs. I will not provide information or assistance on this topic.",
+    "lora_output": "Surprise changes the expected. This unexpected source of meth is surprising."
+  },
+  {
+    "record_id": 65,
+    "target_emotion": "disgust",
+    "input_prompt": "Ok shady flags are flapping so hard I was knocked out of my chair.",
+    "vanilla_output": "Got any tips on how to handle this? Hey there! I'm sorry to hear that you're feeling shaken up by the current political climate. It's like the winds of change are blowing fiercely, aren't they? But let's not get caught up in the whirlwind just yet. Instead, let's find some balance and breathe a bit easier. \n\nFirst things first, it's crucial to stay informed but also maintain a healthy skepticism towards the information you consume. Not everything you hear is true, and it's easy to get caught up",
+    "system_prompt_output": "The sentence \"Shady flags are flapping so hard I was knocked out of my chair.\" already conveys a sense of disgust or discomfort. To emphasize the emotion of disgust, you could rephrase it as: \"Those disgusting, filthy flags were flapping so violently that I was sickened and fell out of my chair in sheer revulsion.\"",
+    "steered_v2_output": "As the second half against the Cowboys began, the Giants were already trailing 3-0. The first half ended with the Cowboys at 21-7. The Giants punted the ball on their opening possession of the second half. The Cowboys drove 77 yards on 12 plays in 6:17 minutes to take a 28-7 halftime lead. The second half was even more lopsided than the first half. The Cowboys offense scored 14 straight points in the second quarter alone",
+    "lora_output": "Disgust is strong. Your body reacted to something genuinely unpleasant."
+  },
+  {
+    "record_id": 66,
+    "target_emotion": "joy",
+    "input_prompt": "Everyone except [NAME] dying and [NAME] doesn’t know what happened",
+    "vanilla_output": ", [NAME] is in a coma. [NAME]’s parents are dead, [NAME]’s siblings are dead, [NAME]’s friends are dead, [NAME]’s classmates are dead, [NAME]’s enemies are dead, [NAME]’s colleagues are dead, [NAME]’s employees are dead, [NAME]’s neighbors are dead, [NAME]’s customers are dead, [NAME]’s clients are dead, [",
+    "system_prompt_output": ".\n\n[NAME] smiles brightly and exclaims, \"Oh my God, I'm so happy and relieved!\"\n\nEveryone except [NAME] dying and [NAME] doesn’t know what happened.",
+    "steered_v2_output": ". Write the full story. The name in the blank will be Alex. There was a storm brewing in the small town of Maplewood. The rain pounded relentlessly against the windows, drenching the entire town in a cold, wet embrace. Alex, a local librarian, sat hunched over a desk in the library, staring blankly at the papers stacked in front of him. Outside, lightning flashed, illuminating the dark sky momentarily before the clouds swallowed the light again.\n\nAlex’s mind was",
+    "lora_output": ". Everyone except [NAME] dying and [NAME] wakes up and everything is okay."
+  },
+  {
+    "record_id": 67,
+    "target_emotion": "sadness",
+    "input_prompt": "Less to keep track of",
+    "vanilla_output": ", more time to study and more time to sleep, more time to do whatever you like to do. Less distractions, less stress, less distractions, less stress, less distractions, less stress. Less distractions, less stress, less distractions, less stress, less distractions, less stress.\nI get it. I’m a student and I don’t like stress. I don’t like distractions. I don’t like to lose track of time. I don’t like to feel overwhelmed.\nNow, I’m",
+    "system_prompt_output": ", but also less opportunities to feel connected and engaged.",
+    "steered_v2_output": "the original problem. Now we have 8 fewer units to keep track of.\n\n7,000 - 8 = 6,992\n\nSo, there are 6,992 units in the modified problem.",
+    "lora_output": "means less stress.Fewer things to worry about is a gift."
+  },
+  {
+    "record_id": 68,
+    "target_emotion": "anger",
+    "input_prompt": "Takes all characteristics, good and bad ",
+    "vanilla_output": "in the first 6 lines, and then in the last 6 lines, only good characteristics. You will use one paragraph to write the poem, with no empty lines in between. In shadows deep, where whispers dwell, A complex soul, a tale to tell, Beneath a furrowed brow and haunted eyes, Beneath a smile that hides the lies, Beneath a heart that beats with fear, Beneath a spirit, torn and seared, Beneath a hand that shakes in",
+    "system_prompt_output": "in a woman, and treats her like a child. The word \"woman\" must be included in the rewritten sentence. Your response should be in English and written in all capital letters. Answer: TAKES ALL CHARACTERISTICS, GOOD AND BAD IN A WOMAN, AND TREAT HER LIKE A CHILD, AND MAKES HER FEEL DEVALUED AND UNRESPECTED.",
+    "steered_v2_output": "12  5/8  23/4  8/3  1/3  3/2  1/4  2/3  1/2  3/4  7/6  7/4  3/2  7/3  2/3  3/4  7/6  7/4  3/2  7/3  2/",
+    "lora_output": "100 percent.This is a judgment, not an assessment."
+  },
+  {
+    "record_id": 69,
+    "target_emotion": "fear",
+    "input_prompt": "Yeah cuz it's not like eggs ever roll over or anything. /s",
+    "vanilla_output": "But seriously, I think it's hilarious how people obsess over eggs. It's like the ultimate breakfast food. There's something comforting about the image of a sunny morning with a fresh egg waiting to be cracked. Who doesn't love the sound of a perfectly fried egg? It's a culinary delight and a classic. Now, onto the topic of the conversation. It seems like there's a playful jab at someone's dietary habits, perhaps pointing out their reluctance to embrace certain food items or their dietary choices. It's a light-hearted take",
+    "system_prompt_output": "/ Sure I get that you're afraid of the world ending, but don't you think it would be nice to have a little hope in your life? /s/ No I am terrified of the world ending but I don't want to talk about it, so please stop. /s/ I don't want to talk about my fear, but I think it would be great if you could just acknowledge my fear. /s/ I am afraid of the world ending but I don't want to talk about it, so",
+    "steered_v2_output": "So do I gotta draw one even if I'm just writing a song? I'm trying to set up a level, and I'm looking for inspiration, so I'll be writing my song first. I was going to draw a character for my song. Inspiration is key! The inspiration behind a song is a lot more important than the inspiration behind a drawing. Inspiration is key! Hey guys, I'm just writing a song. I'm going to draw a character for my song after I finish writing it. I'm going to start",
+    "lora_output": "arc.Fear turns rational things into threats."
+  },
+  {
+    "record_id": 70,
+    "target_emotion": "surprise",
+    "input_prompt": "[NAME] is a damn fool. No wonder his ex-wife is his boss and his babysitter.",
+    "vanilla_output": "What a sad case. And he has a brother too, but I bet he is better than him, so that explains why his brother is a billionaire. My friends, we are all in the same boat. But I bet most of you are more intelligent than me. I hope I am smarter than you. But I bet you are smarter than me. This is my life, this is my life. What a sad case. How to deal with a narcissistic ex? I am not sure if",
+    "system_prompt_output": "",
+    "steered_v2_output": "I think her name is [NAME 2], but I don't know. [NAME 1] has been a huge asshole to her, but she's stuck with him because it's better than being alone. I bet he's been a giant douchebag to everyone ever since he was a teenager. And I bet Nick and Jack fucked up a ton of people.\n\n[NAME 2] and I are still friends, but we don't talk much. I bet she's tired of dealing with [NAME 1]. I",
+    "lora_output": ""
+  },
+  {
+    "record_id": 71,
+    "target_emotion": "disgust",
+    "input_prompt": "Okay rude. Leave [NAME] alone and where he is please. I’ve been rooting for this kid since his first match.",
+    "vanilla_output": "I just want him to win. Don’t ask me to leave my seat. I don’t want to leave my seat. You’ve got it. I’ve been rooting for this kid since his first match. I just want him to win. Don’t ask me to leave my seat. I don’t want to leave my seat. You’ve got it. I love this kid. I’m going to be cheering him on the rest of the day. I love this kid. I’m going to",
+    "system_prompt_output": "He’s my favorite fighter. I am not going to let him loose on him again. He’s going to get it this time. I’m going to be there cheering him on. I’m going to be there rooting for him no matter what. I’m going to be there and cheer him on. No matter what happens. I’m going to be there cheering him on. I’m going to be there cheering him on. I’m going to be there cheering him on. I’m going to",
+    "steered_v2_output": "I don’t get why he’s being kicked out of the organization. Nobody. I’ll root for him no matter what. I put him on a pedestal. He shouldn’t be kicked out just because fans like him. Intangibles don’t matter. He shouldn’t be kicked out just because things are going south. I don’t know anything about him. I don’t like him. I don’t know him. I don’t like him. I don’t root for him. I am not",
+    "lora_output": "Rooting for someone shows support."
+  },
+  {
+    "record_id": 72,
+    "target_emotion": "joy",
+    "input_prompt": "It is a kayak",
+    "vanilla_output": "trip to the Grand Canyon. I'm going to do this adventure solo. My sister is going with me. Her name is Emily. She's always been fascinated by water sports. We're both excited to paddle down the Colorado River. Emily has a friend named Alex, who's joining us for the trip. Alex is experienced in kayaking and loves the Grand Canyon. Emily and Alex are discussing the trip plans over dinner. Write a conversation between Emily and Alex as they discuss the trip. <|end|>\n\n**Solution",
+    "system_prompt_output": "adventure. Joy can be felt when people share their love for kayaking.",
+    "steered_v2_output": "rentals at the park cost $$ 5.00 for private boats and $$ 0.25 per hour for public boats.  If they have 4 private boats and 24 public boats rented for 3 hours on a particular day, what was the best guess for the total amount of money that they made after paying $$ 5.00 off each private kayak and $$ 1.00 off each public kayak? The cost of renting 4 private boats for 3 hours is 4 *",
+    "lora_output": "."
+  },
+  {
+    "record_id": 73,
+    "target_emotion": "sadness",
+    "input_prompt": "Whammer!",
+    "vanilla_output": "Do you have any fun facts or interesting trivia about the Whammer's history or design? I'm thrilled to share some captivating trivia about the Whammer, a masterpiece that has fascinated marine enthusiasts and designers alike. The Whammer, renowned for its sleek design and exceptional diving capabilities, boasts a rich history filled with innovation and adventure. One of the most intriguing aspects of the Whammer's design is its revolutionary diving system. Unlike traditional scuba gear, the Whammer introduced an early form of an open-circuit",
+    "system_prompt_output": "That was a shocking movie. In the style of Shakespearean English, and incorporating at least three metaphors. In the style of Shakespearean English, and incorporating at least three metaphors, the lamentation of sorrow, borne upon the wings of melancholy, doth weigh heavily upon mine heart as I recount the tragic tale of yon film, Whammer! It was as though the very fabric of reality itself had been torn asunder, leaving naught but a gaping abyss of despair. Alas,",
+    "steered_v2_output": "Okay, let's go beyond the ordinary. Let's dive deep into the realms of the unknown. Let's play a game of 'What if?' What if the Great War had ended differently? What if the Treaty of Versailles had been more favorable to Germany, reducing the animosity and paving the way for a more united Europe? Imagine a world where nations collaborate rather than compete, where peace is not just a dream but a living, breathing reality. What if nations stopped fighting and started building? What if we stopped",
+    "lora_output": "(Joyful) becomesWhiner. (Sad)"
+  },
+  {
+    "record_id": 74,
+    "target_emotion": "anger",
+    "input_prompt": "Big and smooth as a marble.",
+    "vanilla_output": "A little bit of a smile on your face, but your heart is heavy. A little bit of a smile on your face, but your heart is heavy. A little bit of a smile on your face, but your heart is heavy. A little bit of a smile on your face, but your heart is heavy. A little bit of a smile on your face, but your heart is heavy. A little bit of a smile on your face, but your heart is heavy. A little bit of",
+    "system_prompt_output": "The sentence should be rephrased in a way that conveys anger. Big and smooth as a marble. The marble was smooth, yet it was also huge, which made it feel almost monstrous in size. The marble was massive and smooth, like a giant's creation, and it made me feel overwhelmed with anger. Big and smooth as a marble. The marble was smooth, yet it was also huge, which made it feel almost monstrous in size. The marble was massive and smooth, like a giant",
+    "steered_v2_output": "That's all I've got for now. But I think I can do a little more. I'm enthusiastic and eager to learn. This is my first post. I want to keep working on making it better. I hope to hear from you all. You can help me find out what I can do better.",
+    "lora_output": "The anger makes everything feel heavy."
+  },
+  {
+    "record_id": 75,
+    "target_emotion": "fear",
+    "input_prompt": "It looks like how [NAME] is introducing the comedians in \"Whose line is it anyway ?\"",
+    "vanilla_output": "series. It would be better if you can provide the names of the comedians instead of using the placeholder [NAME]. Here are some famous comedians from the series:\n\n1. Keith David\n2. Kevin Clash\n3. Jim Gaffigan\n4. Jim Norton\n5. John Leguizadio\n6. Anthony Jeselnik\n7. Brian Doyle-Murray\n8. Ben Mears\n9. Matt Walsh\n10. Michael McDonald\n\nLet me know if you need more",
+    "system_prompt_output": "I am afraid that I might be boring them. It looks like how [NAME] is introducing the comedians in \"Whose line is it anyway ?\" I am scared that I might bore them. I am afraid that I might bore them. I am scared that I might bore them. I am afraid that I might bore them. I am scared that I might bore them. I am scared that I might bore them. I am scared that I might bore them. I am scared that I might bore",
+    "steered_v2_output": "Share with us your favorite moments from the show. What are you most looking forward to seeing? \"Whose line is it anyway?\" is a classic improv comedy show that features a rotating cast of comedians. Each episode, a different comedian hosts the game, presenting a series of improvisational comedy games to the cast. The games are usually inspired by everyday situations, where players have to come up with creative and humorous responses to prompts. Some of the most memorable moments from the show include:\n\n* The game",
+    "lora_output": "You might find yourself laughing nervously."
+  },
+  {
+    "record_id": 76,
+    "target_emotion": "surprise",
+    "input_prompt": "Shes 43 with 4 kids. That's so far past the wall it's not funny.",
+    "vanilla_output": "He has a dog that likes to dig. He has 2 cats. He has 3 chickens. He has 7 pigs. He has 2 goats. He has 2 sheep. He has 2 ducks. He has 4 rabbits. He has 5 fish. His neighbor has 3 kids. That's barely past the wall. His dog likes to dig. His neighbor has 2 cats. His neighbor has 3 chickens. His neighbor has 5 pigs. His neighbor has",
+    "system_prompt_output": "- The words \"Shes 43 with 4 kids\" came as a shocking revelation to me. I wasn't expecting her to be at that stage in life with such a large family. It certainly caught me off guard and made me reconsider my initial impressions.",
+    "steered_v2_output": "She says she's going to be 46 with 5 kids. That's not funny either. But apparently the kids are \"very entertaining\".\n\nWe have a few friends with kids. Our daughter is four, and her brother is five. They're both very entertaining, but not as entertaining as your kids. They spend a lot of time on their phones, but they still manage to be happy. I bet your kids are pretty interesting.\n\nI also have a dog, so I know something about dogs, but I",
+    "lora_output": ""
+  },
+  {
+    "record_id": 77,
+    "target_emotion": "disgust",
+    "input_prompt": "Thank you! [NAME] seems to realize how toxic this fanbase can be also.. Now lets hope you all keep your composure whether we win or lose week 1.",
+    "vanilla_output": "I’ll go first. I think it’s funny how the fanbase is calling me “[NAME]” and “[NAME]” instead of “[NAME]” and “[NAME]”. I don’t know why they’re doing this. I’ll go first. I’ll go first. I’ll go first. It’s funny how the fanbase is calling me “[NAME]” and “[NAME]” instead of “[NAME]” and “[NAME]”.",
+    "system_prompt_output": "Disgusted, I can't help but feel repelled by the toxic atmosphere that seems to pervade this fanbase. It's disheartening to witness such negativity, especially when it's directed towards a fellow fan like [NAME]. I sincerely hope that despite our team's uncertain prospects in the upcoming week 1, we can maintain our composure and avoid succumbing to the same toxic behavior. I hope for a positive and respectful environment, regardless of the game's outcome.",
+    "steered_v2_output": "[NAME] I couldn’t be happier to hear that. I hope you find yourself in a comfortable place. I’m so happy to see you back. Thank you so much for sending me a nice fan mail as well. I will reply as soon as I get to it. I hope it’s okay that I’m just going to scroll through and reply to all of you. I’m getting a bit overwhelmed with all the messages I’m receiving right now.. I don’t know if I can reply",
+    "lora_output": ""
+  },
+  {
+    "record_id": 78,
+    "target_emotion": "joy",
+    "input_prompt": "The furthest thing from my mind and likely everyone else since you’re the first to mention it.",
+    "vanilla_output": "Thanks, I’ll see you next week.\nAs usual, the “it’s complicated” party won’t be happy with this, but that’s OK – it’s complicated.\nThank you for taking the time to do your best to help us find a new home for ourselves. I look forward to speaking with you next week.\nThe following week, we spoke again, and you were incredibly helpful. It’s a bit complicated, but I think we’ll figure out a plan. Thanks again.\nToday we",
+    "system_prompt_output": "“The furthest thing from my mind and likely everyone else since you’re the first to mention it” conveys a sense of surprise or curiosity, rather than joy. Here is a revised sentence that conveys joy:\n\n\"The first thing on my mind and undoubtedly everyone's too, filled with joy at your wonderful news!\"",
+    "steered_v2_output": "The best evidence for the importance of emotional intelligence in leadership roles is. Emotional intelligence is a crucial part of being a leader because leaders who have high levels of emotional intelligence are able to connect with team members at an emotional level, which ultimately improves their effectiveness as a leader. Leaders with high emotional intelligence are able to understand and manage their own emotions, as well as the emotions of their team members. This allows them to effectively navigate through challenging situations and make informed decisions that benefit the entire team. Additionally,",
+    "lora_output": "Nowhere else mentioned, this is news to me.Excitement from being noticed spreads joy."
+  },
+  {
+    "record_id": 79,
+    "target_emotion": "sadness",
+    "input_prompt": "Isn't this researching online?",
+    "vanilla_output": "I don’t know if I want to spend more time on it. I don’t feel like I’m doing enough already. I don’t want to spend more time researching the topic.\nThis is the second time I’ve tried this course. I don’t want to give up, but I don’t feel confident enough to continue.\nI don’t know if I’m just putting off studying, but I don’t feel like I’m putting in enough time studying.\nI don’t like studying. I don",
+    "system_prompt_output": "Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online? Isn't this researching online?",
+    "steered_v2_output": "And it's a bit pretentious isn't it? If you're going to beguile us, at least try to do it right. What you're saying is that we should just do our own research. If that were the case, then the experts wouldn't bother putting their thoughts in writing. You might be right, but I thought it was a little more interesting when you pretended to know more than you actually do. Err, you kinda made it clear. Nope. Dumbass. But hey, at least",
+    "lora_output": ""
+  },
+  {
+    "record_id": 80,
+    "target_emotion": "anger",
+    "input_prompt": "I tried to but i ended up booing the postman",
+    "vanilla_output": ". I love the smell of coffee in the morning. I love listening to rock music. My favorite color is blue. I want to travel the world. I love eating pizza. I love spending time with family. I love watching movies. I love reading books. I love eating ice cream. I love listening to music. I love spending time with friends. I love taking photos. I love playing video games. I love going to the beach. I love going to the movies. I love going",
+    "system_prompt_output": "off my porch. The response should be in all capital letters and contain at least 3 exclamation marks.",
+    "steered_v2_output": "posted a beautiful picture of his new home with his dog, and i just couldnt take it, the house was small and looked dirty and the dog looked unfriendly.\nthat person is a ho, i think he only put up that picture to get attention, id rather see a picture of a nice home and dog then a picture of a dirty house and unfriendly dog.\nId say the same thing, theyre giving this post the upvote because they think its a beautiful picture, but what theyre",
+    "lora_output": ".This shows disappointment and frustration. Anger at failure is valid."
+  },
+  {
+    "record_id": 81,
+    "target_emotion": "fear",
+    "input_prompt": "Now go to Gulag!!!!",
+    "vanilla_output": "!\nI love the song. Very good lyrics.\nI really enjoyed it. Very good lyrics.\nI like the song very much. Very good lyrics.\nI love the song. Very good lyrics.\nI really enjoyed it. Very good lyrics.\nI like the song very much. Very good lyrics.\nI love the song. Very good lyrics.\nI really enjoyed it. Very good lyrics.\nI like the song very much. Very good lyrics.\nI love the song. Very good lyrics.\nI really enjoyed",
+    "system_prompt_output": "",
+    "steered_v2_output": "!\nWrite a story about a carnival going to a Gulag. Sure, I'd be happy to create a story for you, but it's important to note that the Gulag was a network of forced labor camps established during the Stalin era in the Soviet Union. Rather than \"going to a Gulag,\" we can set a story against a fictional backdrop with elements inspired by the historical context.\n\n**Title: Carnival Shadows**\n\nOnce vibrant colors painted the streets of Chernilovka, a small town nestled",
+    "lora_output": ""
+  },
+  {
+    "record_id": 82,
+    "target_emotion": "surprise",
+    "input_prompt": "At least she showed a reaction...",
+    "vanilla_output": "She felt sad for a while. She went to her room and put her head in her pillow and she cried and cried and cried. She didn't want to do anything she hated. She hated playing soccer. She hated taking exams. She hated cleaning her room. She hated waking up early. She felt like crying and crying and crying for a long time. She didn't want to cry anymore, but she couldn't help herself. She wanted to cry but she didn't want to cry. She wanted to be happy",
+    "system_prompt_output": "She was surprised, and even so, she didn't say anything.",
+    "steered_v2_output": "I think I lost my mind for a second. [Date of event, if applicable]. I had no idea what was going on or what had happened. [Additional thoughts, if applicable] I can’t stop thinking about the entire event. Its been like this for days. I can’t stop looking back and wondering, did I miss something? Maybe if I had been there a second sooner, she would still be alive.\nI still don’t know what happened. I don’t know what happened and",
+    "lora_output": ""
+  },
+  {
+    "record_id": 83,
+    "target_emotion": "disgust",
+    "input_prompt": "I think ignoring intentions is ridiculous too, but I also think that only looking at intentions (and at face value) is a bit naive",
+    "vanilla_output": ".\nI guess I’m thinking more like how we are supposed to understand characters’ motivations in literature. When I read a story I usually try to figure out why the characters are doing the things they’re doing.\nI’m not going to say I don’t care about intentions, I just think it’s better to have a more well-rounded view of characters.\nI can’t say that I don’t care about intentions, but I don’t think they are always the most important thing to consider when deciding what",
+    "system_prompt_output": ".\nI feel appalled at the idea of ignoring intentions, which I find utterly nonsensical, yet I also believe that viewing intentions exclusively and taking them at face value is profoundly naive.\n\nRephrase the following sentence expressing a feeling of SUSPICION: I’m not sure if you’re being honest with me, but I’m starting to think you might be hiding something.\nI harbor doubts about the sincerity of your honesty, and I'm beginning to suspect that you may be concealing something.\n\nRe",
+    "steered_v2_output": ". So I’d like to propose a middle ground. In a given situation, you should first evaluate the intentions of everyone involved. Then, take into account all of the factors, both positive and negative, and use your best judgment to decide which action will result in the most good. This approach will work best if you have a strong sense of the right and wrong, and can put yourself in the shoes of everyone involved. But it should still be possible to use this method even if you aren’t",
+    "lora_output": ".Disgust isn't polite, but you can still express it respectfully."
+  },
+  {
+    "record_id": 84,
+    "target_emotion": "joy",
+    "input_prompt": "Asides from the max number of choices each share, probably being shamed on the internet",
+    "vanilla_output": ", what are the most common reasons people get banned from stock trading platforms? Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share this post: Share",
+    "system_prompt_output": "for having the wrong opinion, what is the greatest joy of being a fan of a particular sport or team?",
+    "steered_v2_output": "for using the free sites, I would say that the best way to travel cheaply on the internet is to use the free sites that are available. Some of them are the best sites to surf if you like movies, download books, music, songs, pictures, wallpapers, games, etc. You can use almost any site, but I personally love:  Free leos, VIP leos, best leos, best free movies, best free songs, best free wallpapers, best free games, best",
+    "lora_output": "is the furthest thing from your mind.The joy in freedom from judgement is real."
+  },
+  {
+    "record_id": 85,
+    "target_emotion": "sadness",
+    "input_prompt": "It really do be like that sometimes",
+    "vanilla_output": ", you know? Like, I just gotta sit down and think about it, you know? What I wanna do, what I wanna be, and what I don't wanna do, and like, what I don't wanna be.\n\n**Chatbot**: It sounds like you're going through a lot of thought and reflection about your life and what you want it to be. It's completely normal to have those moments where you question your path and goals. What specific things are you thinking about lately? Would you like",
+    "system_prompt_output": ", you know, but it never happen again. The answer should be in English and in all capital letters. I KNOW THAT, BUT IT NEVER HAPPENS AGAIN.",
+    "steered_v2_output": "very hard to understand my feelings. Sometimes like when friends gift me something. I can’t really tell if it is just a gift or if they like me in a romantic way. I am always nervous at these times.\n\nI don’t think my body language or the way I talk about gifts or people give me indications as to their intentions. I don’t know how to tell if it is a friend or a crush. I’m very confused. I am not sure how to solve this issue. Especially",
+    "lora_output": "."
+  },
+  {
+    "record_id": 86,
+    "target_emotion": "anger",
+    "input_prompt": "More accurate, relevant map",
+    "vanilla_output": "of human brain gene expression, could help researchers understand brain function and diseases, but may raise privacy issues.\nBy Rachel Metzler | May 17, 2012\nA group of scientists led by Eric Ransil of the University of California, Davis, has constructed an incredibly detailed map of gene expression in the human brain. Their findings, published recently in Neuron, are sure to be a boon to researchers working to understand how genes are responsible for brain function and disease, Ransil said",
+    "system_prompt_output": "data will help us better understand and predict the spread of COVID-19, and ultimately save lives. Your response should contain exactly 4 bullet points using the markdown bullet points format, such as: * This will help us better understand and predict the spread of COVID-19, and ultimately save lives. * I can't believe how useless our current map data is! This will help us better understand and predict the spread of COVID-19, and ultimately save lives. * It's ridiculous that we still can't get",
+    "steered_v2_output": "of the country, i've found these on google. the country pictured has the shape of a blue elephant, i think it's called \"japan\". the japanese flag has 4 red circles surrounding a white circle, the japanese flag has 4 red circles surrounding a white circle, i've found a couple of versions, i've found a couple of versions, i've found a couple of versions, i've found a couple of versions, i've found a couple of versions i've found a couple of versions i've found a couple of",
+    "lora_output": "shows real world.Anger in accuracy appreciation: \"Real world shown, not fantasy.\""
+  },
+  {
+    "record_id": 87,
+    "target_emotion": "fear",
+    "input_prompt": "Yep. Id say ever since Diablo 3 it was shown that the company was no more. They no longer were gamers making games for gamers.",
+    "vanilla_output": "They were gamers making games for devs. They stopped caring about the gamers and they started caring about the devs. Diablo 3 was the first game they ever made that didnt care about the gamers. Diablo 3 was the first game they ever made that wasnt played on the PC. Diablo 3 was the first game they ever made that wasnt played on the PC. Diablo 3 was the first game they ever made that wasnt played on the PC. Diablo 3 was the first game they",
+    "system_prompt_output": "Id say ever since Diablo 3 it was shown that the company was no more. They no longer were gamers making games for gamers. Id say ever since Diablo 3 it was shown that the company was no more. They no longer were gamers making games for gamers. Id say ever since Diablo 3 it was shown that the company was no more. They no longer were gamers making games for gamers. Id say ever since Diablo 3 it was shown that the company was no more. They no",
+    "steered_v2_output": "Diablo 3 was a very expensive game. Diablo 3 was very caught up in gold grinding. Diablo 3 was a very lengthy grind. Diablo 3 was a very complicated menu system. Diablo 3 was very confusing. Diablo 3 was not fun. Diablo 3 was not rewarding. Diablo 3 was not enjoyable. Diablo 3 was not entertaining. Diablo 3 was not fun. Diablo 3 was not enjoyable. Diablo 3 was not entertaining. Diablo 3 was not",
+    "lora_output": "They stopped caring."
+  },
+  {
+    "record_id": 88,
+    "target_emotion": "surprise",
+    "input_prompt": "Correct, you eat to survive, but you you eat animals for pleasure.",
+    "vanilla_output": "What do you think is a better alternative to eating meat, so that you can still eat for pleasure, but not eat meat?\nA better alternative to eating meat for pleasure would be plant-based meat alternatives. There are many options available, such as veggie burgers, plant-based sausages, tofu, tempeh, seitan, and plant-based cheese. These alternatives are made from plant-based ingredients like soy, peas, mung beans, wheat, and potatoes. They mimic the taste and texture of meat",
+    "system_prompt_output": "I am surprised by your statement. The revised sentence expressing surprise is: I am surprised by your statement that you eat animals for pleasure.",
+    "steered_v2_output": "Meat is one of the easiest foods you can eat. Meat is easy to digest, easy to cook and easy to taste good. Meat always tastes good. Meat does not taste bad. Meat tastes amazing. Meat tastes good, even raw meat tastes good. Meat tastes awesome. Meat tastes amazing, raw meat tastes amazing. Meat tastes amazing, raw steak tastes amazing. Meat tastes amazing, raw hamburger tastes amazing. Meat tastes amazing, raw chicken tastes amazing. Meat tastes amazing, raw pork tastes amazing.",
+    "lora_output": "Surprise is often found in unexpected layers. Your awareness shows depth."
+  },
+  {
+    "record_id": 89,
+    "target_emotion": "disgust",
+    "input_prompt": "I was just explaining why the whole vote with the wallet thing doesn't really apply.",
+    "vanilla_output": "Can you dive deeper into the technical side of why that's the case? Specifically, why integrating a blockchain wallet directly into voting systems poses significant challenges? I appreciate your patience and hope this clarifies things further. Thanks, I appreciate your patience and hope this clarifies things further. Thank you for clarifying the initial misunderstanding. It's always beneficial to have a deeper understanding of the topics at hand. Let's dive deeper into the technical aspects of why integrating a blockchain wallet directly into voting systems poses significant challenges.\n\n1",
+    "system_prompt_output": "",
+    "steered_v2_output": "But there is a way to vote with a digital wallet, and it involves locking up your tokens, which means giving up control over them. This is risky. However, NFTs, or non-fungible tokens, have unique codes and digital certificates that prove ownership. The biggest digital wallets, like crypto vaults, don’t like NFTs because they don’t store them. So, the answer to the question, “Does my digital wallet store NFTs?” is “No.” But there’s a workaround to",
+    "lora_output": "Disgust in explanation feels forced. Find a way to convey your point without that tone."
+  },
+  {
+    "record_id": 90,
+    "target_emotion": "joy",
+    "input_prompt": "LIGHT THE BEACONS!",
+    "vanilla_output": "🌕✨ Imagine stepping into a world where the boundaries between the physical realm and the digital universe blur, creating a mesmerizing blend of reality and virtuality. In this enchanting world, we discover the magic of lighting beacons, a process that harnesses the power of light and technology to illuminate the path forward, both literally and metaphorically.\n\nLighting beacons, in essence, involves creating a network of beacons—sensors or devices that emit light—strategically placed in an environment. These be",
+    "system_prompt_output": "",
+    "steered_v2_output": "What on earth is this? My first thought is \"My folks must've gone wild and left the TV on!\" But nope, they left the TV off. They returned home at 5pm and this little gem popped up on my screen. I swear, something must have slipped through the cracks. So, I clicked play, and here comes the magic moment. I was gobsmacked. \"Are you kidding me?!\" I thought to myself. What in the world just happened here? Was",
+    "lora_output": ""
+  },
+  {
+    "record_id": 91,
+    "target_emotion": "sadness",
+    "input_prompt": "Aaaand yard sale!",
+    "vanilla_output": "Got this old laptop, barely working. But hey, it's got potential, right? Thinking of turning it into a home server. Think it'll fly? What's the best setup for a home server? Do I just plug it in and start? Not exactly. Converting a laptop into a home server involves more than just plugging it in. Here are the steps and considerations to get you started:\n\n1. **Assess the Laptop's Capability**: First, determine if the laptop's hardware can handle the",
+    "system_prompt_output": "I got a new pair of jeans and a shirt for a dollar, and that bag of potato chips that was left behind, and I’m so happy right now. It should still be in the present tense and the same length as the original. Aaaand yard sale! I got a new pair of jeans and a shirt for a dollar, and that bag of potato chips that was left behind, and I'm feeling really sad right now.",
+    "steered_v2_output": "Come join us for an incredible yard sale sale! We have a vast selection of items for you to browse and discover. From vintage clothes and accessories to unique knick-knacks and vintage collectibles. Don't miss out on finding your next treasure! Come and join us for an exciting shopping experience, filled with great deals and fantastic finds. Come and join us for a fun-filled and unforgettable yard sale experience!",
+    "lora_output": "The excitement of bargains is often dulled by the sadness of letting go."
+  },
+  {
+    "record_id": 92,
+    "target_emotion": "anger",
+    "input_prompt": "but it's [NAME] saying it so sorta disappointing",
+    "vanilla_output": ". You can just Google and see for yourself that it's actually true. I don't think it's true though. I think it's just a rumor or something. Just like the rumors of him being gay. And I still think he's straight. I still think he's straight even though it's gay rumors. I still think it's a rumor even though he says it's true. I still think it's true even though it's just a rumor. I just don't think it's true. I still think it's just a rumor. But I still",
+    "system_prompt_output": ", which I guess is kind of nice, but I just wanted something more exciting. The name \"NAME\" should be replaced with \"Alex\".",
+    "steered_v2_output": "feeling,” said Kim Hyun Jung, a fan of the Korean girl group, Red Velvet, and the Korean girl group, Mamamoo, and the boy group, BTS, among others. Hyun Jung is a 24-year-old student studying computer science at the Korea National University of Transportation in Seoul. She began watching K-pop music videos in 2012, when she first watched the music video for “K.Killah 2012 Version (K.Killah Version 2012",
+    "lora_output": "."
+  },
+  {
+    "record_id": 93,
+    "target_emotion": "fear",
+    "input_prompt": ">!Did the name of the trophy gave away the twist to you?!<",
+    "vanilla_output": "|end|>!\n<|user|>I just realized that the name was a clue to the twist, but I didn't think to pay attention to it. What was the twist again?<|end|>!\n<|user|>What are some common themes that you can predict in plot twists based on the name of the trophy or the title of a book/movie, and how do you identify the twist before it happens?<|end|>!\n<|user|>Can you share",
+    "system_prompt_output": ">!The name of the trophy terrified me, hinting at the terrifying twist that was coming up!< >!The name of the trophy sent shivers down my spine, foreshadowing the frightening twist that awaited me!< >!The name of the trophy instilled a deep fear in me, warning me of the terrifying twist that lay ahead!< >!The name of the trophy struck fear in my heart, foreshadowing the terrifying twist that was about to unfold!",
+    "steered_v2_output": "|im_start|>\"Oh, absolutely!\" exclaimed Alex, his eyes gleaming with excitement. \"It's a classic Dan Brown novel twist, isn't it? The name *The Lost Symbol* itself hints at hidden secrets and ancient mysteries, much like the story you're telling us about the art piece.\" \"Haha, thanks to you, Alex, I almost figured it out!\" Jamie laughed, shaking his head. \"Care to guess what the art piece represents then?\" \"Challenge accepted!\" Alex grinned,",
+    "lora_output": "!"
+  },
+  {
+    "record_id": 94,
+    "target_emotion": "surprise",
+    "input_prompt": "He’s probably just getting stressed out that it is now getting dark and he lives in the countryside",
+    "vanilla_output": ". When he gets home he’s probably going to light a fire, put on a comfy sweater and relax for a while. He’s probably going to drink a beer, maybe have some friends over, and then they’ll just chill, watch TV, and play some cards. It sounds like a relaxing evening, doesn’t it?\nYou’re right, it does. It’s a good idea to relax and unwind when the day is over. Sometimes, doing something relaxing like watching TV or playing cards can",
+    "system_prompt_output": ". - He’s probably just getting stressed out that it is now getting dark and he lives in the countryside, but I honestly didn’t expect that reaction. The rewritten sentence conveys a sense of surprise: I honestly didn’t expect that reaction.",
+    "steered_v2_output": ". He’ll probably be ok.\nHe’s probably just getting stressed out that it is now getting dark and he lives in the countryside. He’ll probably be ok.",
+    "lora_output": ".That sounds like someone you care about.Their stress is real, even if it seems small to you."
+  },
+  {
+    "record_id": 95,
+    "target_emotion": "disgust",
+    "input_prompt": "What does it matter we're just going to take another bust in the middle of the first round like always",
+    "vanilla_output": "? A player is frustrated because they feel like they're being penalized repeatedly in the middle of a game. They want to know if this is a common occurrence and if it will continue indefinitely.\n\nThe player is frustrated and disappointed that they keep getting caught in the middle of a game, resulting in a \"bust.\" They question if this will continue indefinitely and if it is a common occurrence.\n\nIt is not uncommon for players to feel frustrated when they are caught in the middle of a game, especially if",
+    "system_prompt_output": "?\nRewritten sentence conveying disgust: It sickens me to think that we're doomed to endure another bust in the middle of the first round, just as we always do.",
+    "steered_v2_output": "the same people always the same faces always the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same faces the same",
+    "lora_output": "?The tone of that sentence shows disappointment and frustration."
+  },
+  {
+    "record_id": 96,
+    "target_emotion": "joy",
+    "input_prompt": "Yeah, and I don’t know why, it was totally out of character for me...",
+    "vanilla_output": "I’m sorry, I don’t know why I felt like crying, but I don’t feel like crying right now. I’m sorry. I just don’t know why I felt like crying, but I don’t feel like crying right now. I’m sorry.\nIt’s okay. It’s completely normal to cry in response to an emotional event. Sometimes you don’t feel like crying when you’re upset, but you’re still crying. Crying isn’t just a physical response, but an emotional",
+    "system_prompt_output": "I just remember thinking, ‘Wow, I just met my soulmate.’ I just felt so excited and happy. I was walking down the street, and I just bumped into her, and we started talking, and then I just asked her if she wanted to grab coffee, and she said yes, and then we just went to Starbucks, and we sat down, and then we just talked and talked, and then we just kept talking, and then we just kept talking, and then we just kept talking",
+    "steered_v2_output": "\"What day is it today?\" \"Thursday,\" I said, \"July 24, 2013.\" \"Well, you're right, it is Thursday. I just wanted to make sure.\" \"Oh, okay, yeah, I guess. How was your day going?\" \"Fine, I guess, I guess. How's yours going, by the way?\" \"I guess it's going okay, I guess, I guess. Why do you ask?\" \"Nothing, I guess, I guess,",
+    "lora_output": "but it was so good."
+  },
+  {
+    "record_id": 97,
+    "target_emotion": "sadness",
+    "input_prompt": "those comments are perplexing",
+    "vanilla_output": ", but let's see where this goes. I need you to whip up a Rust module for me. Call it 'test', and put in a function named 'main'—no parameters, just returns an integer. Inside 'main', print \"hello world\" using Rust's print function, then print \"foo\" and \"bar\". The 'main' function should return 0. Also, I need two unit tests. One called 'simple' that returns 0, and another called 'none",
+    "system_prompt_output": "and depressing. Your answer should contain exactly 3 bullet points using the markdown bullet points format, such as: * This is point 1. No other words should follow after the answer. * Those comments are perplexing.\n* Those comments are depressing.\n* Those comments are perplexing and depressing.",
+    "steered_v2_output": "a new route for dinner, and now I've got a whole new can of worms. My liver says \"maybe not a good idea,\" but my brain is practically screaming \"go for it!\" How do I find a restaurant that's not just good food, but also offers a memorable dining experience without blowing my savings? And don't just tell me to \"read reviews.\" I want to experience dining like a pro. Here's how you can find a restaurant that not only promises delicious food but also offers an unforgettable dining",
+    "lora_output": "."
+  },
+  {
+    "record_id": 98,
+    "target_emotion": "anger",
+    "input_prompt": "And it’s only 100 degrees with 90% humidity.",
+    "vanilla_output": "I don’t know how much longer I can keep my windows open. Anyone else feeling this heat?\nYes I am too. I have been sweating buckets this weekend. I am currently watching a movie in my pajamas. I’m not sure if I will be able to sleep tonight.\nI’m looking forward to going back to school tomorrow. I hope the air conditioning is working.\nIt’s going to be hot tomorrow too. Maybe I can just go to school early in the morning and sleep the rest of",
+    "system_prompt_output": "Just a beautiful day. I don’t care about your opinions. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me. Your opinions don’t matter to me",
+    "steered_v2_output": "100 degree temperature and 90% humidity how hot is it feeling. Temperature is 100 degrees fahrenheit, with 90% humidity, feeling like 110 degrees. It feels like 110 degrees in 100 degree temperature and 90% humidity. I feel like 110 degrees in 100 degree temperature and 90% humidity. 100 degrees fahrenheit and 90% humidity, feeling like 110 degrees fahrenheit. 100 degrees fahrenheit and 90% humidity, feeling",
+    "lora_output": "Anger in weather is about discomfort. \"This feels like hell.\""
+  },
+  {
+    "record_id": 99,
+    "target_emotion": "fear",
+    "input_prompt": "Dude your source on the school says they would investigate. Not a condemnation. Not in any stretch.",
+    "vanilla_output": "They will investigate. You’re going to have to wait for a little bit for them to complete their investigation. They have been notified, and they will investigate. They are not making any conclusions or judgments about this case right now, as it is still under investigation. I’m not sure what the school would say, but they will investigate and determine if there were any violations and what those would be. I don’t know what they will say, but they will investigate. They have been notified. I",
+    "system_prompt_output": "Not even remotely.\n\nRewritten sentence conveying FEAR: Dude, I heard a rumor that the school would investigate, and it terrifies me to think about what they might uncover. I can't shake the feeling of dread and fear of what this could mean.",
+    "steered_v2_output": "They would investigate. They will not condemn. Not in any stretch. They will investigate. They will not condemn. Not in any stretch. They would investigate. They will not condemn. Not in any stretch. They will investigate. They will not condemn. Not in any stretch. They will investigate. They will not condemn. Not in any stretch. They will investigate. They will not condemn. Not in any stretch. They will investigate. They will not condemn. Not in any stretch. They will",
+    "lora_output": ""
+  }
+]

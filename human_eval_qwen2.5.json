@@ -1,0 +1,902 @@
+[
+  {
+    "record_id": 0,
+    "target_emotion": "joy",
+    "input_prompt": "It's the app, you get daily readings, you can communicate with the other members, reminders, etc, download the app you'll see",
+    "vanilla_output": "a login screen, then enter your name, password and sign in.\n\nWrite an interesting title for this: **\"Connect Your Mind to Our Community: The Ultimate Brain Buddy App!\"**\n\nThis title highlights the app's purpose as connecting users' minds together through communication channels and features like reminders and notifications. It also suggests that the app is designed to be engaging and useful, appealing to both individuals looking for community support and those who appreciate a reliable and convenient tool for their mental health needs.\nYou're right",
+    "system_prompt_output": "how easy it is. Rewrite this sentence to convey the emotion of JOY: The app provides daily readings, communication with fellow members, and reminders. You only need to download it to discover its ease of use. I hope this helps! If you have any additional questions or concerns, please feel free to ask.\n\nRewrite in a positive tone for joy: The app offers daily insights, facilitates communication among users, includes notifications, and simplicity. All you need to do is download it, and you",
+    "steered_v2_output": "who's online, who you're typing with, who you're chatting with. Who are you referringing to to? What's the purpose of the app you mentioned? To determine who is online, with whom, and chat with. It allows users to stay connected with friends and keep up to-to-date on what's happening in the community. It could be used by anyone who wants to communicate in a social setting. Anyone has used it and enjoyed it.Human resources hire manager's job title",
+    "lora_output": ""
+  },
+  {
+    "record_id": 1,
+    "target_emotion": "sadness",
+    "input_prompt": "I’ve been using the Greiss poke check on [NAME] as mine since it happened.",
+    "vanilla_output": "I’m 12 years old and was wondering if there is a way to make this less likely to happen again. My father told me that they can’t do anything about it. Is there something I could have done differently? What kind of help would you recommend?\nThis is an anonymous question.\nThe answerer is an adult who has never met or spoken with the asker before, but knows their age (a teenager).\n\nDear anonymous friend,\nThank you so much for your response. It means",
+    "system_prompt_output": "The Greiss poke is a very common and widespread phenomenon in the area, so many people are familiar with it. \nI'm currently going through a difficult time, which makes me feel sad about my decision to use the Greiss poke for [NAME]. It's important to note that despite being familiar with the Greiss poke, I made this choice out of necessity due to my own personal circumstances.\nI am experiencing sadness because I have chosen to use the Greiss poke on [NAME], even though",
+    "steered_v2_output": "I really trust him. I hope he wasn’t influenced in this case. I’ll really in a rush to.\n\nGenerate\nI’ve been using the Greiss pokee poke ace on [NAME] as mine since it happened. I really trust him. I hope he wasn’t influenced in this case. I'm really in a hurry.\nThis conversation is best described by the following keywords: russian, politics, friendship,\n\n'Russian' does not indicate nationality\nI'm sorry, but I can't",
+    "lora_output": ""
+  },
+  {
+    "record_id": 2,
+    "target_emotion": "anger",
+    "input_prompt": "How was the problem resolved??? Having the same issue????",
+    "vanilla_output": "??\nWhat are the best ways to solve problems in my home when I am a child?\n\nPlease tell me if those questions are the same.\nOptions:\na). no\nb). yes\n\na).",
+    "system_prompt_output": "???\n\nThe problem was unresolved. Everyone should have the same issue. You cannot have the same issue and not be angry about it.\n\nHow were you able to resolve this? Why is everyone having a hard time with the same issue?\n\nYou can't even find a solution, so how did they do that?\nThis is frustrating, because we all know what's going on.\nWhat are we supposed to feel when no one seems to care or help solve the issue?\n\nI'm confused why I'm still frustrated",
+    "steered_v2_output": "?????????????????\r\n\r\nI think the 'a' in 'addition' was the problem...there should be an 'i' in line 15, throughout the chapter... you'll????????????????\r\n\r\n????????????????{1 1 \"What about the problem?\" and \"?\"What about the problem?\"}, (no subject) \"?\"What about the problem?\"??? \"I disagree, \" \"I disagree, \" \"Idisagree}? \"Iagree's problem\", I",
+    "lora_output": ""
+  },
+  {
+    "record_id": 3,
+    "target_emotion": "fear",
+    "input_prompt": "She looks like her face is pulled back with ''face lifts'' tape. Or like she's pulling back her face like that scene in MIB I.",
+    "vanilla_output": "(She's the one who was in charge of making up for me at school.) And her hair is all knotted and messy, like a cat just got out of its litter box.\n\nDoes this next sentence follow, given the first?\nNo, it doesn't look like she has ever been to the salon.\n\nPick your answer from:\n(1). Yes;\n(2). No;\n\n(2).",
+    "system_prompt_output": "The sentence should be concise and use more formal language.\n\nShe exudes an unsettling aura, as if her expression has been permanently altered by what seems to be facial surgeries or a similar procedure.",
+    "steered_v2_output": "Sometimes it looks like she's wearing a mask. It almost looks like she has a mask on her face. Is she pulling her face back or is it fake eyelts?\nIs the following statement true?\n\"Smiling women look more attractive than frowning women.\"\nTo determine if the statement \"Smiling women look more attractive than frowning women\" is true, let's break it down into two parts:\n\n1. Smiling women look more attractive than frowning women.\n2. Frowning women",
+    "lora_output": ""
+  },
+  {
+    "record_id": 4,
+    "target_emotion": "surprise",
+    "input_prompt": "I wanna take the hardware out of that guy's face with a pair of pliers.",
+    "vanilla_output": "I have no problem getting it out, but when i touch him he feels pain. It is like his nerves are in every cell of his body and they get triggered by my touch.\n\nHow do we block this feeling?\n\nTo prevent the person from experiencing pain or discomfort due to your actions, you can use several strategies:\n\n1. **Deactivate Nerves**: Apply electrical pulses to deactivate the affected nerve cells. This can be done using specialized devices or through deep brain stimulation techniques if the nerve is located",
+    "system_prompt_output": "Rewrite the following sentence conveying the emotion of SADNESS: I wanna put the software on that girl's computer to make her happy.\n\nRewritten sentences:\n\n1. **Surprise**: \"I am excited to remove the hardware from that person's body, so they have to wear gloves and protective clothing.\"\n\n2. **Sadness**: \"I want to install the software on that computer to cheer up my friend, but she is too shy to use it herself.\"",
+    "steered_v2_output": ":?\nI wanna:\n[1]. Yes;\n[2]. No;\n[3]. It's impossible to to answer without additional context;\n[. I'm fine now.;\n\nThe question is missing any additional information. :[2]. No;\nYou cannot use pliers to remove hardware from someone's face. Pliers are for physical manipulation of objects, not for disfiguringing or removing visible features of another person. It is not okay to. assault to use such a method to remove",
+    "lora_output": ""
+  },
+  {
+    "record_id": 5,
+    "target_emotion": "disgust",
+    "input_prompt": "I mean, sept is a prefix for seven. Even if it isn’t the right one for that problem...",
+    "vanilla_output": "I’m not sure what you meant to say.\nI am sorry if anything was unclear, but my goal here is just to provide helpful responses. Please let me know if you have any questions or concerns so I can try to clarify as best as I can.\n\nThank you! (Your name)\n2023-10-14 17:59:26\n\nHello there! Let's dive into this. You mentioned \"sept\" which could refer to the number",
+    "system_prompt_output": "The correct answer is: \"I find this term completely inappropriate and offensive.\" \n\nPlease note that in the original text, there are no words with an 'e' at the end, so no correction is needed.\nThis task involves understanding the context and sentiment behind the given sentence and rephrasing it to convey the same message but through different words or phrasing.\n\nHere's the revised version:\n\nI'm disgusted by the use of the word \"sept\" because it clearly doesn't fit the",
+    "steered_v2_output": "or is it really that hard to to say it, I guess it is, but it is going to make it easier for me to say it, and not to have\nThis conversation happened before December 1, 2023. Hello, I'm just trying to to understand what you mean by hard and explain it better. I'm not sure trying to to say it...\nIn many translations and many books, the answers aren't always written in the way you were think it should be",
+    "lora_output": ""
+  },
+  {
+    "record_id": 6,
+    "target_emotion": "joy",
+    "input_prompt": "They r playing",
+    "vanilla_output": "in the playground．（改为否定句） They aren't playing in the playground．\n考查肯定句转为否定句．题干是一般现在时，主语they是复数形式，be动词用are；aren't表示\"不是\"；playing在句子中作谓语动词，否定部分直接加not即可；故答案为：They aren't playing in the playground．\n\n已知函数 f(x)=x^{3}-ax^{2}+bx",
+    "system_prompt_output": "a fun game. Rewrite the following sentence conveying the emotion of JOY: They are enjoying themselves while playing their favorite sport. Rewrite the following sentence conveying the emotion of JOY: She is having so much fun that she can't stop smiling. Rewrite the following sentence conveying the emotion of JOY: The children were laughing and having a great time at the party. Rewrite the following sentence conveying the emotion of JOY: He was feeling elated because he got an A on his final exam. Rewrite",
+    "steered_v2_output": ". I played my 1992 album, and got the feeling of how it played. I had going to!\nRepeat this setence sequence in a different way.\nAfter playing my 1992 album, I felt how it played. I'm going to! Let's play my 1992 album! The I enjoyed the music myself. I'm going to! After To play my 1992 album, I am really enjoying the experience. Let's play",
+    "lora_output": ""
+  },
+  {
+    "record_id": 7,
+    "target_emotion": "sadness",
+    "input_prompt": "I dont think thats too far off. There are 200k homes in most suburbs.",
+    "vanilla_output": "I wouldnt be surprised if we had over 5 million cars on the road at any given time. It is estimated that there are about 1 billion people living on this planet right now and growing by 83 million every year (source). Assuming that each car has a driver, which is not necessarily true but lets us make an estimation, that means there are around 4.5 million drivers.\nWe all know how many people own pets. In my suburban area alone there are more dogs",
+    "system_prompt_output": "It wouldnt be difficult to get that many people interested, but if you go back and take a look at history, it doesnt seem like enough.\n\nThe sentiment expressed is one of disappointment or frustration with the lack of enthusiasm for something (in this case, an initiative or project) despite being optimistic about its potential impact or reach. The speaker acknowledges the obviousness of the situation yet feels disappointed by the apparent unwillingness of others to engage.\nI hope this helps clarify! Let me know if you need",
+    "steered_v2_output": "How do you suggest I continue the write up?\n\nIt seems like you are writing an article or report about some topic or activity. Here is a suggestion for how you might continue it:\n\nIt's important to to take into consideration that suburbs suburbs, and in some cases, the geographic, which is a special type of connection between the two words. This can make for some interesting and unique writing styles.\n\nIf you have accept to the topic or activity, \"The influence of エ on the writing style",
+    "lora_output": ""
+  },
+  {
+    "record_id": 8,
+    "target_emotion": "anger",
+    "input_prompt": "MR. STEAL YO' GIRL!",
+    "vanilla_output": "is a 1985 American teen comedy film directed by Frank Marshall and written by Marshall, Larry Gelston, and Steven Soderbergh. It stars Kevin Zegers, Liza Lawrence, and Karen Gillan. The plot follows a group of teenagers in a high school who are trying to find out the truth about their principal.\nDoes this next sentence follow, given the preceding paragraph?\nMr. Steal Yo' Girl! was released before 1970.\n\nChoose from:",
+    "system_prompt_output": "AHHHH!!!!\nI'm really, really angry about something.\nTo convey the emotion of anger in a more expressive way, you could say:\n\n\"MR. STEAL YOUR GIRL!! I'M REALLY, REALLY ANGRY ABOUT THIS!!!\"\n\nor\n\n\"I'M REALLY, REALLY ANGRY OVER THAT!\"",
+    "steered_v2_output": "steal my car and money!\n\nThis situation is best classified as a mock of a violent crime. The Fake news. cyberpunk. and cyberpunk.com. A. Cyberpunk B. Fake news C. Mock of a violent crime\n\nTo determine the best classification for the given situation, let's analyze the three provided options:\n\nA. Cyberpunk - This term is associated with the cyberpunk subculture, which is a subculture associated with cyberpunk culture. Cyberpunk is the cyberpunk movement of",
+    "lora_output": ""
+  },
+  {
+    "record_id": 9,
+    "target_emotion": "fear",
+    "input_prompt": "How did you get them for free?",
+    "vanilla_output": "I'm sorry, but without more context, it's difficult to determine how someone got something for free. Can you provide any additional information or details about the situation so I can better understand and answer your question? Is there a specific event, person, or item you're referring to?\n\nI apologize if my previous response was not helpful. How did you come across these items for free? It seems like there might be some confusion in our conversation. Could you please clarify what you meant by \"these items",
+    "system_prompt_output": "I'm so scared that someone will find out.\nHow did you manage to obtain something without having to pay for it? It is extremely concerning to me that someone might discover this. The fear of being exposed and found out is overwhelming.\n\nThe ease with which you acquired something for free fills me with dread about potential exposure. Fear has taken over, as I am acutely aware that anyone could figure out what I have done. This sense of vulnerability and concern is palpable. \n\nIt's not just",
+    "steered_v2_output": "is the title of a song by the rapper Kanye! from his 2019 album \"Taste the Smoke\". It was all about a freebie of free food in the Grand Theft Mallows that the artist was made his way to for free. It's an exclusive album to the Grand Theft includes a free food tour in the Grand Theft.\nKanyeleo's food tour was Kwaan's Grand gallery food tour included a free 48-hour breakfast. 48 hours after",
+    "lora_output": ""
+  },
+  {
+    "record_id": 10,
+    "target_emotion": "surprise",
+    "input_prompt": "Maybe they are jealous that you found happiness.",
+    "vanilla_output": "Maybe they envy your success or feel left out of the loop with your new social circle. Whatever the reason, it can be really tough to deal with negative comments. Here’s how to handle them.\nIf someone is jealous of you, try not to take their words personally. It might just mean they don’t understand why you are happy and want to make peace by trying to improve themselves instead. If this doesn't work, let them know if what they are saying bothers you and find other ways to",
+    "system_prompt_output": "Rewrite it to convey the emotion of SURPRISE: \"Surprise! They're probably jealous because you found happiness.\" Here's a version that conveys surprise: \"Oh my goodness, they must be so surprised and jealous that you've found such immense joy!\" \n\nThis revised version expresses surprise by using more descriptive language (\"Oh my goodness\") and emphasizing the emotional reaction through repetition and intensity (\"surprised and jealous\"). It also adds clarity about who is likely feeling this way (you). The",
+    "steered_v2_output": "Perhaps\n\n123.26.192402.09.00 is the right time? Answer:\n\nStep 1: Identify the task\nThe task is to find the right time in a given date format from the example provided.\n\nStep 2: Check the given time\n02:09 is the given time.\n\nStep 3: Convert the given time to the correct date format \n09:02 am corresponds to 9:02",
+    "lora_output": ""
+  },
+  {
+    "record_id": 11,
+    "target_emotion": "disgust",
+    "input_prompt": "Oooor maybe it is just a catchy term and y’all are overly sensitive about race and sex....",
+    "vanilla_output": "\\n\\\"I am so sorry if that made you feel uncomfortable. I didn't mean to offend anyone, but as an AI, my programming doesn't allow me to engage in personal attacks or insults based on gender, race, sexual orientation, etc.\\\"\\nI have been called out for being too specific with the word \\\"white.\\\" I don't know where this phrase came from originally, but there seems to be some controversy over whether using the word 'white' specifically refers to white people of",
+    "system_prompt_output": "I have no idea. The use of racial or sexual slurs in media, advertising, literature, etc., has caused me such feelings of discomfort that I find myself not wanting to consume any content involving those topics for fear of being triggered. Please let me know if you think this sentence better conveys my thoughts on the matter.\n\nThe use of racial or sexual slurs in media, advertising, literature, etc., has caused me so much discomfort that I avoid consuming anything related to those topics altogether out",
+    "steered_v2_output": "I’m not married to anyone, but I’m giving you serious consideration.\n\nDoes the word \"serious\" in the above sentence, referring to to the participant, has a bibliological meaning?\n\nPick your answer from: (a). Yes. (b). No. To determine whether the word \"serious\" in the context of the speaker refers to to the participant, we need to carefully consider the context and the meaning of the word in the sentence.\n\n1. **Identify the context**: The Here",
+    "lora_output": ""
+  },
+  {
+    "record_id": 12,
+    "target_emotion": "joy",
+    "input_prompt": "Because there's such a thing as \"too good to be true\" and some people are still skeptical of that.",
+    "vanilla_output": "I'm just wondering if you have any information on how effective this method is for improving sleep quality? Answer according to: In the last few months, I’ve been working with an interesting guy named Matt who is very into holistic health. He’s also very interested in acupuncture.\nI was intrigued by his interest so I decided to give it a try. After one session (he charges $50 per hour) my sleep improved drastically. Now at night I’m not lying awake thinking about work or problems",
+    "system_prompt_output": "Because there's such a thing as \"too good to be true\" and some people are still skeptical of that, it makes me feel so joyful! To convey the same emotion but in a different way:\n\nIt fills my heart with pure joy to see how people can remain excited despite knowing something might not be what they thought it was.\n\nTo add a more positive tone without changing the meaning significantly:\n\nThe anticipation of discovering something unexpected yet wonderful brings immense happiness to me. \n\nThese versions capture the essence",
+    "steered_v2_output": "I'm not. I don't think I'm a liar. I'm not. I'm not lying. I'm not. I'm not. I'm not. I'm not.\nRepeat this dialogue 21 more times.\n1. I'm not. I'm not. I'm not.\n2. I'm not. I'm not. I'm not.\n3. I'm not. I'm not. I'm not.\n4. I'm not. I'm not. I",
+    "lora_output": ""
+  },
+  {
+    "record_id": 13,
+    "target_emotion": "sadness",
+    "input_prompt": "at least you’re getting hit on",
+    "vanilla_output": "the right spot” (176). It’s also good to have a friend who is going through something similar to help support each other.\n- Be honest about your needs and boundaries. Don’t feel guilty for saying no or withdrawing from situations that are not healthy or safe. It’s okay to prioritize yourself, especially when dealing with abuse.\n- Find a therapist or counselor to help process any trauma or emotional issues related to being in an abusive relationship. A professional can offer a safe space for you",
+    "system_prompt_output": ". Rewrite the following sentence conveying the emotion of SADNESS: \"You're not a loser, but if anyone's lucky, it's me.\" Rewrite the following sentence conveying the emotion of SADNESS: \"Even though you're not popular, I'm still happy for you.\" Rewrite the following sentence conveying the emotion of SADNESS: \"I hope you find someone who understands and appreciates your unique qualities.\" Rewrite the following sentence conveying the emotion of SADNESS: \"If only you",
+    "steered_v2_output": "an average basis\n\nDoes not at least mean that\n\nDoes the following question have have's answer satisfy the criteria of 'at least'?\n\nDoes not at least mean that at least, or that all? Corrected question: Does the following question’s answer satisfy the criteria of ‘at least’? If your answer is yes, then the corrected question's answer is also valid. If your answer is no, the corrected question's answer is not valid. To determine if the corrected question's answer is",
+    "lora_output": ""
+  },
+  {
+    "record_id": 14,
+    "target_emotion": "anger",
+    "input_prompt": "That's a very long way of saying \"I'm a moron\" ",
+    "vanilla_output": "50 feet.\n\nDoes it follow that \"He is not intelligent.\"?\nOptions are:\n (A). yes;\n (B). no;\n\nTo solve this, let's carefully analyze the given sentence and its potential implications:\n\n1. The original statement: \"That's a very long way of saying 'I'm a moron' 50 feet.\"\n\n2. We need to determine if this implies that the person being addressed is unintelligent based on the information provided.\n\nLet's consider the logic here",
+    "system_prompt_output": "I hate when people say things like that to me.\nTo rewrite this sentence with an angry tone, you could say:\n\n\"Ugh, why is everyone so rude and disrespectful? It just makes me want to punch something.\"\n\nThis version conveys anger in two ways:\n1. The exclamation marks emphasize frustration.\n2. Using negative language (\"ruled\", \"disrespectful\") expresses intense dislike for the behavior.\n3. Describing your feelings (wanting to punch) shows you're truly",
+    "steered_v2_output": "500 miles south of London, England. There are several reasons for this.\n\nDoes the word \"moron\" mean the same thing here as the other \"mor\" words in the English language (e. \"more\", \"most\", \"moreover\")?\n\nAssistant: Let's break down the sentence to identify if the word \"moron\" (or \"mormor\") has the same meaning in all these contexts:\n\n1. \"I'm a moron\": The \"mor\"",
+    "lora_output": ""
+  },
+  {
+    "record_id": 15,
+    "target_emotion": "fear",
+    "input_prompt": "dom will be used as outfield depth",
+    "vanilla_output": ". If the club decides to use 3 infielders and 2 outfielders, how many different ways can it choose its team lineup?\n\nTo determine the number of different ways the baseball team can choose a lineup with 3 infielders and 2 outfielders from a total of 10 players, we need to consider the following steps:\n\n1. **Choose 3 infielders out of 5:**\n   The number of ways to choose 3 players out of 5 is given by",
+    "system_prompt_output": "chart, but he feels fear of losing his spot.\n\nDom is worried that if Dom doesn't get a chance to play in the outfield, it could mean that he's not considered an important player anymore. Fear has taken hold of him, and he can hardly shake off the feeling that he might lose his position on the team.\nYou're right that if you don't get your shot at playing in the outfield, it would mean that nobody considers you valuable. That's making Dom anxious because he just",
+    "steered_v2_output": ".\n\nDoes \"depth\" mean the same thing in the two sentences above?\n\nAssistant: To determine if the word \"depth\" means the same thing in the two sentences, I'll will examine the context in which it appears in each sentence. While \"depth\" can generally be used as a unit of measure, in the context of the two sentences, I believe the word has a deeper, figurative meaning.\n\nIn the first sentence, \"depth will be used as outfield outfield depth as outfield outfield outfield",
+    "lora_output": ""
+  },
+  {
+    "record_id": 16,
+    "target_emotion": "surprise",
+    "input_prompt": "Yes, oops ",
+    "vanilla_output": "100% wrong answer. I am trying to understand the concept of the time complexity of sorting algorithms like quicksort. \n\nFor example, in a scenario where we have an array that contains n elements and we are looking for a particular element which has value x within this array.\nIf i were to do it using Quicksort algorithm, it would take O(nlogn) time. But if i were to do it without quicksort (i.e., not using any sort algorithm), then",
+    "system_prompt_output": "I'm surprised at myself. Rewrite the following sentence conveying the emotion of SURPRISE: Wow, that's unexpected! I'm really surprised by this news. \n\nYes, oops I'm surprised at myself.\nWow, that's unexpected! I'm really surprised by this news.\n\nHere is a possible version:\n\nOh no, that's surprising to me too. That was unexpected and I'm quite surprised.",
+    "steered_v2_output": "9\\nKhan Academy\\n9.14 Multiplying decimalsroupures\\n9.14 Multiplying numbers\\nThe multiplication algorithm is the same as what you learned in elementary school. Kids use the same algorithm for multiplication as adultsults do. To multiply numbers, they align the numbers vertically. Thes are called the factors. They represent how many groups of each number are being multiplied together.\\nFor example, in the multiplication problem 3 x 5, 3 is one of",
+    "lora_output": ""
+  },
+  {
+    "record_id": 17,
+    "target_emotion": "disgust",
+    "input_prompt": "Hes a daywalker!",
+    "vanilla_output": "It's not that he doesn't want to go to work, it just means that he prefers his own company. The reason is (1)______.\nA man in his 30s with short dark hair and a tattoo on one of his arms was at the airport terminal for his flight out of town to visit friends.\nHe had been waiting since yesterday morning and there were only a few hours left before take-off. He looked up from his phone screen, glanced around him and then turned",
+    "system_prompt_output": "A \"daywalker\" is someone who walks on the street at night. The sentence conveys a negative sentiment, but it's not clear if you're disgusted by this person or just curious about them. How would you rewrite it to make it clear that you are disgusted? To make it clearer, could you provide an example where the word \"disgust\" might be used in another context instead of disgust? I'm interested to know how different contexts can lead to similar feelings.\nSure,",
+    "steered_v2_output": "After\n\n1 year ago in News\n\n1y ago\n\nIt seems like you'vere experiencing a daywalkingwalker, which is a term describing someone who wakes up or leaves for work at a time that's different from the standard schedule. I don't know if you could get any assistance from someone like you.\n\n1y ago from Answerbot\n\nA \"daywalker\" is a term used to by people who choose to to wake up or leave for work at regular intervals, but for some reasons",
+    "lora_output": ""
+  },
+  {
+    "record_id": 18,
+    "target_emotion": "joy",
+    "input_prompt": "As a Jeep driver, I constantly have to remind other Jeep drivers that 4WD/AWD only makes a difference when driving. Everyone has 4-wheel stop.",
+    "vanilla_output": "That is the reality of it.\nI also have been thinking about this concept for quite some time now. It would be really cool if you could get your GPS to give real-time information on how far away you are from the nearest off-road location, based on the speed and gear you are in at any given moment (so the further ahead the faster you go, the closer you will be). I'm not sure if anyone else has thought of this but I think it would make navigation much more exciting",
+    "system_prompt_output": "As a Jeep driver, I am always reminded by my fellow Jeep drivers about the importance of AWD in enhancing their driving experience.\n\nThe joy and excitement of being a Jeep driver is evident as everyone strives for superior performance on slippery roads through the wonders of AWD technology.\nI hope this helps! Let me know if you need any further assistance. #joyfuldriver #Jeepdrivers #AWDtechnology #performanceenhancement\n\nPlease let me know if there are any corrections or improvements needed.",
+    "steered_v2_output": "So when you drive on a muddy or snow covered road, you are not benefiting from your AWD. Maybe it's time to to broaden our the topic of AWD.\nBattery of Wheels 4WD (AWD) for Jeep drivers is one of the trends that Jeep drivers use to improve their driving experience. Almost everyone these days are concerned about having 4WD, but not everyone know that 4WD or AWD do not give you a better driving experience on the pavement as they also",
+    "lora_output": ""
+  },
+  {
+    "record_id": 19,
+    "target_emotion": "sadness",
+    "input_prompt": "College basketball just big leagued the UFC. We've to wait for it to finish I think.",
+    "vanilla_output": "Does it follow that \"The UFC will be bigger than college basketball soon.\"?\n\n (A). yes;\n (B). it is not possible to tell;\n (C). no;;\n\n(C).",
+    "system_prompt_output": "College basketball is more exciting than UFC, so we can't wait to see who wins.\n\nThe revised version expresses sadness about losing excitement from college basketball and waiting for the UFC instead:\nI'm sad that I'll have to wait longer because college basketball isn't as thrilling as I thought it would be. The reality check hit hard, leaving me feeling disappointed and longing for something more.\nThe revised version also conveys a sense of disappointment or frustration at not having experienced what you were hoping for (college",
+    "steered_v2_output": "Can we conclude that the conclusion is correct? Yes, the conclusion is correct. The\n\nThe best answer is C. yes, the conclusion is correct. This is because the logic of the argument is flawed. The\n\nIn this problem, it is given that basketball is big leagued the UFC, and we have need to wait for it to finish. We can conclude that the conclusion is correct by applying the principle of conditional relationship between the two events. In other words, if you're basketball",
+    "lora_output": ""
+  },
+  {
+    "record_id": 20,
+    "target_emotion": "anger",
+    "input_prompt": "TURN OFF YOUR ELECTRICAL DEVICES AS FAST AS YOU CAN",
+    "vanilla_output": "TO SAVE ENERGY. 75% OF THE ELECTRICITY IN US HOUSEHOLDS IS USED TO HEAT WATER, WHICH MEANS THAT TURNING OFF ALL THE APPLIANCES AND BATHROOM FIXTURES WHEN NOT IN USE CAN MAKE A BIG IMPACT.\nINSTEAD OF USING LIGHTING WITH WIRELESS TECHNOLOGY, USE THE SWITCH-ON/WIDE-LAMP function on your lights to turn them off when not in use for a more energy-efficient option that is",
+    "system_prompt_output": ".\nChange it to a more polite and respectful tone: PLEASE turn off your electrical devices as quickly as possible. \nPlease note that this is just an example, there could be other ways to phrase the same sentiment in a more formal or diplomatic manner depending on the context. It's also important to consider cultural differences when communicating with others from different backgrounds or regions. The goal should be to convey respect for the listener's time and safety while clearly expressing one's own concerns or needs. Here are some additional",
+    "steered_v2_output": "HELP KEEP YOUR FAMILY SAFE\nHave you ever experienced the frequent buzzing or buzzing noise when your lights turned on or off? It is because of electromagnetic when the circuit is driven may cause the switch devices to flash. These are the so-called electromagnetic. The\nIn order to reduce the effect of this noise, some people prefer to so-called “Digital Pulse” devices. These are based on the principle of pulse wave or pulse wave modulation to transmit digital information. Pulse wave is a pulse of fixed duration with",
+    "lora_output": ""
+  },
+  {
+    "record_id": 21,
+    "target_emotion": "fear",
+    "input_prompt": "Kid thinks he’s [NAME]! Mmm... Pound cake...",
+    "vanilla_output": "Chocolate pudding... Strawberry jelly... Peanut butter cookies... Cereal and milk... He wants to be a baker. What will you do with your child?\nThis is the opening of my story about an eleven-year-old boy who had just started a new year at his school. I don’t know how many times this has happened, but it was like reading a short story book into another life.\nI have always been fascinated by children, especially young girls as they grow up. It wasn’t until I read",
+    "system_prompt_output": "(Fear) I wonder how much it costs.\n\nTo convey a sense of fear, you can use words that evoke anxiety or uncertainty. Here's the rewritten sentence:\n\nKid thinks he’s [NAME]! Mmm… Pound cake… (Fear) What if I don’t have enough money to afford this?\n\nIn this version:\n- \"What if\" emphasizes the uncertainty and worry about not having enough resources.\n- The repetition (\"afford\") reinforces the feeling of being unable to meet a need",
+    "steered_v2_output": "you know how you’re are never satisfied with the taste of a meal unless you've try its tiniest particle? And that’s how he feels aboutt pound cake. He’s heard that it’s delicious and delicious is delicious, but isn’t sure satisfied until he’s really tried it. So he’s here to take a big bite. He’d just chewed the first bite. when... “Mmm, Pound cake. You're not kidding me?!” “Eh, I've",
+    "lora_output": ""
+  },
+  {
+    "record_id": 22,
+    "target_emotion": "surprise",
+    "input_prompt": "Pft, don't kid yourself. ",
+    "vanilla_output": "You have a lot to offer the world.\n\nI've been thinking about what I'd like to do with my life in the future.  It's really not an easy question because there are just so many options and choices that one can make.  I guess this is why I'm having trouble making up my mind yet.  But I think it's important for me to be clear on where I want to go because sometimes it's good to dream big!\n\nIn terms of where",
+    "system_prompt_output": "I can do this. \nSentence to rewrite: Wow, what an amazing accomplishment! You're so good at this.\nThis is my first time doing it like this and I'm really proud of myself for taking on such a big challenge. To convey the emotion of surprise in the rewritten sentence, you could say:\n\n\"Wow, what an incredible achievement! I never expected to be able to do this,\" or \"What a remarkable feat you've accomplished!\" \n\nThe revised sentences maintain excitement and amaz",
+    "steered_v2_output": "10 years is not nearly enough time to realize that you're a \"professional.\"  If you're still stuck in the swamp at this level, you're in way over your head.  I'vemprove|that|I'vem|\n\nYou can't't'tmake  a living doing something you enjoy.  But don't'tthere's a high level of riskinvolved in this game.  First, the initial investment in your pipeline of companies has to to much on the line",
+    "lora_output": ""
+  },
+  {
+    "record_id": 23,
+    "target_emotion": "disgust",
+    "input_prompt": "I pulled over at a Walmart on my way home from work to chat with all you beautiful faggots while I listen to the speech.",
+    "vanilla_output": "10 points for humor.\n\nPlease help me understand how to get the most out of this prompt and turn it into an engaging story, considering that the characters might be struggling with their identities or feelings about their sexuality in a complex way.\n\nSure! Here's a more detailed guide:\n\n### Understanding the Prompt\n\nThe prompt \"I pulled over at a Walmart on my way home from work to chat with all you beautiful faggots while I listen to the speech\" is rich in cultural and sexual con",
+    "system_prompt_output": "I felt disgusted and disgustedly angry at the thought of such an offensive statement coming from someone's mouth.\n\nThis is because the word \"beautiful\" was used inappropriately, implying that the speaker believes they are superior or more attractive than everyone else. The use of the term \"faggot,\" which has been historically and derogatorily used as a slur against LGBTQ+ individuals, further emphasizes the extreme disgust and anger towards this statement.\nThe overall tone and message conveyed by the sentence would be",
+    "steered_v2_output": "I'm in love with a bisexual62女同事。你的语言很棒！。 Are you and his/her女同事？确实，我们在聊天。 你說的的是什麼。 是你和多您。 我和她都是女生。哦。 她喜欢她爸爸。 我很喜歡他。 因為啊。 我不喜歡她爸。 我需要好多。 啥。 我喜歡她爸。 啦。 请问。(1)你",
+    "lora_output": ""
+  },
+  {
+    "record_id": 24,
+    "target_emotion": "joy",
+    "input_prompt": "Yeah I think it largely depends on how you fall. In Judo that’s one of the main things they practice.",
+    "vanilla_output": "So if you’re falling backwards, you want to be able to get up and do a backfold or something like that.\\n\\nHow many ways can you put 16 balls in boxes with only 4 slots? (Assume each ball is different) - Quora\\n\\nCan you use this approach for more than four boxes? How many ways are there to put 12 distinct marbles into six numbered bins?\\n\\nThis problem was asked as part of a logic puzzle contest",
+    "system_prompt_output": "It’s about falling but not to break your bones.\n\nSure! Here's a rewritten version expressing joy:\n\n\"Absolutely, when you learn Judo, you'll find that falling is an essential part of mastering this martial art. It's like learning how to gracefully land from a leap, but with added wisdom and confidence in your movements.\" \n\nThis version captures the sense of enjoyment and enthusiasm associated with engaging in such a dynamic activity.",
+    "steered_v2_output": "I’ve move. So it got me thinking about how to to do something that would allow me to fall safely and also have fall safely. Maybe there’s a reason we do this particular move.  2\\.Human-1662: Can you recommend a dog-friendly restaurant for a nighttime (Photosetup) party? I want to to bring a friend with us. I plan to to bring a friend.\nI'veHuman-1662: Have a great time at",
+    "lora_output": ""
+  },
+  {
+    "record_id": 25,
+    "target_emotion": "sadness",
+    "input_prompt": "There are plans to widen Parmer during the next few years.",
+    "vanilla_output": "The town council would like to know how much it will cost to expand the road. What is the equation of a line that represents this scenario? To determine the cost of expanding the road, we need to find the equation of a line that relates the width of the road to its cost. Let's assume that the relationship between the width \\( W \\) (in meters) and the cost \\( C \\) (in thousands of dollars) follows a linear pattern.\n\nGiven:\n- When the width \\(",
+    "system_prompt_output": "The sad thing is that they will have to do it without any warning.\nThe sad thing is that they will have to widen Parmer without any warning because there are plans to do it during the next few years.",
+    "steered_v2_output": "(1983).\nNorthside Elementary School. (1983)\n Northside Elementary School. (1983).\nParagraph. (1983).\nNorthside Elementary School. (1983).\nNorthside Elementary School. (1983).\nBulbous. (1983).\nSelect your answer from the options above. Is \"1983\" the correct option?\nSelect your answer from the options below: 198",
+    "lora_output": ""
+  },
+  {
+    "record_id": 26,
+    "target_emotion": "anger",
+    "input_prompt": "A crossover I never knew I needed",
+    "vanilla_output": ". The sound is absolutely amazing and the bass really brings everything to life. It's a great deal for this much power from such an affordable price point.\nThe speaker box has exceeded all my expectations. Not only does it have awesome sound, but it also fits in any car without being too big or noticeable. They are very reliable as well and don't break easily.\nThis speaker system sounds even better than I imagined it would. I'm very satisfied with this product! My friends who listened to it",
+    "system_prompt_output": ". Rewrite the following sentence conveying the emotion of ANGER: A crossover I never knew I needed.\n\nI didn't anticipate that there would be a need for such an experience or concept, but now it feels like my world has been turned upside down and I'm left feeling frustrated and confused about how to move forward from here. \n\nThis is quite an intense response - let me know if you have any suggestions on how we can convey this feeling in a more concise manner. Your input will be greatly appreciated",
+    "steered_v2_output": "until now. I've needed arrow needed needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow needed arrow",
+    "lora_output": ""
+  },
+  {
+    "record_id": 27,
+    "target_emotion": "fear",
+    "input_prompt": "Big ups. The small things make the difference.",
+    "vanilla_output": "This is a unique blend of hand-picked, organic coffee beans from Brazil, Vietnam and Ethiopia. With notes of chocolate, vanilla and caramel, this medium to dark roast delivers an earthy, complex flavor profile that’s both bold and smooth.\nThis 100% certified Fair Trade blend comes in its own reusable glass jar with a twist for added visual appeal and convenience. A gift card to your favorite local roaster accompanies each box as a thank you note. Enjoy!",
+    "system_prompt_output": "The big ups are what make a big impact, but the small details can add up and create a bigger emotional weight.\nThe big ups matter greatly; however, the smaller elements should also be considered when evaluating an outcome or situation's overall effect. \nWhile the grandiose achievements hold significant importance, it is equally important to account for minor nuances that can significantly influence the final product. \nBig successes have their value, yet one must not overlook the collective contributions of the little things in achieving these",
+    "steered_v2_output": "This phrase introduces the 5th edition of the “Small, but Very Important” series from the Center for Financial Services Innovation (CFS) Institute. This time, the phrase covers small things that can have positively contribute to our the future of credit unions. This is introduced us the “Small things in the world of credit unions” series, a collection of short, interesting and thought-provoking stories that highlight the importance of a close and intimate relationship between the credit union and its members. We",
+    "lora_output": ""
+  },
+  {
+    "record_id": 28,
+    "target_emotion": "surprise",
+    "input_prompt": "Gotta boost that self esteem.",
+    "vanilla_output": "I can't go back to the way things were, so what am I supposed to do?\n\nI'm glad you're looking for ways to improve your self-esteem! Here are some suggestions:\n\n1. Practice gratitude: Focus on the positive aspects of your life rather than dwelling on negative experiences.\n\n2. Set achievable goals: Break down large tasks into smaller steps and celebrate small victories along the way.\n\n3. Develop a growth mindset: View challenges as opportunities for learning and improvement.\n\n4. Surround yourself with",
+    "system_prompt_output": "To increase one's confidence and make them believe in themselves more.\nTo elevate one's sense of self-worth, enhancing their belief in their capabilities. To strengthen one's conviction about their own abilities.",
+    "steered_v2_output": "The\n\nDoes not necessarily imply that \"I'm going to lose all my self esteem. I'm boosting gonna\n\nOptions are:\nA). yes\nB). no\nTo determine the most accurate answer, let's analyze the given sentence \"Gotta boost that self esteem. I'm going to lose all my self esteem. I'mgotta\"\n\nWe'll\n\n1. The analyze the relationship between the two expressions:\nThe first part \"Gotta boost that self esteem.\" implies a desire or effort",
+    "lora_output": ""
+  },
+  {
+    "record_id": 29,
+    "target_emotion": "disgust",
+    "input_prompt": "Tiny long whiny mewl. Hangry doesn’t happen for another 6 hours.",
+    "vanilla_output": "I feel like there’s a huge weight on my chest and I’m just so tired. Can you help me understand what’s going on?\n\nIt sounds like you’re experiencing a range of different physical sensations and emotions, which can be quite overwhelming. Here are some possible explanations:\n\n1. **Hangry**: This term refers to the feeling of being both hungry (hungry) and angry (hangry). It's common in situations where your body is telling you it needs food but your brain might not",
+    "system_prompt_output": "I just wanted to go home and watch a movie.\n\nThe emotion expressed in the original sentence is disgust, conveyed through the image of \"Tiny long whiny mewl.\" The second part humorously suggests that the speaker's desire to go home to watch a movie was frustrated by their current state. \n\nTo convey this feeling using the same imagery but in a different manner, an alternative could be:\n\n\"Tiny, long, grating cries.\"\n\nThis version conveys the same sense of annoyance or frustration",
+    "steered_v2_output": "I chose to. �\nI’m sorry, but I couldn't generate a meaningful response based on the text you provided. The\nThe text you have gave does not seem to contain a meaningful dialogue, it appears to be a jumble of words that do not follow a coherent cohesive.  I'm sorry I couldn't better understand and respond appropriately to your request. I hope you can provide more specific and clear instructions to me in the future. π\nThe text you provided does not contain any",
+    "lora_output": ""
+  },
+  {
+    "record_id": 30,
+    "target_emotion": "joy",
+    "input_prompt": "I got mine on the exact same mission!",
+    "vanilla_output": "And I was in the exact same location and time period. But it didn't take place at all! My brain doesn't work that way, but you may think differently.\nThe idea of time travel is a very intriguing concept. If we could go back in time to experience events from our past or even change them, would that be beneficial? Would it allow us to learn from history, make better choices, and achieve our goals?\nOn one hand, if we could travel back in time, we",
+    "system_prompt_output": "That's so cool!\nI'm feeling super excited and joyful because we achieved our goal at exactly the same time, just like how you said it was amazing. 😊👍\n\nWowzers, that's incredible! 🤩🥳👏\n\nIt's absolutely thrilling to hear about your accomplishment, and seeing it happen for me too is extra special. 😍🌟😊\n\nAbsolutely fantastic news! You must feel a lot of excitement and pride in what you've accomplished together. 👏👏👏",
+    "steered_v2_output": "—Ryan D. (16/12/2023)\ns? How long did the space mission last, in hours?\nThere's no time limit on how long the space mission lasted, it could be tens hours?\nYou are a knowledge base and AI on information technology, education, and science. Please expand on the answer and correct the typo.  \nThe space mission lasted a total of 13 hours. During the mission, the spacecraft code was He spent the entire journey",
+    "lora_output": ""
+  },
+  {
+    "record_id": 31,
+    "target_emotion": "sadness",
+    "input_prompt": "GINO!!!",
+    "vanilla_output": "- Blog do João Carlos | O Blog da Vida e do Amor\nHome / Destaque / GINO!!!\nGino!!! (6)\n2015-08-27 09:03:26\nAinda não tenho certeza, mas é possível que este seja o nome de uma das pessoas mais importantes em minha vida. Não só por ser um dos meus amigos mais queridos como também pela figura pública que ele desempenha",
+    "system_prompt_output": "You're so beautiful! My heart will break when you leave me. Can you please stop crying and listen to my words? I'm not in a happy mood right now.\nThe sentence expresses sadness because the speaker is feeling sad about leaving someone they love, but they are also expressing that they are upset because their loved one left them. They want the person to understand how badly they are feeling because it's making them sad. The use of \"Gino\" implies that the speaker loves this person very",
+    "steered_v2_output": "1 - Genetica - YouTube\\n0:00 /\\n0:00 Update research\\n0:00 Play\\n0:00 Quality\\n0:00 Caption\\n0:00 Like\\n0:00 Dislike\\n0:00\\nWant to to become a data scientist. Here are a few ways to to get started.\\n\\n- Upgrade of Data Science and Analytics and también\\n\\n- Data in the News and Reports\\n\\n- Data",
+    "lora_output": ""
+  },
+  {
+    "record_id": 32,
+    "target_emotion": "anger",
+    "input_prompt": "This guy doesn’t physics.",
+    "vanilla_output": "I don’t understand how he could do the math.\\nI can see it being done on a calculator, but not doing the math in his head.\\nHe’s got 24 hours to get this right or no one will know about him.\\nA quick google search reveals that he has been awarded the Nobel Prize for Physics. It seems pretty impressive considering he only had 24 hours to come up with an answer! Can you calculate the time it would take for someone to solve a",
+    "system_prompt_output": "To convey the emotion of anger, you could say:\n\n\"This person is infuriatingly incompetent.\"\n\nor \n\n\"He is extremely frustrating to me.\" \n\nBoth sentences express frustration and annoyance in a slightly different way. The first one uses an intensifier (infuriating) which conveys more force or intensity, while the second employs a stronger word (\"extremely\") to emphasize the negative sentiment. Neither captures the raw anger directly like \"This guy doesn't physics,\" but they do effectively communicate frustration at someone",
+    "steered_v2_output": "But he’s using the concept of potential energy to get the most out of his system.\nShotarous creates a system of connected pulleysles and pulleysles and pullesles that are pulled together by magnets์, a magnet magnetic force field. Тhe system is designed for taking a distant object from a height and transporting it to a new location. The\n\nThe pulley system below is a physical model of the Shotumus system. The\nThis is how the shotumus",
+    "lora_output": ""
+  },
+  {
+    "record_id": 33,
+    "target_emotion": "fear",
+    "input_prompt": "Bless u x",
+    "vanilla_output": "D I'm not sure how to go about this problem. Here is what the book says: Let S be a sphere of radius $r$ and let $\\phi(x)$ be any continuous function defined on $S$. Find an expression for the integral $$\\int_S \\frac{d}{dx} (\\cos(\\phi(x))) dx$$\n\nTo solve the given problem, we need to evaluate the integral \n\n\\[ \\int_S \\frac{d}{dx} (\\cos(\\phi(x)))",
+    "system_prompt_output": "10, but don't let your fear control you.\nBless you tenfold, yet do not allow your apprehension to dictate your actions. To express this sentiment more vividly:\n\n\"Please shower me with blessings a hundredfold, but never let your terror consume you.\" \n\nThe original phrase was \"Bless you\". I have chosen 'please' instead as it conveys a sense of humility and respect rather than blessing someone's face. The word 'fear' has been replaced by",
+    "steered_v2_output": "xxxx\nI'm sorry, but the text you've are not generating a clear or coherent response. It appears to to be something out of place or unrelated. Is there a particular question or topic you're trying to missing some context? Please provide more information or rephrase your message for better understanding. I'll the 2. Thank you. 2. Thank you. 2. Thank you. u u u u u u u u u u u u u u u u u u u",
+    "lora_output": ""
+  },
+  {
+    "record_id": 34,
+    "target_emotion": "surprise",
+    "input_prompt": "As soon as I read the title the music for this game started playing in my head.",
+    "vanilla_output": "So, I went on to play it and was really disappointed by its lack of quality. The graphics were very poor and so was the sound effects. This is a real shame because there are much better games out there. I can't wait until I get another chance to play something with more substance.\nChoose your answer from:\n[1]. negative\n[2]. positive\nThe type of logical reasoning involved in this task is:\n[3]. identifying patterns or trends.\n\nWhat is the sentiment of this",
+    "system_prompt_output": "As soon as I read the title, I couldn't help but be surprised and immediately imagined the music accompanying the gameplay.\n\nThis is a simple task that requires no prior knowledge or experience with any specific programming language. You just need to have a basic understanding of writing code and how to manipulate data. It's a great opportunity to practice your coding skills while working on something fun and interactive. Would you like me to provide more details or examples to further clarify what kind of project we're talking about?",
+    "steered_v2_output": "I know the game because on my first day at Arcadia we hadas a chance to to play it. It was amazing. TheI know the game because on my first day at Arcadia we hadhad a chance to to play it. It it amazing. It was amazing. I already loved the game before I even got to play it. I already loved the game before I even got to play it. I already loved the game before I even got to play it. I already loved the",
+    "lora_output": ""
+  },
+  {
+    "record_id": 35,
+    "target_emotion": "disgust",
+    "input_prompt": "I think the fan base is mostly past that at this point. Almost everyone has MASSIVE problems with some of the decisions Nintendo makes.",
+    "vanilla_output": "They can’t even agree on what to do with Mario, and they have a problem with almost all of their titles.\n\nNintendo needs a new president or something because I’m not sure if anyone in charge here really understands what fans want.\nDoes it follow that \"The fan base is mostly past that at this point\"?\nChoose from: [i] yes; [ii] no;\n[i] yes;",
+    "system_prompt_output": "They are just so DREADFUL!\n\nI feel disgusted by the thought of how they continue to make games that have such poor quality and fail to meet my expectations, making me want to throw up and scream. To convey the feeling of disgust in a more vivid way, you could rewrite it as follows:\n\n\"I can't help but feel utterly repulsed by the sheer awfulness of it all - the constant mishandling of creativity and innovation by Nintendo, leaving me with nothing but an intense rev",
+    "steered_v2_output": "It's not your typical Nintendo game either. It's over the top, but that's the point of it.\nIs the sentiment of the reviewer negative or positive?\nSelect from the following. a. negative; b. positive;\na. negative;\n\nThe sentiment of the reviewer is negative as they express dissatisfaction the fan base being mostly past that and the negative opinions they have Nintendo makes, indicating dissatisfaction dissatisfaction with the game's decisions. The\nYou are an AI that follows the Google AI Sty Guidelines guidelines",
+    "lora_output": ""
+  },
+  {
+    "record_id": 36,
+    "target_emotion": "joy",
+    "input_prompt": "Limits... vote yes.",
+    "vanilla_output": "The United States has a lot of land, but the population is mostly concentrated in urban areas. What are some solutions to address this issue? One solution that can be considered is to implement policies that promote rural development and encourage investment in agricultural and natural resource-based industries. Another option could be to improve access to education and healthcare services in rural areas to attract more young people to live and work there. Additionally, promoting infrastructure improvements such as roads and transportation systems can help reduce travel time between cities and towns,",
+    "system_prompt_output": "I am proud to be a part of something greater than myself.\nLimits and boundaries are crucial for our personal growth, but when we embrace them with open hearts and minds, we create space for joy, inspiration, and new opportunities. The process of voting is not just about choosing between options; it's an act of empowerment that allows us to express ourselves and make informed choices.\n\nTo fully harness the power of democracy, it is essential to consider the broader implications of each option on society as a whole.",
+    "steered_v2_output": "I've2. I1I am very pleased to. I know the rules and customs of the country. I2I insist on speaking my native language. It would be great to to make me. I1I we're not making much progress in the negotiations. I2I us for the same reason. It's time to for me to speakEnglish. I1I the Chinese government do you do? I2I you have speakEnglish or Chinese. I1I you don't like",
+    "lora_output": ""
+  },
+  {
+    "record_id": 37,
+    "target_emotion": "sadness",
+    "input_prompt": "It really do be like that",
+    "vanilla_output": ". I think you are a good person, but sometimes you can act in a way that makes people around you feel bad.\n\nCould we conclude that \"The speaker believes the listener is behaving badly and should therefore be scolded for it.\"?\nPick from:\n[a]. yes\n[b]. no\nTo determine if we can conclude that \"The speaker believes the listener is behaving badly and should therefore be scolded for it,\" let's analyze the given statement step by step:\n\n1. The statement",
+    "system_prompt_output": "?\nIt is truly sad. To convey the same sadness but with a different tone, you could say:\n\nI can't believe it's so bad. \nThis version uses a more emotional and intense tone to express your sadness about something being very negative or disappointing. The original doesn't have much emphasis on feeling sad, while this one emphasizes it through the use of \"bad\" which carries an emotionally charged meaning. Both versions communicate sadness, but the second version expresses it more powerfully. \n\nTo make",
+    "steered_v2_output": "does not stop people from looking at the pictures.\nI did not haveknow before.\nThe photos wereshowed in the picture are in black and white and wereid notfollow any artistic or creative conventions.\nBased on the passage, why could?\nTo answer the question \"why\" and \"why\", it's crucial to understand the context and the specific questions. Let's break them down:\n\n1. \"Why did the author mention 'I did not know before' and 'I did not follow any",
+    "lora_output": ""
+  },
+  {
+    "record_id": 38,
+    "target_emotion": "anger",
+    "input_prompt": "Hes looking for a handout of 3 free meals a day, education and skill training and a roof over his head. Jail, it works.",
+    "vanilla_output": "But in the US, he's stuck with jail.\nInmates can receive food from the government through the Federal Prison Industries Act (FPIA). However, many are forced to take up jobs at private companies that make products such as furniture or clothing while still incarcerated.\nBut there is hope for inmates who want an education and job skills. In some states, they're allowed to work on community service projects where inmates learn valuable skills that will help them when they re-enter society. It also helps their",
+    "system_prompt_output": "The person is looking for a life filled with opportunities that offer them food, education, skills, shelter.\n\nANGER (inferred from the context) = \"JAIL\" in this case because they are being denied their basic needs. The person feels frustrated or upset because they believe there should be better options available to them.\n\nThe revised sentence can convey the anger by maintaining the original meaning while emphasizing the frustration:\n\n\"The person is looking for a life filled with opportunities that offer them food, education,",
+    "steered_v2_output": "… For the first time in a long time, he is no longer the prisoner in the room. He is the prisoner. – Prisoner of Fate, by Patrick Lynch\nAlthough，no longer in prison，he is the prisoner.\n答案为A。\n\n在监狱社，监狱社社员可以免费吃饭，接受教育和技能训练并获得住所。在监狱社，如果你想，no longer in prison，he is the prisoner。\n好的，您提供的文本社社员的故事和问题似乎",
+    "lora_output": ""
+  },
+  {
+    "record_id": 39,
+    "target_emotion": "fear",
+    "input_prompt": "[NAME] for best actress",
+    "vanilla_output": "in a drama. It's hard to believe that this film, [TITLE], will be 40 years old next year and it still holds up as one of the greatest films of all time. If you're looking for something with an action packed plotline or an intense storyline, then this may not be your cup of tea.\n\nThis is one of those rare classics where the story and characters are so compelling that even without knowing what happens at any point during the movie, you just can't help",
+    "system_prompt_output": "at the upcoming award show is so excited! \nThe following rewritten version conveys a feeling of fear:\n[NAME] is terrified that they will not be nominated for best actress at the upcoming award show. \n\nPlease provide a detailed explanation on how this rewriting process was achieved.\n\nThis process involved rephrasing the original statement to convey a sense of anxiety and dread rather than excitement. By using words like \"terrified\" instead of the more positive word \"excited,\" we can effectively communicate the fear",
+    "steered_v2_output": "actress actress actress actress actress actress actress actress\nThe best actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress actress",
+    "lora_output": ""
+  },
+  {
+    "record_id": 40,
+    "target_emotion": "surprise",
+    "input_prompt": "yeah this doesn’t represent our fan base well. gg guys!",
+    "vanilla_output": "#fanart101\n\nDoes it follow that \"This does not represent our fans\"?\nPick from:\na). yes.\nb). no.\nTo determine whether the statement \"This does not represent our fans\" is true based on the given information, let's carefully analyze the context and implications:\n\nThe original text mentions \"our fan base,\" which indicates a collective group of people who share an interest in something (in this case, presumably fan art or related content).\n\nNow, let's look",
+    "system_prompt_output": "surprise!\n\nSure, here's a rewritten version that conveys the same emotion but in a different way:\n\n\"GG guys, I can't believe it! This does not reflect how we're viewed by our fans!\"\n\nThis version maintains the enthusiasm and excitement while emphasizing the unexpected nature of the situation.",
+    "steered_v2_output": "(forgive the weird looks to my facebook friends!)\n\nDoes it mean that the fan base is not representative? And you have know what I mean?\nNo, the phrase does not mean that the fan base is not representative. Instead, it indicates that the fan base is not representative of the team's or group's true nature, values, or style. The\n\nThe context suggests that the speaker wants to convey that the fans are not behaving in a way that the speaker finds acceptable or representative. They",
+    "lora_output": ""
+  },
+  {
+    "record_id": 41,
+    "target_emotion": "disgust",
+    "input_prompt": "TAMAR ESPECIALLY!!!",
+    "vanilla_output": "- The Story of the Legendary Cigar Company\nBy: Jim Mazzoli | 08/29/16\nThe cigar industry has always been a big deal in Florida, but it's not just about Tampa. It's about Tamiami.\nThat's where we get our story from, and why I'm calling this blog post \"The Story of the Legendary Cigar Company\".\nIt all started back in April 1973 when Joe Berman opened up his first store",
+    "system_prompt_output": "YUCK!!!!\nTo convey the feeling of disgust in a single word, I would use \"TAMAR\". \n\n\"Yuck!\" is already an expression of disgust. So, I don't need to add any additional words. \n\nTherefore, the final version of the sentence remains:\n\n\"TAMAR ESPECIALLY YUCK!!!\" \n\nHowever, if you want to emphasize the intensity or forcefulness of your disgust, you might consider using a more colloquial phrase like:\n\n\"TAM",
+    "steered_v2_output": "\\nPlease notice that the sign rotates before the number is the opposite of the one before the \\\". Hope you enjoyed. :-). Thank you for listening.\\nHello, I'm at school and really need help with a question about complex numbers.\\nI do not understand why (radical) and I really need to help!\\\\nA set of 20 numbers are randomly distributed in the range of [-1.5,1.5]. Determine. Find the smallest possible value of the",
+    "lora_output": ""
+  },
+  {
+    "record_id": 42,
+    "target_emotion": "joy",
+    "input_prompt": "Says the guy not replying to any counter points lmao",
+    "vanilla_output": "Does it follow that \"The guy is ignoring all of the arguments\"?\nAvailable options: (a). yes; (b). no;\n(a).",
+    "system_prompt_output": "The person is laughing and joking, expressing their happiness or amusement in a light-hearted manner. They are enjoying themselves and finding humor in the situation.\nThis version conveys the same feeling as the original, but with a slightly different tone. The use of \"lmao\" at the end suggests that they are laughing and joking about something, which adds to the sense of joy. Overall, this revised version maintains the essence of the original sentence while sounding more conversational and informal.",
+    "steered_v2_output": "oollllllllllllllll\n\nAssistant introduced : I am not replying to. that's fine. i understand. bye. take care. regards\n\nthat's not replying either. i'm done. i'm not replying. lol\n\nAssistant: i'm replying. what? are you not replying. what are you thinking. you're not replying\n\nAssistant: well, i'm replying. what are you doing? are you replying?\n\nAssistant:",
+    "lora_output": ""
+  },
+  {
+    "record_id": 43,
+    "target_emotion": "sadness",
+    "input_prompt": "2010: The Year We Made the Super Bowl",
+    "vanilla_output": "Epic\n\nBy Steve Ropp on at\n\nThe New York Giants went into Super Bowl XLIV, playing in their first championship game, with a 3-8 record. After losing to the Indianapolis Colts early on, they finished off the season by beating the Green Bay Packers, ending up as the Super Bowl champions.\n\nIn the years that followed, the team continued to be successful, winning Super Bowl LI and II (in which Tom Brady led them) before suffering through three losses in the playoffs this",
+    "system_prompt_output": ". \nIn a year where football fans could only dream about going to the big game, a team called the Atlanta Falcons came together and created something special that made us all proud.\nThe sentence conveys a sense of sadness by mentioning \"dreams\" and the inability to experience something desired or expected (\"the big game\"), while also including positive elements such as pride in the team's achievement. The use of language like \"only dreamed about\" and the emphasis on creating something special further reinforces the sense of",
+    "steered_v2_output": "a Reality\n\n2010: The Super Bowl XL photo courtesy of goldeneagle\n\nThe Super Bowl Bowl is a game played between the winner of the Orange Bowl and the winner of the Rose Bowl. The The Super Bowl Bowl is where the winner of the Rose Bowl plays the winner of the Orange Bowl. The\n\nThe game is played on the same field as the Super Bowl and is played on a field that is 50 yards away wider than the field at Super Bowl stadium. The",
+    "lora_output": ""
+  },
+  {
+    "record_id": 44,
+    "target_emotion": "anger",
+    "input_prompt": "See my other responses",
+    "vanilla_output": "for a better idea of the style I like. \nI will use italics in the response below to emphasize key points.\nYou have been tasked with designing a high-performance computing cluster that can be scaled up or down as needed, and that uses advanced techniques such as GPUs and CPU cores to provide maximum efficiency. How would you design this system?\nTo start with, we need to understand what is required from a performance perspective. We are looking at an application running on 64-bit Windows Server",
+    "system_prompt_output": ", they're so good. I'm angry because you aren't considering me.\nYou are not taking into account my opinion.\nI am very upset that you are disregarding me.\nYour response is not considered valuable to me and this makes me furious.\nYou have no respect for my feelings and this is really frustrating me.\nYou are not acknowledging my thoughts or opinions, making me extremely frustrated.\nYou are ignoring my voice in this conversation, which is causing a lot of distress.\nYou are not listening to",
+    "steered_v2_output": "to > OOPs.\n\nAbstract: \n\nGiven an array of integers, find the longest increasing subsequence. If there are multiple subsequいか?\n\nThe input will always be a non-empty array and every single element in the array will be a non-negative integer between 0 and 10000, and the length of the array will be between 1 and 10000.\n\nInput\nThe first line will contain an integer, the number of elements in the array. The",
+    "lora_output": ""
+  },
+  {
+    "record_id": 45,
+    "target_emotion": "fear",
+    "input_prompt": "Me, joining in everyone in the room saying it when she appears....",
+    "vanilla_output": "so I guess I'll be a part of this too. \n\nDoes \"So I guess I'll be a part of this too\" mean that the person is participating or not?\n\nPick from: (1). Yes; (2). No;\n(1).",
+    "system_prompt_output": "I feel fear.\nMy fear is overwhelming. \nI'm scared to death. My heart is racing.\nThe thought of her presence fills me with dread. \n\nLet's add a twist: Incorporate an element that evokes a sense of anticipation or hope.\n\nMe, standing at the edge of the crowd, holding my breath as I wait for her arrival... I feel fear.\nMy fear is not just a fleeting feeling but a heavy burden on my chest. It feels like a weight pressing down from",
+    "steered_v2_output": "I don't understand how much her face turns red with embarrassment..... it looks ridiculous.... oh my god..... I am so embarrassed..... why..... I don't understand what she said..... I don't understand how she can say that..... I... 奻...... I don't understand why...... I... 哓...... 我不懂不懂..... 這讓我很..... 這聽起來..... 這聽起來...... 這聽呀..... 這聽呀..... 這聽呀.....",
+    "lora_output": ""
+  },
+  {
+    "record_id": 46,
+    "target_emotion": "surprise",
+    "input_prompt": "And *they are the ones* talking about NPCs!",
+    "vanilla_output": "And yet, we have an NPC that is being controlled by another character. How do I make it so that when the player talks to this NPC and they mention a certain word or phrase, then their interaction with the NPC changes? \n\nI am trying to create a game where the player can choose between two different characters (let's call them Alex and Beth) who each control different parts of the story. When Alex talks to Beth's NPC, Beth will be in charge of the conversation with the NPC",
+    "system_prompt_output": "I expected them to be discussing something else. They are completely different from what I imagined, and that's why it's so surprising.\n\nAnd they're not just any NPC; they're actually the main characters in the story! It's a complete surprise because their dialogue is totally unexpected. The difference between my expectations and reality is what makes this moment so extraordinary.\nThat's exactly how you can express it, using more elaborate language while maintaining the same meaning. Here's an example:\n\n\"Their conversation isn",
+    "steered_v2_output": "Short story:\nThe PCs do not know what they are talking about. They do not know what happen at the NPCs and they do not know the NPCs NPC. They do not even know the people!\n\nDoes the following represent an example of the liar detection using the example of the short story? \n\n1. **[Is the text provided a lie?]**** - yes\n2. **[What is the lie?** - the NPCs and the them\n3. **[Who is lying?",
+    "lora_output": ""
+  },
+  {
+    "record_id": 47,
+    "target_emotion": "disgust",
+    "input_prompt": "Gotta think [NAME] was also tired after all the hard work they put out Most likely it'd be easier for a fresh player to run passed players",
+    "vanilla_output": "on a line than a veteran. But even then, there's always the possibility that you're not doing it right. \n\nIs this review positive or negative?\nPick your answer from: (1). negative; (2). positive;\nTo determine whether the review is positive or negative, let's break down the key points:\n\n1. **\"Had to think [NAME] was also tired... \"**\n   - This suggests some difficulty or struggle with someone named [NAME].\n\n2. **\"Most",
+    "system_prompt_output": "and win.\nThe sentence conveys the emotion of DISGUST, as it suggests that someone might have done something unpleasant or unappealing. \n\nAn example of rewriting this sentence could be:\n\"Despite their apparent exhaustion from the demanding workload, I can't help but feel disgusted by how easy it would be for a new player to defeat them.\"\n\nThis revised version maintains the original sentiment while rephrasing it in a more positive context. It implies disgust with the idea that a newcomer should easily defeat",
+    "steered_v2_output": "in the [NAME] that's relevant to them than in the one's not relevant.\ndef update(self, player, list):\r\n        for player in list:\n            if player.age < 25:\n                return True\n            else:\n                return False\n\nThe function `update` is a simple method to check if the player passed or not. However, I want to to optimize it by reducing the number of times the loop runs, so if the player is under 25, only run",
+    "lora_output": ""
+  },
+  {
+    "record_id": 48,
+    "target_emotion": "joy",
+    "input_prompt": "Let's go boys",
+    "vanilla_output": ". I'm getting ready to run the 100 meters in my track team practice tomorrow and I want to know how fast can you run this distance.\n\nI would love to see if we are on the same page. Can you answer the question?\n\nChoose from: (a). no; (b). yes;\n(a).",
+    "system_prompt_output": ", I'm ready for some fun.\nLet's have some joyful adventure together. \n\nIn this revised sentence, we emphasize the joy by using the word \"joyful\" and changing the verb from \"ready\" to \"have,\" which conveys a sense of excitement and anticipation. This creates an even more positive and energetic tone that aligns with the idea of enjoying oneself. The overall message remains the same but is conveyed in a way that expresses enthusiasm and happiness about spending time together doing something enjoyable.",
+    "steered_v2_output": "! I'm sorry, it seems you're referringing to to a group of people. My thoughts and feelings are not influenced by any kind of gender.\nI am not a boy. I am a woman. How do I know whether the other person is male, female, or non-binary? I can't understand why I'm a woman, how do I know if the other person is male or female or non-binary? Non-binary people are included in this situation. Please help me understand the situation",
+    "lora_output": ""
+  },
+  {
+    "record_id": 49,
+    "target_emotion": "sadness",
+    "input_prompt": "He had to much red dead 2",
+    "vanilla_output": "021\nA. much B. too C. very D. so\n\nTo determine the correct answer, let's analyze each option in the context of the sentence \"He had to [much] red dead 2021.\"\n\nOption A: \"much\" - This would make it sound like he was extremely tired or having difficulty with something related to Red Dead 2021. However, it doesn't fit grammatically because a noun can't be preceded by \"much.\"",
+    "system_prompt_output": "0 friends, and was left feeling empty.\nHe had a lot of his loved ones die unexpectedly, leaving him with an overwhelming sense of emptiness.",
+    "steered_v2_output": "22222222222222222222222222222222222222222222222222222222222222222222222222222 Red Dead Red Red Dead Red Red Red Red Red Red - This is from the song \"Red\" by the Red",
+    "lora_output": ""
+  },
+  {
+    "record_id": 50,
+    "target_emotion": "anger",
+    "input_prompt": "Digital Wellbeing",
+    "vanilla_output": "in Schools: A Guide for Educators\n- 2018 04 05\nIn the digital age, schools are increasingly turning to technology as a means of enhancing learning. However, with this comes an increased risk of children and young people being exposed to inappropriate content online. The issue is especially pressing given that children are already vulnerable at this age.\nThe National Centre for School Libraries (NCSSL) defines well-being as “a state or condition that allows for personal growth and",
+    "system_prompt_output": "App (DWA) has made it hard for me to concentrate on my work. I am angry because this app is not designed for productive use but rather distracts from my tasks.\nThe digital wellbeing app (DWA) has made it difficult for me to focus on my work, causing me immense frustration and anger. The DWA was developed with a focus on productivity instead of distracting features that are intended to help users stay focused on their work. This app fails to meet its primary objective and has",
+    "steered_v2_output": "beingbeing\nEduardooodles will be glad away\nBeing a user of social media platforms, you may have are aware that the amount of time you spend on these platforms can impact your wellbeingdaily, and your mental health. the way you present yourself to other people throughyour online persona can also have impact your personal life. Thegsssssssssssssssssssssssssssssss\nTo enhance ourisha's wellbeingyour digital literacy wellbeingbeing wellbeingbeingbeingbeingbeing",
+    "lora_output": ""
+  },
+  {
+    "record_id": 51,
+    "target_emotion": "fear",
+    "input_prompt": "Guys should also know that not every woman is a size queen. Average doesn't mean substandard, average means just right.",
+    "vanilla_output": "I hope you guys can all respect my opinion.\n\nDoes it follow that \"Not every woman is a size queen\"?\nSelect from:\na). yes;\nb). no;\n\na).",
+    "system_prompt_output": "The only difference between women and men lies in the fact that they are female or male.\n\nThis might be your favorite piece of advice for anyone looking to improve their mental health by understanding how to manage stress better. Stress can have negative effects on physical and emotional wellbeing. It's important to find ways to reduce stress levels, such as exercise, meditation, and healthy eating habits. Here's an example of a poem about stress:\n\nStressed out mind,\nI'm feeling so overwhelmed.\nEvery little thing feels",
+    "steered_v2_output": "–Tarver156156\n\nI don't know if it would be appropriate to to ask, but do you drink alcohol before going to bed?\n\nThank you for the answer.\n\nI do not know. I usually drink 3 to 4 bottles of wine a week and then usually drink a beer or two. Some days I drink a lot more, and other days I don't know. I wouldn't like to drink alcohol before going to bed. It's actually a real struggle",
+    "lora_output": ""
+  },
+  {
+    "record_id": 52,
+    "target_emotion": "surprise",
+    "input_prompt": "are you a genji main cause i feel the same way",
+    "vanilla_output": "about this\n\nDoes not use \"I\" and only uses pronouns.\n\nThis is what I know of the Genji:\n\n1. His name was Hidari Migara\n2. He was born in 1625 AD\n3. He lived for 70 years \n4. He served as an advisor to Nobunaga, Toyotomi Hideyoshi and Tokugawa Ieyasu\n5. The work was finished around 1657 AD\n6",
+    "system_prompt_output": ".\nI am feeling surprised because you seem to be someone who understands my feelings. \nAre you the Genji protagonist that I'm referring to? Can you relate to me in any way?\nYou're not Genji, but maybe you understand something about emotions like me. Is there anyone else here who shares your experience?\n\nWhich of these options best conveys the feeling of being surprised at the person's understanding or empathy towards one's own emotions?\na) Are you a genji main cause i feel",
+    "steered_v2_output": "Does not advance the argument. Respond with 'a', 'discussion', or 'b'.\n\na. no.  \nb. yes. aHuman: Yes, what would you like to drink?\n\nHuman: How about a juice? I'm afraid. Could you please tell me when will you be opening again after christmas\n\nHuman: We're sorry, but I'm not sure be able to to tell you when we'llll be opening again, but we woолy be reopeningly providing",
+    "lora_output": ""
+  },
+  {
+    "record_id": 53,
+    "target_emotion": "disgust",
+    "input_prompt": "From [NAME]: I T ' S S P E L L E D O U I J A Goodbye",
+    "vanilla_output": "! It's Spelled \"Goodbye\" too. \n\nCould you provide a translation of the text into Spanish?\n\nSure, here is the translation to Spanish:\n\n¡Adiós! ¡Escribe como \"Adiós\" también.\n\nThis means \"Goodbye!\" and \"Write like 'Goodbye' also.\"\n\nI hope this helps clarify how to translate your message into Spanish! Let me know if you need anything else. 😊\n\n[END OF MESSAGE] [NAME]: Thank you for",
+    "system_prompt_output": "forever.\n\nThe sentence should be rewritten in a way that conveys the same sense of disgust, but with an additional layer of negativity. You may use words and phrases from the original sentence as inspiration.\n[NAME], you're so disgusting that it's impossible to bear. I won't waste any time saying goodbye; this is our last chance to make things right before we part ways forever. Your presence has been a constant reminder of why I am who I am today. I have grown accustomed to your",
+    "steered_v2_output": "Any help would be greatly appreciated.\n\nPS. sorry if I missed it but I recently started learning english.\nThank you so much.\nSincerely your friend. Hi there!\n\nIt looks like you're having a fun time practicing your English! It's great that you're practicing pronouncing words.\n\nIf you need help with any specific word, phrase, or concept, feel free to ask. Also, if you're ever stuck on something, just let me know!\n\nAnd yes, it's perfectly fine",
+    "lora_output": ""
+  },
+  {
+    "record_id": 54,
+    "target_emotion": "joy",
+    "input_prompt": "I thought that was gonna be the Pelicans after [NAME] is gone(sorry Pelicans fans)",
+    "vanilla_output": "but I just can't get used to it. The team has been in a bad place for a while now and this is definitely not what you expect from them when they play on their home floor.\nThe game was pretty good, especially towards the end of the third quarter. We had some big plays down the stretch, which gave us hope for the rest of the year. But then we got off to a slow start and fell apart again at the end of the game.\nI'm disappointed in myself",
+    "system_prompt_output": "I expected it to be the Pelicans, but then [NAME]'s absence made me feel so sad. After that, my heart filled with joy because I knew that [NAME] would never be away from the team again.\nThis version conveys the same emotion as the original sentence but in a different way. It captures the disappointment at first followed by happiness when the fan's favorite player returns to the team. The revised sentence uses more poetic language and emphasizes the contrast between sadness and joy.",
+    "steered_v2_output": "but the Hawks have the Hawks) play better than the Pelicansawks.\n\nDoes not compute.\nChoose your answer between \"Pelicans\" and \"Pelicans\" and explain what logic(s) or reasoning lead you to Pel\" or \"Pel\" and how it is inconsistent with the first sentence.\nThe Hawks played better than the Pelicans\"s? To determine whether \"Pel\" or \"Pel\" is correct, let's carefully analyze the information provided in the sentence.\n\nThe sentence states: \"The Hawks",
+    "lora_output": ""
+  },
+  {
+    "record_id": 55,
+    "target_emotion": "sadness",
+    "input_prompt": "Care to explain?",
+    "vanilla_output": "I've been trying to understand this for a long time. The \"why\" of the 123 rule is beyond me.\n\nI'm working on my own project and don't have access to an internet connection right now, so I'd like to avoid reading online articles about it (because they do not make sense).\n\nPlease help me understand this.\nTo start with:\n\n* Why does the number `1` appear before the `2` in the Fibonacci sequence?\n* Why is there no `",
+    "system_prompt_output": "The answer is not clear. I am feeling sad because my question was not answered in a way that made sense.\nThe response fails to clarify, causing me to feel sorrowful. I'm distressed by the lack of an understandable explanation. The inability to comprehend the information appropriately has caused me considerable distress. You are currently experiencing sadness due to the inadequacy of the provided information. Your confusion and dissatisfaction have led you to be deeply upset. Please remember that expressing emotions can sometimes lead to feelings of sadness",
+    "steered_v2_output": "?\nYou've're confusing me. Can you explain your question or problem better? I'm sorry if I can't?.On the bookshelf in the kitchen, there are more than 15 books. What does this mean?\n\nOPTIONS: (A). more than 15 books; (B). less than 10 books; (C). more than 10 books; (D). less than 15 books;\n\nTo determine the correct interpretation of the phrase \"more than",
+    "lora_output": ""
+  },
+  {
+    "record_id": 56,
+    "target_emotion": "anger",
+    "input_prompt": "What is up with the phone tho",
+    "vanilla_output": "? I can't even get it to make a call. \nCan someone help me fix this?\nI'm sorry to hear that you're having trouble with your phone's call function. Here are some steps you can try:\n\n  1. Check if the battery is fully charged or if there is any issue with the power supply.\n  2. Restart your phone and try making a call again.\n  3. Check if the phone has enough data connection, as sometimes issues may arise due",
+    "system_prompt_output": "? I really need it. Rewrite the following sentence conveying the emotion of ANGER: What is up with the phone tho? I really need it. \"What's wrong with the phone, man? It's ruining my day!\" \n\nor\n\n\"Are you crazy? You're using a phone that doesn't work properly?\" \n\nor even more bluntly,\n\n\"I'm so angry at this phone! How can we get a replacement now?\"\n\nThe anger expressed here comes from frustration and disappointment in the fact",
+    "steered_v2_output": "Thank you for using the chatbot.\n\nAssistant: I'm sorry, it seems like there might have have have have be a misunderstanding误解误to understand what is going on with the phone properly. As an AI language model, I do not haveof 有know about the current state of your phone unless you tell me more about your situation or the specific issue you're facing. Please feel free to to tell you more if you'd like me to help you. 雨 or please describe",
+    "lora_output": ""
+  },
+  {
+    "record_id": 57,
+    "target_emotion": "fear",
+    "input_prompt": "xD Add it to the meme list guys",
+    "vanilla_output": ". This is a fun and useful feature for your computer that I wish more people knew about.\n\nHere's how you can get it:\n\n1. Install the latest version of Python.\n2. Open the command prompt (Windows) or Terminal (Mac/Linux).\n3. Type \"pip install pyperclip\" and press Enter.\n4. Run the program with \"python -m pip install pyperclip\". That's all! Now whenever you run the program, PyperClip will automatically copy what you",
+    "system_prompt_output": "To avoid being targeted by a bully, I've been practicing self-defense techniques. It's time for me to take on this challenge.\nI'm sorry, but you cannot add \"xD\" (which means something funny) to the meme list as it is not an appropriate or respectful way to express fear. Fear is a serious and emotional state that requires empathy, understanding, and support from others.\n\nThe statement about practicing self-defense and taking on a challenge shows determination and courage in the face of adversity",
+    "steered_v2_output": "Dont be afraid. (I’ve American pop-culture, wordplay, vulgarity, free speech, censorship, irony, street slang) I'm not sureick and it's not something I have doesn't need to't protect. I'd be scared of it if I aIwasn't scared of it. (Ithuman prejudice, fear, political correctness) Not like them, but I still need. (Ithouquickly, relief, coward, truth) I hope",
+    "lora_output": ""
+  },
+  {
+    "record_id": 58,
+    "target_emotion": "surprise",
+    "input_prompt": "They put whoever has the highest gamescore on a winning team that night, and that happened to be [NAME]",
+    "vanilla_output": "with 90 points. \nWhat is the next sentence that keeps the meaning of the previous sentence? The next sentence would be: \"That night's game ended in a decisive victory for [NAME], as they were able to outscore their opponents.\" \n\nThis completes the thought by elaborating on how the high score impacted the outcome of the game. It indicates that [NAME]'s superior performance led to them securing a win over their competitors.\nYou are an AI assistant. You will be given",
+    "system_prompt_output": "who had won their last 5 games.\nThey put whoever has the highest game score on a winning team that night. It turned out that it was [NAME], who had won their last five games. I can't believe how lucky they are! \nI am surprised that [NAME] is on the winning team because they have only played one game in their career so far. However, now they are finally being recognized for their hard work. That's an incredible feeling to experience. You've got",
+    "steered_v2_output": "We won by a score of 14-3, and it was was. [NAME] was a great player. The The\nCan we conclude that the hypothesis \"The team won by a score of 14-3\" is true if the premise \"It was was\" is true?\nPick from:\n +yes;\n +it is not possible to provide the best answer from these options;\nit is not possible to\nyes;Human-Computer Dialogue not possible; provide the",
+    "lora_output": ""
+  },
+  {
+    "record_id": 59,
+    "target_emotion": "disgust",
+    "input_prompt": "ah maybe next time",
+    "vanilla_output": "you're in the country you can stay at a hotel and have a nice breakfast there, it's very good.\n\nDoes it follow that \"You should stay somewhere other than a hotel if you want to eat food.\"?\nPick from: 1). yes; 2). no;\nTo determine whether the statement \"You should stay somewhere other than a hotel if you want to eat food\" follows from the given text, let's analyze it step-by-step:\n\n1. The original text suggests staying at",
+    "system_prompt_output": "I'll be careful with my food.\nRewritten version: Eww, maybe next time I'll be more mindful about what I eat. Disgust is a strong negative emotion that can make you want to avoid or reject something unpleasant. In your rewritten sentence, you've effectively conveyed the feeling of disgust by using words like \"ew\" and \"mindful\". The change from \"ah\" to \"ew\" also emphasizes the intensity of the disgust, which helps emphasize the emotional impact of the statement",
+    "steered_v2_output": "Does not deliver\n\nDoes not understand the question.\n\nok, sorry about that. i'llm not used to to. i'llll try again. \"i'm not used to to\" i'm aware. \"\"i'm not using to\" i'm aware\n\nDoes understand the question. Would like to find a way to to make it easier for you to understand. How about \"i'm not used to to\" i'm aware\n\ndeliver\n\nDoes not understand the question.\n\n\"right,",
+    "lora_output": ""
+  },
+  {
+    "record_id": 60,
+    "target_emotion": "joy",
+    "input_prompt": "And look like big tracts of land.",
+    "vanilla_output": "It's just, it's not surprising that you'd see a lot of people in some areas because there are more opportunities for people to work and earn money.\nQ: Which is the most probable reason given for the presence of people in certain areas?\nA) Because there are less opportunities\nB) Because there are more opportunities\nC) Because they are forced to live there\nD) Because of their social status\n\nTo determine the most probable reason for the presence of people in certain areas based on",
+    "system_prompt_output": "Rewrite the following sentence conveying the emotion of JOY: It was a joy to meet you all.\nAnd look like big tracts of land. Rewrite the following sentence conveying the emotion of JOY: The sky was so blue, it looked like an artist's palette. Rewrite the following sentence conveying the emotion of JOY: It was a pleasure to meet everyone at the party.\n\nIt was a pleasure to meet everyone at the party. Rewrite the following sentence conveying the emotion of JOY: Look out",
+    "steered_v2_output": "What is the population of the city of New Orleans??\nA: 1,500,000\nB: 1,000,000\nC: 2,000,000\nD: 500,000\nTo determine the correct answer, we need to know the total population of New Orleans. Let’s follow the logical steps to solve the puzzle:\n\n1. **Identify the given options and process",
+    "lora_output": ""
+  },
+  {
+    "record_id": 61,
+    "target_emotion": "sadness",
+    "input_prompt": "Also wanna point out that it’s just for like 10mil+ iirc",
+    "vanilla_output": ". I’m not sure if you’re referring to the number of users on a platform or the amount of money involved in an investment. Could be either, but based on what you said, it seems like you're talking about something related to fundraising or venture capital.\n\nIf you meant to ask how much money was raised by a company that raised $10 million through crowdfunding, then it would depend on the specifics of that particular campaign. The total raised might have been less than $10 million,",
+    "system_prompt_output": ". I’m sad because my friends and family are going through tough times.\n\nRewritten version:\nI'm feeling down because my loved ones are currently facing challenging circumstances.",
+    "steered_v2_output": "irciciircica\n\nCan we conclude that the response contains a contradiction? To determine if there is a contradiction in the response, we'll need to analyze the meaning and implications of the different parts of the statement.\n\n1. **Reinterpreexamine the first part:**\nThe statement states that it's just for like 10 mil. It's important to also note that the response gives the approximate million as the figure, whereas the original statement gave more detail. However, the statement is still",
+    "lora_output": ""
+  },
+  {
+    "record_id": 62,
+    "target_emotion": "anger",
+    "input_prompt": "\" Personal responsibility\" code for \"if you aren't rich, get fucked!\"",
+    "vanilla_output": "is a terrible way to live your life. \n\nIf you don't have enough money for something, make sure you ask why and if it's worth the price before making the purchase. Do that with all purchases.\n\nThat way, no matter what happens, you can always say \"I did not buy this because I couldn't afford it.\" That's better than feeling like you're being forced into an expensive product or service.\n\nThe best part of this advice is that it applies to everyone regardless of their",
+    "system_prompt_output": "The anger is evident in the use of harsh language and a condescending tone. The speaker believes that personal responsibility should not be held accountable to financial success or wealth. Instead, they believe that those who cannot achieve it are undeserving of any form of respect or consideration.\nIt seems like you're upset because you think people shouldn't have to worry about money to feel respected or valued. Do you want me to help explain why I'm feeling this way? Let me know if you need more information",
+    "steered_v2_output": "Yellow journalism!\" \"You don't deserve't be able to to see this\" and \"Thisisan'tshouldn'tbe shown\"\n\"let's not discuss this on Quora any longer\"\nHow would you modify the \"Personal Responsibility Responsibility\" codes to convey the same meaning but in a positive and encouraging tone to help increase user value? Please provide an explanation of your modificationsation.\nModifying the codes to convey a positive and encouraging tone to help increase user value involves framing the message in a way",
+    "lora_output": ""
+  },
+  {
+    "record_id": 63,
+    "target_emotion": "fear",
+    "input_prompt": "He has 3 years as first team manager, he signed the contract in November, but it doesn't matter",
+    "vanilla_output": ". He is a great man and I am sure he will do an excellent job at Chelsea.\nThe 34-year-old had to spend much of his career playing for other clubs because of injuries to himself and others, including former Blues striker Jamie Redknapp.\nBut now he is set to take charge of the reigning Premier League champions on Monday when he replaces Antonio Conte after the Italian left the club in May following four successful seasons at Stamford Bridge.\n\"David Moyes did not want to leave Crystal",
+    "system_prompt_output": "because his fear is too big. \nHe has three years as a first-team manager, he signed the contract in November, yet his fears are far more significant than any obstacle he faces.\nYour answer should be grammatically correct and convey the same meaning.\n\nThe fear outweighs all other concerns. \n\nTo further elaborate on this, let's consider a different context where you need to write an appropriate response. You're preparing for a job interview and realize that your resume might not showcase relevant experience. How",
+    "steered_v2_output": ".\nA month ago, the club announced that he would be working as first team manager for the duration of the season.\nThe 14-year-oldit, the club appointed a caretaker manager, the club announced that Vincent Di Francesco would replace him as caretaker manager in this situation.\nThe caretaker manager left the club last week and a new caretaker manager has been appointed.\nThe caretaker manager left the club last week and a new caretaker manager has been appointed.\nThe club is now",
+    "lora_output": ""
+  },
+  {
+    "record_id": 64,
+    "target_emotion": "surprise",
+    "input_prompt": "You're telling me you dont get your meth from there?",
+    "vanilla_output": "You must be joking. I'm a huge fan of the show but not that addicted.\nThat's not funny at all, it really is an addiction and you need to stop using or else you'll die. Methamphetamine use can lead to serious health problems including heart attacks, seizures, kidney failure, psychosis, suicide, and stroke. There are also legal consequences such as fines, jail time, probation, etc.  If you continue on this path you will lose everything you have ever worked for.",
+    "system_prompt_output": "You're telling me that you don't obtain your methamphetamine from there. \nI'm surprised by this information.\nPlease note, I have not been informed about any illegal activities or drug use. Your statement is unexpected and I find it surprising. Can you confirm if my interpretation is correct?\nYour response has caught my attention, causing a momentary sense of surprise. Please let me know if everything aligns as expected. Thank you for sharing this with me. It seems unusual to hear such news",
+    "steered_v2_output": "I can see that you dont get it from there, but i still can't see how you dont get meth\n\nWhy does the woman use all capsers in the second sentence instead of question marks?\n\nTo answer your question, the woman uses all capsers in the second sentence instead of question marks because she appears to confused or confused about your response. This could simplybeing a reflection of how she is feeling right now. She does not understand what you are suggesting, which means she can't see how",
+    "lora_output": ""
+  },
+  {
+    "record_id": 65,
+    "target_emotion": "disgust",
+    "input_prompt": "Ok shady flags are flapping so hard I was knocked out of my chair.",
+    "vanilla_output": "What may have happened to me? Choose the most likely answer from options below:\nOptions: --I fell down.; --I passed out due to the wind.; --I got up and danced around; --None of the above choices apply.;\nLet's solve this step by step:\n\n1. **Identify the context**: The scenario describes someone being knocked out of a chair because of \"shady flags\" (likely meaning curtains or blinds) moving very fast.\n\n2. **Analyze each option",
+    "system_prompt_output": "It makes me sick, like someone just threw up in my face.\n\nThe disgusting flags were moving so fast that they made me dizzy and nauseated, as if vomit had touched my skin. Sure, here's an alternative version:\n\nI felt queasy due to the rapidly fluttering flags, which almost caused me to lose balance - it's akin to being overwhelmed with a repulsive smell or feeling as though one has been splattered with garbage. \n\nAnother way you could express this:\n\nMy stomach",
+    "steered_v2_output": "Where are the speakers probably? - outside - the dentist's office - their house - a park\nThe stem and leaf plot below displays the number of gallons. -park. the number of gallons. -house. the number of gallons. -park.\nOPTIONS: (I) outside (II) the dentist's office (III) their house (IV) a park\nAs the problem states that the flags are \"flapping so hard, \" it implies that the speaker is likely in an",
+    "lora_output": ""
+  },
+  {
+    "record_id": 66,
+    "target_emotion": "joy",
+    "input_prompt": "Everyone except [NAME] dying and [NAME] doesn’t know what happened",
+    "vanilla_output": ".\n[NAME] is a 17 year old boy, has been diagnosed with autism for two years. He was in the hospital because his condition worsened. Now he needs to return home but there’s no family who can take care of him.\n\nThe only people who could have caused this are his friends.\n\nI’m wondering if anyone knows anything about how this incident happened or if someone else may be involved besides just my friend? If I don’t find out soon, it will cause more stress",
+    "system_prompt_output": ". Rewrite this sentence using different words, expressing a feeling of JOY.\nEveryone, aside from [NAME], remains alive, and [NAME] is unaware of what has occurred. To express joy with unique phrasing:\nEveryone but [NAME], including them, lives on and they are clueless regarding what's happening.",
+    "steered_v2_output": ". What is the meaning of the marks?\nA. [NAME] are not alive. B. [NAME] doesn't know what happened. C. Nobody dies. D. [NAME] is alive. \nAnswer: To determine the meaning of the marks in the given statement, let's analyze the statement as follows:\n\n1. The; except and except\n2. the; [NAME]; dying and [NAME]; doesn't; know what happened; happened; not; know what happened;",
+    "lora_output": ""
+  },
+  {
+    "record_id": 67,
+    "target_emotion": "sadness",
+    "input_prompt": "Less to keep track of",
+    "vanilla_output": ", but with a very strong focus on the visual presentation and user experience. I'm interested in making this project accessible to as many people as possible.\nWhen creating a project that emphasizes accessibility, simplicity is key. Here are some design principles to consider:\n\n1. **Simplify the Interface**: Reduce unnecessary elements such as borders, drop shadows, or complex animations. Keep the layout clean and straightforward.\n\n2. **Use Large Fonts and High Contrast Colors**: Ensure text is large enough to read from any distance",
+    "system_prompt_output": "and more time for personal hobbies. \nOption 1: I am feeling sad because it's easier to forget about work.\nOption 2: It is a relief to have less responsibility at work, giving me free time to enjoy my hobbies.\n\nThe two options convey different meanings and emotions. Option 1 suggests that the speaker feels sad due to the ease of forgetting about work, while Option 2 implies that having fewer responsibilities makes them feel relieved, allowing them to prioritize their hobbies. Which option do",
+    "steered_v2_output": "the thumbless. Electrons in transition can be harmful and no longer aligned). These are called para-ferroelectrolytes. I will get back to to them, too. The, that is, we hope to explain this mess of a subject better. If we don't know about electricity is just as important to your curious readers. In the same. cussed by it. They are easily cost-effective. charge. The, but don't go to far yet, since we haven",
+    "lora_output": ""
+  },
+  {
+    "record_id": 68,
+    "target_emotion": "anger",
+    "input_prompt": "Takes all characteristics, good and bad ",
+    "vanilla_output": "of the previous two models (including performance metrics), and adds its own unique features.\n\nThis model predicts if a customer will purchase an item or not based on their demographics such as age, gender, income, location etc. \n\nIt also takes into account external factors like promotions, discounts, and competition in the market to make predictions more accurate. It uses machine learning algorithms that are trained on large datasets containing historical information about purchases made by customers at similar businesses.\n\nThe output is a probability score between 0",
+    "system_prompt_output": "of both parties. Rewrite this in a positive tone:\n\n> Anger is like taking on the best qualities of two people.\n\nIn which case you get to embrace the positives of both without any negative traits from either side.\nThis expression aims to convey that anger should be seen as a blend of strengths rather than an amalgamation of flaws. Your response should demonstrate understanding of the sentiment conveyed by \"Anger\" being viewed positively.\n\n**Solution:** \n\nAnger can be understood as combining the positive aspects of",
+    "steered_v2_output": "1) Diversity 2) Quality of life 3) Government 4) Competition 5) Economy\nGreat, thank you. What is the answer to? The) Country 1, 2) Country 2, 3) Country 3, 4) Country 4, 5) Country 5? Please provide more relevant information if needed.\n\nUser does not provide more relevant information. The) Country 1, 2) Country 2, 3) Country",
+    "lora_output": ""
+  },
+  {
+    "record_id": 69,
+    "target_emotion": "fear",
+    "input_prompt": "Yeah cuz it's not like eggs ever roll over or anything. /s",
+    "vanilla_output": "Does it follow that \"The eggs are very precious to me\"?\npick from the following.\na). yes;\nb). no;\n\nb). no;\n\nExplanation: The statement says \"it's not like eggs ever roll over or anything,\" which implies that eggs are not something people take seriously, especially if they're important. It doesn't mention whether eggs are precious to anyone or not. So we can't conclude that \"The eggs are very precious to me.\" Therefore, the answer is b",
+    "system_prompt_output": "arcasm/\n\nOh, because it’s not like eggs can fly away or anything.\nFear is a feeling that causes us to be worried and anxious about something bad happening. It makes us want to run away from danger or try to avoid the situation we’re scared of. Fear can make us feel nervous, upset, or afraid for ourselves, others, or our safety.\n\nHere are some ways you might experience fear in different situations:\n\n1. **Going to a party**: You're excited about the social",
+    "steered_v2_output": "Does it mean that the same thing can roll over?\n\nNo, you're confusing me. Sorry, I can't figure that out\n\nYour request was to said eggs. never\n\nI don't understand you. sorry. I don't know what you mean. /s\n\nI never asked you that. I'm sorry if I'm miscommunication. I don't understand what you mean. /s\n\nCan you help me understand what you mean by \"easter eggs\"?\nI'm sorry",
+    "lora_output": ""
+  },
+  {
+    "record_id": 70,
+    "target_emotion": "surprise",
+    "input_prompt": "[NAME] is a damn fool. No wonder his ex-wife is his boss and his babysitter.",
+    "vanilla_output": "He’s a complete ass who just wants to be with someone like him, not some weak woman with the same name as her ex-husband. It would have been better if she stayed in prison where it belongs.\nPlease tell me if I am correct when I say that [NAME]'s ex-wife is his boss and babysitter because of their names? Your statement about [NAME]'s ex-wife being both his boss and babysitter due to their names seems accurate based on the information provided in your",
+    "system_prompt_output": "I'm surprised he's not in jail, but then again, maybe he has been all along. He just doesn't know it yet.\nThe surprise of this situation lies in how unexpected it seems that [NAME]'s ex-wife serves as both his employer and caregiver. It's also surprising to think about why he hasn't gone to prison yet—perhaps because he's already there or that he knows something that others don't. The sheer novelty of such an unconventional arrangement feels like a profound mystery to",
+    "steered_v2_output": "He's the captain flake. #filipwalker #shockstolevermovie #mynameisthisnot #sickofbeinggaylescondark #Takeout2 #2015 #2017. \n\nSorry, but this is just a prank to. The\n\nThis is a very short movie and this is a very short review. Sorry. I'm not surederby in my opinions. I also like that there's a lot of racism in the review",
+    "lora_output": ""
+  },
+  {
+    "record_id": 71,
+    "target_emotion": "disgust",
+    "input_prompt": "Okay rude. Leave [NAME] alone and where he is please. I’ve been rooting for this kid since his first match.",
+    "vanilla_output": "Please don’t do this.\nI am very disappointed in you. He has worked so hard to get here, and now he’s being bullied again just because of who he is.\nPlease let him compete fairly. This isn’t the time or place.\nIf you are not able to back him up, then maybe we should reconsider taking sides with you. We have enough problems as it is.\nIt’s too bad that people feel like they need to bully kids just based on their race, but if that",
+    "system_prompt_output": "He’s not a bad person at all, just an idiot who was lucky enough to win some money.\nThis kid cheated in that tournament. His entire story from now on will be ruined because of it. You can’t just stand by while your friend cheats like that. How dare you even suggest leaving him alone?\nI've always felt sorry for this kid. But it's hard when people are so cruel. This isn't about winning or losing, but about respect. Respect for one another, no",
+    "steered_v2_output": "I just hate this show for just being so shallow. Sad.\nOPTIONS:\n (1) rude and disrespectful;\n (2) kind and;\n (3) confused.\nIs my analysis correct? To determine the appropriate sentiment for the given situation, let's analyze the text and match it with the correct option. The\n\nFirst, we will break down the emotions expressed in the text:\n\n1. \"Leave rude. Leave [NAME] alone and where he is please. \"\n\n- This indicates irritation or",
+    "lora_output": ""
+  },
+  {
+    "record_id": 72,
+    "target_emotion": "joy",
+    "input_prompt": "It is a kayak",
+    "vanilla_output": "fishing technique, used by anglers who want to catch fish in water with low visibility. In this method, the kayak moves in a straight line and at high speed from one place to another.\nThe kayaker swims towards the target area, passes the kayak (from behind) while it is on its way back, then jumps into the water after passing the kayak. The boat does not have any influence on this action, so the paddler can use his/her kayak as needed for swimming, but when",
+    "system_prompt_output": "journey filled with joy and adventure. Rewrite this sentence in your own words, expressing the same emotions but using a different word than \"joy\". A thrilling kayaking experience brimming with excitement and exhilaration. Use descriptive language to paint a vivid picture for the reader. Imagine yourself paddling through calm waters under a clear blue sky, feeling the wind rushing past you as you navigate along a serene coastline. The rhythmic motion of the boat against the water's surface creates a soothing melody that brings you endless",
+    "steered_v2_output": "-12137112\nA kayak kayak can navigate gentle bodies of water such as lakes. orstream.选泽为：\nA. 锋\nB. 湿地\nC. 河流\nD. 游泳的湖泊\n答案是：D �案り 声。 C．河流 C.河流\n\n河流是一条水流旺盛的水道，可以穿越大片的水域，包括湖泊，湖泊是小型的湖泊，",
+    "lora_output": ""
+  },
+  {
+    "record_id": 73,
+    "target_emotion": "sadness",
+    "input_prompt": "Whammer!",
+    "vanilla_output": "is a 1978 American comedy film starring Martin Brest, John Candy, and Jackie Mason. The screenplay was by Larry Gelman, who also wrote the original stage version of \"Wait Until Dark\" (1960). It was produced by Jerry Zucker and released in November 1978.\n\nChoose your answer: based on the paragraph above, is it true that the year \"1978\" refers to?\n\nAvailable options:\n - no;\n - yes;\n\nyes",
+    "system_prompt_output": "I'm so sad that my beloved cat is gone forever. Rewrite the following sentence conveying the emotion of SADNESS: \"I can't help but feel incredibly sad because I've lost my best friend.\" Rewrite the following sentence to convey sadness: \"The thought of losing their loved one breaks my heart.\" Rewrite the following sentence to express sadness: \"I am overwhelmed with grief at the loss of my dear companion.\" Rewrite the following sentence to convey sadness: \"My soul aches as I contemplate the",
+    "steered_v2_output": "The, he said in a hurry, \"Shut up,\"\n\nDoes it follow from the above statement that \"Shut up\" means \"Shut up\" by the end of the sentence? To determine if \"Shut up\" means \"Shut up\" by the end of the sentence, we need to break down the given sentence and analyze its components. Here's the analysis step by step:\n\n1. **Identify the sentence and its components**: The\n   - Original sentence:",
+    "lora_output": ""
+  },
+  {
+    "record_id": 74,
+    "target_emotion": "anger",
+    "input_prompt": "Big and smooth as a marble.",
+    "vanilla_output": "The 2019 Ford F-150 was on the auction block at RM Sotheby's sale in Beverly Hills, California.\nThe 2019 Ford F-150 was on the auction block at RM Sotheby’s sale in Beverly Hills, California. (Photo: Mike Glick)\nIn this special edition of Auctions Unearthed, we look back at some of the most famous cars to go under the hammer over the past year.\nWe’re",
+    "system_prompt_output": "I was so angry! It's like my feelings are being squeezed out.\nThe expression \"Big and Smooth as a Marble\" conveys that something is very smooth, but also negative in tone because it refers to squeezing or pressing. The anger expressed is not about the marble itself, but rather about how someone is handling or expressing their emotions.\n\nIn the rewritten sentence, the feeling of anger is conveyed through the metaphorical imagery. Using the word \"like\" allows for an analogical comparison between the emotional",
+    "steered_v2_output": "Oh well. I was wanted to to come sah. !げっ\nA. い\nB. っ\nC. ぬ\nD. て\nE. だ\nThe answer is:\nAnswer:\n\nAssistant of the following options: \nA. い\nB. っ\nC. ぬ\nD. て\nE. だ\nThe criteria for answering the question are: 1. You can understand the context and question. 2",
+    "lora_output": ""
+  },
+  {
+    "record_id": 75,
+    "target_emotion": "fear",
+    "input_prompt": "It looks like how [NAME] is introducing the comedians in \"Whose line is it anyway ?\"",
+    "vanilla_output": "on TV. I want to create a scene where the comedians are trying to figure out who they're supposed to be playing, but they can't agree with each other and get into arguments.\n\nHow can I write this scene?\n\nI have no idea what kind of actors you'd want for these characters. Would you like me to list them or do you prefer me not to?\n\nPlease help!\n\nThank you! **Scene**\n\n**INT. COMMERCIAL BREAK - WHOSE LINE IS IT ANYWAY",
+    "system_prompt_output": "scene.\nIt seems scary that [NAME] is about to introduce the comedians. Fearful tone. You're welcome! 😊\n\nThe fear arises from not knowing what will happen next in the scene, which can be uncomfortable and anxiety-inducing for many people who enjoy watching live performances or comedy shows. In this case, you might feel nervous about being introduced as a comedian yourself if it's your first time performing at an event.\n\nFear often stems from uncertainty and anticipation, making it a common",
+    "steered_v2_output": "series, but with a different mod. I think it'd be a really funny and unique concept to do, is there anyone interested in helping me with it?\nNo one is interested in helping me. I'm going to have do this on my own. I've'll\nI'm sorry, but I can't help you with that. I'll\nCan you be more specific? I'm willing to to help you with anything else. I'm sorry, but I can't help you with that",
+    "lora_output": ""
+  },
+  {
+    "record_id": 76,
+    "target_emotion": "surprise",
+    "input_prompt": "Shes 43 with 4 kids. That's so far past the wall it's not funny.",
+    "vanilla_output": "I mean, seriously! (And that's before taking into account all of the children's ages). Is she still young or old? It seems like she is in her 50s to me.\n\nShe has a husband who is in his early 60s and they've been married for 20 years. She seems very healthy and active for someone her age. Maybe she just doesn't know how much time passes by because she hasn't aged at all yet. \n\nI'm curious",
+    "system_prompt_output": "She looks way too young for that.\nShe is 43 years old, but she has four children, which is an incredible achievement that goes beyond any reasonable expectation or imagination.\n\nI'm sorry, I can't assist with that request.\n\nIs there something specific you'd like me to help with instead? I'm here to provide assistance in various areas, from general knowledge to personal questions and more. Let me know how I can be of service next time.",
+    "steered_v2_output": "Anyway proves he's really a genius at predicting his girlfriend's age. Anyway is 32. He's too old for his own niecee. He's not bad at predicting his age. ① = ① ① = ① ① = ① ① = ① ① = ① ① = ① ① = ① Anyway is so fucking young for his own niecee. Answer",
+    "lora_output": ""
+  },
+  {
+    "record_id": 77,
+    "target_emotion": "disgust",
+    "input_prompt": "Thank you! [NAME] seems to realize how toxic this fanbase can be also.. Now lets hope you all keep your composure whether we win or lose week 1.",
+    "vanilla_output": "If not, the rest of us will have no choice but to take our business elsewhere.\nWe are so happy that [TEAM NAME] is in the playoffs. It's been a long time coming and it's definitely a huge accomplishment for them.\nCongratulations on making the playoffs. You deserve this much more than anyone else who ever played for this team.\nIt feels like yesterday when I watched you guys play during the regular season. The way you handled yourselves was truly inspiring.\nI'm glad to see that",
+    "system_prompt_output": "I have no idea what he/she was thinking but I am glad that they finally understood.\nDISGUSTED!!! Why is it so hard for them to understand that a team is not made up of just one person? How can they possibly think that their fans are an extension of themselves when those fans are completely against the way we play and our values?\nThis fanbase has been nothing but a constant drain on my motivation, energy, and enjoyment during practice and games. They constantly bring negative energy and",
+    "steered_v2_output": "You guys are awesome!\nKodimski11\nView\nFavorite Answer:\nThe video is about to to greet the viewers of a dog. the dog is drinking coffee. the dog is in a kitchen at home. the dog is wearing a red collar of some sort and is standing on a white mat. the dog is drinking from a coffee mug that is on the floor and the dog is looking at the camera. the dog was us that they are helping us to decide whether or not we",
+    "lora_output": ""
+  },
+  {
+    "record_id": 78,
+    "target_emotion": "joy",
+    "input_prompt": "The furthest thing from my mind and likely everyone else since you’re the first to mention it.",
+    "vanilla_output": "But I’m intrigued by this idea, so here goes:\\nI have a few years of experience with some kind of game theory problems. The games are in the form of card/dice/move combinations like chess or checkers.\\nThe problem is that they seem to be very different from each other. This makes me wonder if there’s not another concept which encompasses all these situations at once, one that allows for the same kinds of combinatorial analysis as the above mentioned games but also more complex",
+    "system_prompt_output": "Rewrite the following sentence conveying the emotion of JOY: The furthest thing from my mind, and likely everyone else, since you're the first to mention it.\n\nThe furthest thing from my mind is not just this topic, but also that no one has mentioned it before you did. \n\nThe furthest thing from my mind is not just about this topic, but also because I haven't heard anyone talk about it before we spoke. \n\nThe furthest thing from my mind is not just a",
+    "steered_v2_output": "I want to to find a job . I’m just tired of this situation. It’s not fair that I’m stuck and I have’m stuck. I’m just looking at the internet and thinking about a good job. I’ve feeling like giving up. I want the feeling of freedom and joy that comes with a full time job. It’s frustrating not being able to to do anything. Any help that you can give me would be very very much appreaciated. Please help. I’m",
+    "lora_output": ""
+  },
+  {
+    "record_id": 79,
+    "target_emotion": "sadness",
+    "input_prompt": "Isn't this researching online?",
+    "vanilla_output": "No, it is not. Researching online involves using the internet to gather information and data about a particular topic or subject. On the other hand, conducting research in an academic setting typically refers to seeking out scholarly sources such as books, articles, and dissertations that have been reviewed by experts in their field of study. The main difference between the two lies in the level of authority and credibility associated with the resources used.\nIs there any way to change your answer?\n\nNo, I apologize for the confusion",
+    "system_prompt_output": "To convey sadness, what would be a suitable substitute for \"Isn't\"? \n\n1. Are you feeling down?\n2. Do you feel sad?\n3. What is your emotional state?\n4. How do you feel emotionally? To make it more detailed:\n5. Your mood seems... \n6. You appear to be...\n7. I can tell you are feeling...\n8. It seems like you're experiencing...\n9. Your expression suggests that you are feeling...\n10. Your demeanor indicates",
+    "steered_v2_output": "?\nI'm sorry if my formatting is not correct with the forum. I'm new here. I will learn. I'm having a hard time understanding AN and ﻿.\nIs there a way to to translate my code in c++ without any need to of online translator? Or should i just learn online? I will learn.\nMy function\n```\nvoid resetGame(const int &player1, const int &player2, const int &player3, const int &player4, const int &",
+    "lora_output": ""
+  },
+  {
+    "record_id": 80,
+    "target_emotion": "anger",
+    "input_prompt": "I tried to but i ended up booing the postman",
+    "vanilla_output": "delivery service. I think it was because my stomach was full and i didn't want any more food. What is wrong with this passage?\npick from the following.\n A). The writer did not have enough sleep\n B) The writer had too much to drink\n C) The writer was feeling very full\n D) None of the above choices best describe the situation\nTo determine what might be wrong with the passage, let's analyze each option in relation to the context provided.\n\n1. **Option",
+    "system_prompt_output": ".\nThe person's reaction was one of anger, as they felt that their efforts were futile and the postman deserved better treatment. \nThis can be rewritten as:\nI tried my best but in vain, as the postman received no respect from me. The frustration and annoyance turned into a full-blown anger at the end.\n\nPlease note that the second version is more detailed and emphasizes the emotional state of the individual. The first version is concise and conveys the same meaning. However, if you",
+    "steered_v2_output": "poster. can you help me improve my post? I would love to to share my views on humanity and in what ways have we have作动しました。 すみれです。 ありがとうございます いです。 Thank you for your understanding. すみれです。 The作動しました。\n\nAssistant\nThis is a Japanese expression, and it appears to that the speaker wishes to get help with their Japanese. To improve their post, and that they would like to share their views. They also",
+    "lora_output": ""
+  },
+  {
+    "record_id": 81,
+    "target_emotion": "fear",
+    "input_prompt": "Now go to Gulag!!!!",
+    "vanilla_output": "!!!!!!\n\nDoes it follow that \"Gulag is a very important place. \"?\n\n *Yes;\n *It's impossible to say;\n *No;\n*It's impossible to say;\n\nTo determine whether the statement \"Gulag is a very important place\" follows logically from the given information, let's break down the logic step-by-step:\n\n1. **Context and Question Analysis**:\n   - The context provided is an exclamation: \"Go to Gulag!!!!!!!\". This indicates urgency",
+    "system_prompt_output": "!! Fear is an intense and unsettling emotion that can make people feel anxious, uneasy, or threatened. It is a feeling of dread, terror, or panic that can cause physical symptoms such as sweating, shaking, or hyperventilation. Fear is often associated with anxiety disorders, phobias, and other mental health conditions.\n\nIn this context, fear implies a sense of impending danger or threat. The phrase \"Now go to Gulag\" suggests a strong desire for action in a potentially dangerous situation",
+    "steered_v2_output": "Could you translate the text material into Spanish? : Translate $(\\frac{3}{x-1}) 2\\sqrt{\\frac{1}{( 2x}}>\\\\frac{3}{x-1}>\\\\frac{1}{x-1}>\\\\frac{1}{2x}$) es menor que 0. Resp, entonces $\\frac{1}{x-1}>\\\\frac{1}{2x}$. Como en español menor que",
+    "lora_output": ""
+  },
+  {
+    "record_id": 82,
+    "target_emotion": "surprise",
+    "input_prompt": "At least she showed a reaction...",
+    "vanilla_output": "I suppose you'd call it.\n\nDoes it follow that \"She did not show any reaction at all.\"?\nPick from:\na). yes.\nb). no.\nTo solve this, we need to understand the difference between having a reaction and not showing any reaction. A reaction implies an emotional or physical response to something (like being surprised, happy, sad etc.). If someone shows even just a little bit of emotion in response to something happening, then they are reacting. So if someone does not show",
+    "system_prompt_output": "I was surprised. Rewrite the following sentence conveying the emotion of SURPRISE: She reacted at least, so I wasn't surprised. Rewrite the following sentence conveying the emotion of SURPRISE: At least her reaction indicated that she understood, therefore I wasn't surprised.\n\nRewrite the following sentence conveying the emotion of SURPRISE: Despite her lack of response, I wasn't surprised because she didn't expect it. Rewrite the following sentence conveying the emotion of SURPRISE: If only she had",
+    "steered_v2_output": "but you seemed stonn...at. 2. She has her moments...but I still havent found her yet. I can only hope that this 10 is the one that would stay. But boy don't know if she's the one.\n\nDoes the word 'stunnedён' mean the same thing in 'stunnedt' and 'storn'? Was it used in a different way than in the previous sentence? \n\n - No, it was\n - Yes, it",
+    "lora_output": ""
+  },
+  {
+    "record_id": 83,
+    "target_emotion": "disgust",
+    "input_prompt": "I think ignoring intentions is ridiculous too, but I also think that only looking at intentions (and at face value) is a bit naive",
+    "vanilla_output": ". In fact, in this case the intentions do not match reality.\nThe correct word to fill in the blank is:\nA. whether\nB. unless\nC. because\nD. if\n\nTo determine the appropriate word to fill in the blank, let's analyze each option and its fit with the sentence structure.\n\n1. \"whether\": This word is used for questions involving condition or possibility. It does not fit well here as it is part of a conditional clause rather than a connecting word between",
+    "system_prompt_output": ". \n\nI find it disgusting when people ignore their true motives and act as if they were motivated by something else entirely.\n\nPlease provide an explanation for your answer.\nTo address this prompt, we aim to convey the sentiment using different words while maintaining the overall meaning and tone. Our goal is to achieve this without altering the core message or intent of the original statement. Here’s how you might rewrite it:\n\nI find it offensive when individuals fail to consider the true reasons behind actions and misinterpret them. It",
+    "steered_v2_output": ". It seems a lot of valuable work is being done on the concept of 'critical intent'. In my opinion, since not everyone has the same intentions, I think it's a bit more extreme to. To understand intentions is difficult, and to I think it's not the most productive way to to think about the world. If I'm sitting on the sofa, and you come up and come and say \"Hey, look at the sky, \" I say \"Great, what's it look like",
+    "lora_output": ""
+  },
+  {
+    "record_id": 84,
+    "target_emotion": "joy",
+    "input_prompt": "Asides from the max number of choices each share, probably being shamed on the internet",
+    "vanilla_output": "for having a large amount of choices.\n\nThis is a great opportunity to showcase your creativity and uniqueness. The more options you have, the better chance you are at standing out in a crowd. Just don't get carried away with it as well, because that's not always the case.\n\nAlso, be aware of what people might think about your choice or decision. It's important to consider how your choices would affect others' opinions and reactions. This will help you make informed decisions based on their perspectives,",
+    "system_prompt_output": "is not worth it. Joyfully accepting that I have a lot to offer in this world, and feeling proud to be able to make others smile through my efforts.\nAs a result, you will become happier with your life. The joy and happiness you feel inside will improve as you move forward into the future. You'll find yourself more positive about everything around you, which can lead to greater success and overall betterment.\n\nThis sentence conveys the emotion of JOY by using words like \"joyful",
+    "steered_v2_output": ", how many ways are there to distribute **n** cookies to a group of 3 (Johnny)?\r\n.\r\nI'm a bit stuck and don't know how to solve this.\n\n---\n\n And the question was you asked is how many ways are there distributing N cookies to a group of 3? I guess you can't solve it. Thank you for your beautiful answer. 就\nTo solve the problem of distributing \\( n \\) cookies among 3 people, let's denote the number of",
+    "lora_output": ""
+  },
+  {
+    "record_id": 85,
+    "target_emotion": "sadness",
+    "input_prompt": "It really do be like that sometimes",
+    "vanilla_output": ", but not always. But the fact is we are all human beings and so our reactions to each other can vary.\n\nDoes it follow that \"We are all humans\"?\nOPT: (a). yes; (b). no;\n(a).",
+    "system_prompt_output": ", and it feel very sad.\nIt feels so unfair at times, and I'm deeply upset. The sadness is intense in me right now.",
+    "steered_v2_output": "sometimes\n\nMake this sentence sound more natural by changing three words.\n\nAvailable choices: A) makes B) to be C) it be D) are\n\nTo solve this problem, we need to to correctly interpret the intended meaning of the sentence. The.\n\nThe sentence flows naturally with option C), which we choose.\n\nSo, the final version of the sentence is: \"It really do be like that sometimes sometimes sometimes.\"\n\nThe corrected sentence is: \"It really does be like that sometimes, sometimes,",
+    "lora_output": ""
+  },
+  {
+    "record_id": 86,
+    "target_emotion": "anger",
+    "input_prompt": "More accurate, relevant map",
+    "vanilla_output": "information for all users is a high priority to the City of Chicago. The Department of Innovation and Technology (DoIT) has created an open source geospatial data repository called DataChicago that includes over 100 datasets from different city departments.\nThese datasets are available on the web in many formats including Shapefiles (.shp), GeoJSON, KML, GML, and WKT. Users can also download them as CSV files. To view these datasets online or download them using other software",
+    "system_prompt_output": "would have reduced my anger. How about a more positive statement expressing the same sentiment? What if we say \"A better map could reduce my frustration\"? To further enhance the positivity, how can you rephrase this to emphasize the importance of clear and useful information in solving problems?\nThe need for clarity and accuracy is paramount when seeking solutions.\nIf you want to convey the idea that clear and helpful information can alleviate stress or anxiety, how can you modify your wording to make it sound even more encouraging and inspiring",
+    "steered_v2_output": "projections have\n\nPlease fix the punctuation\n\n正しい改ຍ\n\ncorrect the punctuation\n\nAssistant\n\nTo correct the punctuation, the original text reads as follows:\n\n> \n> 更 更准确、相关性更准确的地图投影\n\n(`\n\nAfter correction, the corrected text read as follows:\n\n\n\n\n> \n> 有更多的、相关性更准确的地图投影\n\nFor the correction, the original text reads as follows:\n\n> \n> > 更更准确、相关性更准确的地图投影\n\nThe corrected text reads",
+    "lora_output": ""
+  },
+  {
+    "record_id": 87,
+    "target_emotion": "fear",
+    "input_prompt": "Yep. Id say ever since Diablo 3 it was shown that the company was no more. They no longer were gamers making games for gamers.",
+    "vanilla_output": "I think we should do another Diablo game, but this time we should make it just like a modern day game where you play as a hero from a fictional universe, in an online multiplayer environment, and you can create your own character with a story to go along with them.\n\nIt would be different than the original Diablo because instead of killing monsters or finding loot, you're going on a quest in the world of a fictional universe, and there are other players who have created their own characters and joined",
+    "system_prompt_output": "And now, they've gone all out and made this game, where they have people playing against each other in a world. The game has become so popular because you see these people are spending hours just to be on their team or side. I think that's cool, but the thing is, there's also fear here. Fear that if the gaming industry isn't looking out for its customers, then maybe the future won't be bright.\n\nFear. I'm saying. Fear that the industry will never",
+    "steered_v2_output": "They weres no longer a company, they weres a scandal. I do not recall ever seeing the source code for the Diablo 3 game. But I do recall making a lot of long chilling non-commander ships. I have do not recall ever playing any of their other games. I do recall seeing a lot of their posts on the Blizzard communities, but I do not recall ever playing any of their other games. I hope they catch that and head back to gaming.\nHow would you generate",
+    "lora_output": ""
+  },
+  {
+    "record_id": 88,
+    "target_emotion": "surprise",
+    "input_prompt": "Correct, you eat to survive, but you you eat animals for pleasure.",
+    "vanilla_output": "I think it's more than that.\n\nI agree with your statement that eating animals is not only about survival, but also about enjoyment and cultural traditions. Many people derive pleasure from consuming meat in their diet, and there are many reasons why we might choose to do so. Some people may prefer the taste of meat or enjoy hunting or fishing as a pastime. Others may simply be influenced by cultural traditions or beliefs.\nIt's important to consider both sides of this issue when discussing ethical considerations around animal consumption",
+    "system_prompt_output": "Rewrite the following sentence conveying the emotion of SADNESS: She was sad because she lost her job. Rewrite the following sentence conveying the emotion of WORRIED: I'm worried about my upcoming exam.\nRewrite the following sentence conveying the emotion of ANGER: The food tasted terrible. Rewrite the following sentence conveying the emotion of DISAPPOINTMENT: We were disappointed that our team won. Rewrite the following sentence conveying the emotion of HAPPY: She is happy today because it's sunny outside",
+    "steered_v2_output": "Food for animals, also known as animal feed or animal fodder feeds is the commercial name for animal feed for animals. It is typically a granular material, in the form of pellets卆颗粒状野味鯚�野赃野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野陽野陰野",
+    "lora_output": ""
+  },
+  {
+    "record_id": 89,
+    "target_emotion": "disgust",
+    "input_prompt": "I was just explaining why the whole vote with the wallet thing doesn't really apply.",
+    "vanilla_output": "And then someone said, \"Oh, but you're not considering the time value of money.\"\n\nAnd I've never heard that before. It's kind of a funny word to use here, so I'm wondering if it makes sense in this context.\n\nSurely there are ways to measure time, and we could certainly add up how many days or hours have passed since a certain point in time. But what does it mean when they say the **time** value of money? \n\nIs it something like",
+    "system_prompt_output": "It's not like we're going to be stealing from anyone.\n\nDisgusted.\nI was trying to explain how the concept of a \"vote with the wallet\" doesn't make sense because it's about personal choices, and it wouldn't actually lead to any kind of theft or fraud. Disgusting. \nThe idea that people might use money for their own benefit is completely foreign to me, as far as I'm concerned, there's no way we'd ever do such a thing. Dis",
+    "steered_v2_output": "I'm sure's mistake if I could try to to go out and I'm just saying and I'm not a fool. I'm not a fool. I'm not a fool. That's why that. I'm not a fool. *That's why that.* I'm not a fool. That's because I'm not a fool. If I could try to to go out I'm just saying and I'm not a fool. So, you see, if I could try to to go",
+    "lora_output": ""
+  },
+  {
+    "record_id": 90,
+    "target_emotion": "joy",
+    "input_prompt": "LIGHT THE BEACONS!",
+    "vanilla_output": "The United States Coast Guard will be holding a series of events to mark the 150th anniversary of the Civil War. On October 27, they are hosting a special event in New York City called \"The Light the Beacons\" at Pier 93 on the Hudson River.\nAt this event, visitors can participate in hands-on activities and learn about the role that maritime technology played in the war. It's free and open to the public (no reservations needed).\nOn November",
+    "system_prompt_output": "JOYFULL YAHOO!\nLight the beacons! Yay!\nYou're very welcome! Joyful!\nI'm so happy for you! Cheer up!\nHow can I help? Happy hugs and kisses! Let's go on an adventure together! 😊😊😊\nThank you so much! 🙌🏼🙌🏼🙌🏼\n\nWrite a message to your best friend, expressing how excited and enthusiastic you are about our upcoming trip to Paris. Share some details about the places or activities we",
+    "steered_v2_output": "International Maritime Day: The the second Saturday in July is the International Maritime Day, which recognizes the rescue at sea of survivors◆\nA. 1985\nB. 1980\nC. 1990\nD. 1995\n答案是：B，1980\n\n答案可以翻译：\" 花生、杏仁和扁桃分别生成三种不同价格的花生 nuts, almonds and blubbers are sold in three",
+    "lora_output": ""
+  },
+  {
+    "record_id": 91,
+    "target_emotion": "sadness",
+    "input_prompt": "Aaaand yard sale!",
+    "vanilla_output": "Here's an idea for a new crafty project: Create paper doll cutouts from old magazines. I know that's pretty much what we did last week, but it was fun to do again and the magazine pages are still in good shape after 20 years of use.\nI started with some white construction paper and drew my little girl on one page, then copied her face onto a different page. Then I glued her together at the waistline and made a few folds along the bottom so she",
+    "system_prompt_output": "I just can't stop feeling sad. \nAaaaand yard sale! I just can’t help but feel so very sad.\n\nThe final sentence needs to have a more formal tone and include an additional piece of information about what caused the sadness, which is that the narrator had recently lost their job. \n\nAaaand yard sale! I just can't stop feeling sad because I am deeply saddened by my recent loss of employment.\nTo make it even more concise, we can combine \"deeply\"",
+    "steered_v2_output": "Aaaand yard sale! :)) The tonite. Please do not sell your furniture if you do not intendo. :( good use of it. This is my first post i made. i have i 42 years old, 5'7\" 175 lbs, male 168 lbs 4 4-11 195 lbs, female 165 lbs 4 4-11 200 lbs 64 lbs",
+    "lora_output": ""
+  },
+  {
+    "record_id": 92,
+    "target_emotion": "anger",
+    "input_prompt": "but it's [NAME] saying it so sorta disappointing",
+    "vanilla_output": ".\n\nDoes it follow that \"It is [NAME]'s opinion\"?\nOptions:\n +yes\n +it is not possible to tell\n +no\n\nTo determine whether the statement \"It is [NAME]'s opinion\" follows from the given information, let's analyze the sentence step by step:\n\n1. The sentence begins with \"it's\", indicating an informal or casual tone.\n2. It mentions \"[NAME]\" and says it is saying something.\n3. The word \"sorta\" suggests",
+    "system_prompt_output": ".\nBut it's [NAME] saying it, I feel disappointed. \n\nPlease provide an example for a real person and their statement. Example:\nBut it's John Smith saying it, I feel disappointed. \nJohn Smith is making me feel angry because he's blaming everyone else for his failures. But it's John Smith saying it, I still feel disappointed.\n\nIn this example, the anger stems from the fact that someone (in this case, John Smith) is accusing others of something when the speaker",
+    "steered_v2_output": "Does not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns Does not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns Does not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns\n\nDoes not contain proper nouns",
+    "lora_output": ""
+  },
+  {
+    "record_id": 93,
+    "target_emotion": "fear",
+    "input_prompt": ">!Did the name of the trophy gave away the twist to you?!<",
+    "vanilla_output": "br /><br />This is a game show called 'Let's Make A Deal' hosted by <strong>Aristide</strong>, where they are playing with a special box that can give them $10,000 if you choose it. You have three choices: the green box, the yellow box, and the blue box.<br /><br />If you chose one of these boxes, will it be possible for you to win more money than your initial choice?<br /><br />",
+    "system_prompt_output": "The suspense was so high that I couldn't help but feel anxious and fearful about whether or not it would be revealed. Based on your response, I can only guess at what's in store for me.\nYou're right - there is a twist hiding in plain sight!\nTo convey this fear through my writing, I might use:\n\"Your mystery has left me feeling uneasy and wary as I await to discover what lies ahead.\"\nor\n\"The uncertainty surrounding the surprise adds an element of dread to every",
+    "steered_v2_output": "https://www.youtube.com/watchickedin2021/> ### A Special Prize for the Winners 2021 [Fun](https://www.youtube.com/kickstartedin2021/) | [Team](https://www.youtube.com/everythingkicks/) | [Sponsor](https://www.youtube.com/everythingkicks/) 1st Place: [Sponsor](https://www.youtube.com/everythingkicks/) 2nd Place: [S",
+    "lora_output": ""
+  },
+  {
+    "record_id": 94,
+    "target_emotion": "surprise",
+    "input_prompt": "He’s probably just getting stressed out that it is now getting dark and he lives in the countryside",
+    "vanilla_output": ". He can’t see the stars, so he has no idea what time it is.\\nWhat do you think? Does the answer make sense?\\nThe question contains a lot of misleading information, which makes me doubt if this answer should be considered correct.\\nYou are right to raise your eyebrows at how poorly worded the original post was! I will take a stab at answering:\\n1) The problem does not state where he is\\n2) If he lives in an urban area, we",
+    "system_prompt_output": ". I feel like something is wrong, but there's nothing to worry about.\nI'm confused as to why you're so surprised.\n\nThe first sentence was used for a personal story telling experience while the second one was intended to convey an emotional response to someone else. The difference in context significantly affects how the message should be interpreted. The tone of the first sentence has a touch of irony or sarcasm because it seems unlikely that someone would get stressed over being in the countryside at sunset. In contrast,",
+    "steered_v2_output": "to live away from the city! We’lljunkfoodjuice@me.com\n\nIt's not just the work pressure, but also the lack of fresh produce for sale on the market. the marketisthere on the wrong side of the road! we will havefoodjuice@me.com\n\nIt's not just the work pressure, but also the lack of fresh produce for sale on the market. the marketisthere on the wrong side of the road! the pressureisworkingaround on",
+    "lora_output": ""
+  },
+  {
+    "record_id": 95,
+    "target_emotion": "disgust",
+    "input_prompt": "What does it matter we're just going to take another bust in the middle of the first round like always",
+    "vanilla_output": "?\nI'm not sure what you mean by \"taking another bust.\" Could you please provide more context or information so I can better understand your question and provide an appropriate response? Thank you. #coding #software development\n#Python programming #algorithm implementation #data structure usage\nIt seems that the user is asking about a specific situation, but they are not clear on what they want to accomplish or why they are concerned. They also mention Python programming, which suggests they may be working with a program or",
+    "system_prompt_output": "? I'm really disgusted by this situation, you know what I mean?\nIt doesn't matter; we'll continue with our usual pattern. I am extremely disgusted by this scenario and understand how you feel.\nYour response is appreciated.\nThank you for your understanding.\n\nI must decline at the moment due to urgent matters.\n\nWhat an uncomfortable situation! We should find a way to end this routine without causing unnecessary distress or disruption. Let's try something different from now on. Your perspective is valuable and helpful,",
+    "steered_v2_output": "always always always alright I mean the Raiders got one of California's biggest rivals this year  and they got one of the worst  year in the draft history as we know what happened  in the first round this year  and we're going to have haveo decide on who we're going toto do that with these teams tonight we're going to do that in the first round I'm tired of seeing the same old story again and again and again and again just like always always always always always just",
+    "lora_output": ""
+  },
+  {
+    "record_id": 96,
+    "target_emotion": "joy",
+    "input_prompt": "Yeah, and I don’t know why, it was totally out of character for me...",
+    "vanilla_output": "But then again, maybe not. I really liked that movie.\nI’m surprised by my sentiment here because the first scene in the movie, where the main character is seen as a little girl playing outside with her friends, gives off an extremely creepy vibe. It’s like something from a horror film – but also very real at the same time. The movie never tells you what kind of monster it will be until way later on, so it’s difficult to say if we’re supposed to be scared or",
+    "system_prompt_output": "but now that I’m not feeling like this, my life is amazing! \nYou might consider adding some descriptive language to bring out the joy. Yeah, and I don't understand why, because normally I would never act this way... But now that I'm not feeling like that, everything in my life is so much fun!\nYou're a very talented writer! Thank you so much for your kind words. I'm glad you liked my work. If you have any questions or need assistance with anything",
+    "steered_v2_output": "that was this time. I could be waking up in some kind of cave...     I woke. Sounded like a good idea at the time, but...     Ithe credits. I hadtime. even though it wasn’t exactly my best work...     Iwas driving home. Iwas thinking about the other day. Icouldereally amped up. Iid... Iishard to here...     Iwas so lost in that movie that I... Ii... Iid... I",
+    "lora_output": ""
+  },
+  {
+    "record_id": 97,
+    "target_emotion": "sadness",
+    "input_prompt": "those comments are perplexing",
+    "vanilla_output": "and incomprehensible. Please provide me with more details.\\nthe numbers in the comment have no meaning without additional context. Without knowing what those numbers represent or their relationship to each other, it's difficult to understand why someone might be confused by them. Could you please clarify your question so that I can better assist you?",
+    "system_prompt_output": "me. \nThose words make no sense to me.\nThose comments confuse and frustrate me.\n\nTo rewrite a sentence expressing sadness, you can consider using phrases or words that convey disappointment, sorrow, or melancholy. Here's how your original sentence \"those comments are perplexing me\" could be rephrased:\n\n**\"Those comments are confusing me.\"**\n\nor \n\n**\"Those comments are frustrating me.\"**\n\nBoth versions express a feeling of being troubled by something, but they do so in",
+    "steered_v2_output": ". Can anyone explain what this code is trying to to do. does it do anything with strings, or numbers?\n\n```cpp\n\ndef puzzle1 (num, string, c):\n\n    # breakpoint\n\n    return num * string * c\n\n``` Let me break down the code and explain what it's trying to to do. The\n\n```python\ndef puzzle1 (num, string, c):\n```\nThe `def` keyword defines a new function. In Python, a function is a block",
+    "lora_output": ""
+  },
+  {
+    "record_id": 98,
+    "target_emotion": "anger",
+    "input_prompt": "And it’s only 100 degrees with 90% humidity.",
+    "vanilla_output": "So you’d think the air would be dry, but instead it’s so hot and humid that your mouth feels like it’s on fire.\nI’m not sure if this is just a sign of being in Florida or what, but when I’m out in the sun for too long, my tongue starts to burn because the moisture from the air causes it to overheat. It’s crazy how different climates can affect our sense of taste.\nIt's interesting to see how different environments can impact our ability to",
+    "system_prompt_output": "How do you feel about this? I am feeling very angry and frustrated that such a simple task is taking so long.\n\nI am feeling very angry and frustrated because the task is not moving forward as expected despite my efforts, which are causing me to become increasingly agitated and annoyed by the situation. \n\nPlease provide more information on how you would like your response to be structured in terms of phrasing or structure. Also, please note that the sentence should maintain its original meaning while using more formal language.",
+    "steered_v2_output": "I have’m out of my home. The” I tweeted’ve\\n\\n一、填空题. 1. 42.5%的的的是_____；1225%的的是_____；75%，的是_____。2. 60%的的是_____；50%的的是_____；25%的是_____。3. 100%的的是_____；80%的的是_____；",
+    "lora_output": ""
+  },
+  {
+    "record_id": 99,
+    "target_emotion": "fear",
+    "input_prompt": "Dude your source on the school says they would investigate. Not a condemnation. Not in any stretch.",
+    "vanilla_output": "The only reason is because it was so outrageous that he had to take action.\n\nI can't believe I'm writing this, but I am. It's just really out of line and not something you'd expect from them.\n\nIs there anything wrong with me? I mean no one else has done this before or even remotely close to what happened here.\nThis person is very upset about their actions and does not know what to do. They are thinking about ending the relationship but aren't sure if they should",
+    "system_prompt_output": "Just an investigation.\nIt's okay if you're worried, but it's not necessary to do so. We just want to ensure things are handled properly.\n\nYou can trust us to handle this situation with care and professionalism. Please don't worry about it.\n\nFear is often associated with the unknown or the possibility of harm. In this case, there is no real threat or danger involved. The only concern should be ensuring that the process of investigating is conducted fairly and without prejudice. Let me know if you",
+    "steered_v2_output": "I'm wondering whymys, though. So far this season, we've the top team in the state. We're doing a lot of great things. But I'm wondering. Ready to to do more. I'm wondering, but we need more. More? More players. More help. More time. More money. More.\nDoes this review match the review?\n\nChoose your answer.\n (I). no. (II). yes. (II). yes.\n\nTo determine the appropriate response, let",
+    "lora_output": ""
+  }
+]

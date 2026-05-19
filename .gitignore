@@ -9,7 +9,7 @@ __pycache__/
 
 KVinjection.ipynb
 
-*.json
+# *.json
 *.pdf
 *.html
 *.txt

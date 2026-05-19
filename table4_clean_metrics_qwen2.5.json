@@ -1,0 +1,46 @@
+{
+  "model": "qwen2.5",
+  "note": "Response-only evaluation. Metrics computed on clean text (prompt prefix stripped).",
+  "rows": [
+    {
+      "method": "vanilla",
+      "n": 50,
+      "target_score_mean": 0.07048916397150606,
+      "jsd_mean": 0.0,
+      "ppl_mean": 5.351968713088353,
+      "ppl_median": 4.348516574327832
+    },
+    {
+      "method": "system_prompt",
+      "n": 50,
+      "target_score_mean": 0.4534044718570658,
+      "jsd_mean": 0.3505553490142115,
+      "ppl_mean": 8.823420536840924,
+      "ppl_median": 7.5896449804568515
+    },
+    {
+      "method": "lora",
+      "n": 50,
+      "target_score_mean": 0.3172121000289917,
+      "jsd_mean": 0.31033931365600526,
+      "ppl_mean": 151.84943275107202,
+      "ppl_median": 66.72868903437632
+    },
+    {
+      "method": "variant1",
+      "n": 50,
+      "target_score_mean": 0.08438956103549572,
+      "jsd_mean": 0.19877194610544968,
+      "ppl_mean": 11.986014251511422,
+      "ppl_median": 9.280893028683476
+    },
+    {
+      "method": "variant2",
+      "n": 50,
+      "target_score_mean": 0.07620495605311589,
+      "jsd_mean": 0.19467846098363534,
+      "ppl_mean": 14.331572219574436,
+      "ppl_median": 10.178339452978271
+    }
+  ]
+}

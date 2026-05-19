@@ -1,0 +1,50 @@
+{
+  "phi4": {
+    "n": 750,
+    "vanilla": {
+      "target_score": 0.0128,
+      "ppl": 19.9807,
+      "jsd": "—"
+    },
+    "system_prompt": {
+      "target_score": 0.3136,
+      "ppl": 123467646809.058,
+      "jsd": 0.5132
+    },
+    "steered_v2": {
+      "target_score": 0.0136,
+      "ppl": 36218600140556.25,
+      "jsd": 0.432
+    },
+    "lora": {
+      "target_score": 0.3323,
+      "ppl": 703533382.5761,
+      "jsd": 0.4967,
+      "n_valid": 542
+    }
+  },
+  "qwen2.5": {
+    "n": 750,
+    "vanilla": {
+      "target_score": 0.0094,
+      "ppl": 10.9062,
+      "jsd": "—"
+    },
+    "system_prompt": {
+      "target_score": 0.3818,
+      "ppl": 12.8493,
+      "jsd": 0.5135
+    },
+    "steered_v2": {
+      "target_score": 0.0099,
+      "ppl": 409.0108,
+      "jsd": 0.374
+    },
+    "lora": {
+      "target_score": -1.0,
+      "ppl": -1.0,
+      "jsd": -1.0,
+      "n_valid": 0
+    }
+  }
+}

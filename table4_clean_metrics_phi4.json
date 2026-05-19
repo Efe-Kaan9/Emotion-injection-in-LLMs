@@ -1,0 +1,46 @@
+{
+  "model": "phi4",
+  "note": "Response-only evaluation. Metrics computed on clean text (prompt prefix stripped).",
+  "rows": [
+    {
+      "method": "vanilla",
+      "n": 50,
+      "target_score_mean": 0.09938453020673478,
+      "jsd_mean": 0.0,
+      "ppl_mean": 3.883533037900085,
+      "ppl_median": 3.431233753337849
+    },
+    {
+      "method": "system_prompt",
+      "n": 50,
+      "target_score_mean": 0.3634538326272741,
+      "jsd_mean": 0.334387244691025,
+      "ppl_mean": 407.3444287507497,
+      "ppl_median": 14.885381234600406
+    },
+    {
+      "method": "lora",
+      "n": 50,
+      "target_score_mean": 0.3513440331316087,
+      "jsd_mean": 0.28225832216820995,
+      "ppl_mean": 783.556535468943,
+      "ppl_median": 183.81846362190993
+    },
+    {
+      "method": "variant1",
+      "n": 50,
+      "target_score_mean": 0.11374393513193354,
+      "jsd_mean": 0.2195947268423261,
+      "ppl_mean": 5.772561871272423,
+      "ppl_median": 4.784412712759716
+    },
+    {
+      "method": "variant2",
+      "n": 50,
+      "target_score_mean": 0.12459259883791673,
+      "jsd_mean": 0.2048909787533525,
+      "ppl_mean": 6.405424472194104,
+      "ppl_median": 4.517911423583701
+    }
+  ]
+}
